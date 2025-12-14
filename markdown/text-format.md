@@ -34,3 +34,5 @@ _italic_            # Syntax 2
 
 **Example:** 
 - ~~text~~
+
+==test==

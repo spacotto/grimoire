@@ -29,7 +29,7 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 Data types that are used to store simple values.
 
 #### `void`
->
+>Lorem ipsum.
 
 #### `char`
 >It is used to store a single character (like ASCII).
@@ -44,38 +44,46 @@ Data types that are used to store simple values.
 >On 32-bit systems, its range goes from -2147483648 (`INT_MIN`) to 2147483647 (`INT_MAX`). This range can be extended or reduced using modifiers like `long` or `short` (see below).
 
 #### `float`
->
+>Lorem ipsum.
 
 ### Sign Specifiers
 Data types that define the sign (negative or positive) of another data type.
 
 #### `signed`
+>Lorem ipsum.
 
 #### `unsigned`
+>Lorem ipsum.
 
 ### Size or Range Specifiers
 Data types that modify the size or range of another data type.
 
 #### `short`
+>Lorem ipsum.
 
 #### `long`
+>Lorem ipsum.
 
 #### `long long`
+>Lorem ipsum.
 
 ### Derived Types
 Data types that are built from the basic types.
 
 #### Pointers
+>Lorem ipsum.
 
 #### Arrays & Strings
+>Lorem ipsum.
 
 ### User-Defined Types
 Data types that are defined by the user.
 
 #### Structures
+>Lorem ipsum.
 
 #### Unions
+>Lorem ipsum.
 
 #### Enumerations
-
-
+>Lorem ipsum.

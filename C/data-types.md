@@ -4,7 +4,9 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 >[!IMPORTANT]
 >Actual sizes and ranges depend on the system architecture. Use `<limits.h>` and `<float.h>` headers for precise minimum and maximum values on your platform.
 
-## Basic Data Types
+## Type Specifiers (or Modifiers)
+**Type Specifiers** (or **Modifiers**) are keywords that define the variable's underlying data type and change its size and/or range of values.
+
 ### Integer Types
 #### `int`
 ```
@@ -47,6 +49,8 @@ long long      # Extended integer, at least 8 bytes
 ### Enumerations
 
 ## Type Qualifiers
+**Type Qualifiers** are keywords that change how the compiler treats a variable in memory or optimization, but they do not change the data's range or size.
+
 ### `const`
 
 ### `volatile`

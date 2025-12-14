@@ -1,7 +1,8 @@
 # Lists
 ## Unordered
 ```
-- item` or `* item
+- item
+* item
 ```
 
 **Example:**

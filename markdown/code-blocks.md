@@ -29,7 +29,7 @@ block
 
 **Example:**
 ```diff
-diff text
+--text
 - red
 + green
 @@ purple @@

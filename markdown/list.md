@@ -13,7 +13,7 @@
 - item
 - item
 
-### Ordered
+## Ordered
 ```
 1. item
 2. item
@@ -25,7 +25,7 @@
 2. item
 3. item
 
-### Nested lists
+## Nested lists
 ```
 - text
   - text
@@ -37,7 +37,7 @@
   - text
     - text
 
-### Task Lists (GFM)
+## Task Lists (GFM)
 ```
 - [x] Done
 - [ ] Not done

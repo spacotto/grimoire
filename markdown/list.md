@@ -1,8 +1,11 @@
 # Lists
+> [!IMPORTANT]
+> GFM are GitHub-specific syntax (technically part of GitHub Docs Markdown extensions). They are not standard Markdown — meaning they won’t render properly outside GitHub (e.g., in VS Code preview, Reddit, or generic Markdown parsers).
+
 ## Unordered
 ```
-- item
-* item
+- item            # Syntax 1
+* item            # Syntax 2
 ```
 
 **Example:**
@@ -10,8 +13,7 @@
 - item
 - item
 
-### List (ordered)
-**Syntax:** 
+### Ordered
 ```
 1. item
 2. item
@@ -24,7 +26,6 @@
 3. item
 
 ### Nested lists
-**Syntax:** 
 ```
 - text
   - text
@@ -37,7 +38,6 @@
     - text
 
 ### Task Lists (GFM)
-**Syntax:** 
 ```
 - [x] Done
 - [ ] Not done

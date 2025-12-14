@@ -29,7 +29,10 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 Data types that are used to store simple values.
 
 `int`
->Standard integer type, typically 4 bytes (32 bits). It is used for whole numbers.
+>Used to store whole numbers (integers). It handles general-purpose counting and arithmetic.
+
+>[!TIP]
+>On 32-bit systems, its range goes from -2147483648 (`INT_MIN`) to 2147483647 (`INT_MAX`). This range can be extended or reduced using modifiers like `long` or `short` (see below).
 
 `char`
 >

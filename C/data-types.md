@@ -32,13 +32,13 @@ Data types that are used to store simple values.
 >
 
 #### `char`
->It is used to store whole numbers (integers). It handles general-purpose counting and arithmetic.
+>It is used to store a single character (like ASCII).
 
 >[!NOTE]
 >Since it is fundamentally an integer type, it stores the character's corresponding numerical value, usually following the ASCII standard.
 
 #### `int`
->It is used to store a single character (like ASCII).
+>It is used to store whole numbers (integers). It handles general-purpose counting and arithmetic.
 
 >[!TIP]
 >On 32-bit systems, its range goes from -2147483648 (`INT_MIN`) to 2147483647 (`INT_MAX`). This range can be extended or reduced using modifiers like `long` or `short` (see below).
@@ -77,4 +77,5 @@ Data types that are defined by the user.
 #### Unions
 
 #### Enumerations
+
 

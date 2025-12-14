@@ -25,15 +25,29 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ## Type Specifiers (or Modifiers)
 **Type Specifiers** (or **Modifiers**) are keywords that define the variable's underlying data type and change its size and/or range of values.
 
-### Basic Specifiers
+### Primary Specifiers
+Data types that are used to store simple values.
+
+`int`
+>Standard integer type, typically 4 bytes (32 bits). It is used for whole numbers.
+
+`char`
+>
+
+`float`
+>
+
+`int`
+>
 
 ### Sign Specifiers
+Data types that define the sign (negative or positive) of another data type.
 
 ### Size or Range Specifiers
+Data types that modify the size or range of another data type.
 
 ### Derived Types
+Data types that are built from the basic types.
 
-
-
-
-
+### User-Defined Types
+Data types that are defined by the user.

@@ -7,9 +7,9 @@ ___            # Syntax 3
 ```
 
 **Example:**
+
 ---
 
 ***
 
-text
 ___

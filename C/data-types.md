@@ -13,13 +13,13 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ## Type Qualifiers
 **Type Qualifiers** are keywords that change how the compiler treats a variable in memory or optimisation, but they do not change the data's range or size.
 
-`const`
+#### `const`
 >It makes a variable read-only.
 
-`volatile`
+#### `volatile`
 >It tells the compiler the value may change unexpectedly.
 
-`restrict`
+#### `restrict`
 >It tells the compiler that for the lifetime of the pointer, no other pointer will be used to access the object to which it points. It can be used in pointer declarations to make optimisations (for example, vectorisation)
 
 ## Type Specifiers (or Modifiers)
@@ -28,29 +28,50 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ### Primary Specifiers
 Data types that are used to store simple values.
 
-`int`
+#### `void`
+>
+
+#### `char`
+>
+
+#### `int`
 >Used to store whole numbers (integers). It handles general-purpose counting and arithmetic.
 
 >[!TIP]
 >On 32-bit systems, its range goes from -2147483648 (`INT_MIN`) to 2147483647 (`INT_MAX`). This range can be extended or reduced using modifiers like `long` or `short` (see below).
 
-`char`
+#### `float`
 >
 
-`float`
->
-
-`int`
->
 
 ### Sign Specifiers
 Data types that define the sign (negative or positive) of another data type.
 
+#### `signed`
+
+#### `unsigned`
+
 ### Size or Range Specifiers
 Data types that modify the size or range of another data type.
+
+#### `short`
+
+#### `long`
+
+#### `long long`
 
 ### Derived Types
 Data types that are built from the basic types.
 
+#### Pointers
+
+#### Arrays & Strings
+
 ### User-Defined Types
 Data types that are defined by the user.
+
+#### Structures
+
+#### Unions
+
+#### Enumerations

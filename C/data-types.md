@@ -4,6 +4,12 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 >[!IMPORTANT]
 >Actual sizes and ranges depend on the system architecture. Use `<limits.h>` and `<float.h>` headers for precise minimum and maximum values on your platform.
 
+>[!TIP]
+>Use `sizeof()` operator to get the size of any type in bytes:
+>```
+>(char *)malloc(sizeof(char) * 42)
+>```
+
 ## Type Specifiers (or Modifiers)
 **Type Specifiers** (or **Modifiers**) are keywords that define the variable's underlying data type and change its size and/or range of values.
 
@@ -56,9 +62,3 @@ long long      # Extended integer, at least 8 bytes
 ### `volatile`
 
 ### `restrict`
-
-## Size and Range
-Use `sizeof()` operator to get the size of any type in bytes:
-```
-(char *)malloc(sizeof(char) * 42)
-```

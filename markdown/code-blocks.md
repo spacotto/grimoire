@@ -22,6 +22,7 @@ block
 ## `diff`
 ```
 # You have to add "diff" on the same line of the ``` marking the start of the code block.
+diff --text        # Blue
 - text             # Red
 + text             # Green
 @@ text @@         # Purple
@@ -29,8 +30,8 @@ block
 
 **Example:**
 ```diff
---text
-- red
-+ green
-@@ purple @@
+diff --text
+- text
++ text
+@@ text @@
 ```

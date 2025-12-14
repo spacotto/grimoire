@@ -3,13 +3,14 @@
 > GFM are GitHub-specific syntax (technically part of GitHub Docs Markdown extensions). They are not standard Markdown — meaning they won’t render properly outside GitHub (e.g., in VS Code preview, Reddit, or generic Markdown parsers).
 
 ## Simple Blockquote
-**Syntax:** `> quote`
+```
+> quote
+```
 
 **Example:**
 >quote
 
 ## Caution (GFM Admonition/Callout)
-**Syntax:**
 ```
 > [!CAUTION]
 > Be careful!
@@ -20,7 +21,6 @@
 > Be careful!
 
 ## Warning (GFM Admonition/Callout)
-**Syntax:**
 ```
 > [!WARNING]
 > This is a warning.
@@ -31,7 +31,6 @@
 > This is a warning.
 
 ## Tip (GFM Admonition/Callout)
-**Syntax:**
 ```
 > [!TIP]
 > This is a tip.
@@ -42,7 +41,6 @@
 > This is a tip.
 
 ## Note (GFM Admonition/Callout)
-**Syntax:**
 ```
 > [!NOTE]
 > This is a note.
@@ -53,7 +51,6 @@
 > This is a note.
 
 ## Important (GFM Admonition/Callout)
-**Syntax:**
 ```
 > [!IMPORTANT]
 > This is important information.

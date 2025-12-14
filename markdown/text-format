@@ -1,0 +1,25 @@
+# Text Format
+## Bold
+```
+**bold**
+__bold__
+```
+
+**Example:** 
+- **bold**
+- __bold__
+
+## Italic
+**Syntax:** `*italic*` or `_italic_`
+
+**Example:** *italic*
+
+## Bold + Italic
+**Syntax:** `***text***`
+
+**Example:** ***text*** 
+
+## Strikethrough
+**Syntax:** `~~text~~`
+
+**Example:** ~~text~~

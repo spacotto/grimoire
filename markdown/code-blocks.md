@@ -20,7 +20,7 @@ block
 ```
 
 ## `diff`
-```
+```diff
 - red
 + green
 @@ purple @@

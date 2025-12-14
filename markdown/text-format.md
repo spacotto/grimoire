@@ -1,8 +1,8 @@
 # Text Format
 ## Bold
 ```
-**bold**
-__bold__
+**bold**            # Syntax 1 
+__bold__            # Syntax 2
 ```
 
 **Example:** 
@@ -11,8 +11,8 @@ __bold__
 
 ## Italic
 ```
-*italic*
-_italic_
+*italic*            # Syntax 1 
+_italic_            # Syntax 2
 ```
 
 **Example:**

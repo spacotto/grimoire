@@ -15,3 +15,6 @@
 | text | text | text |
 | text | text | text |
 | text | text | text |
+
+>[!TIP]
+>You can align the text on the centre ` :---: `, on the left ` :--- `, or on the right ` ---: `.

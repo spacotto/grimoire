@@ -15,14 +15,17 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 
 `const`
 >**Definition.** It makes a variable read-only.
+>
 >**Implementation.**
 
 `volatile`
 >**Definition.** It tells the compiler the value may change unexpectedly.
+>
 >**Implementation.** It is used in embedded systems and multi-threading.
 
 `restrict`
 >**Definition.** It tells the compiler that for the lifetime of the pointer, no other pointer will be used to access the object to which it points.
+>
 >**Implementation.** It can be used in pointer declarations to make optimisations (for example, vectorisation)
 
 ## Type Specifiers (or Modifiers)
@@ -35,6 +38,7 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ### Size or Range Specifiers
 
 ### Derived Types
+
 
 
 

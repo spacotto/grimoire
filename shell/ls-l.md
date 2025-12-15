@@ -33,8 +33,33 @@ By adding the `-l` flag, the so-called **long listing format** is triggered.
 | ---------------- | ----------------- | ------------------ |
 | User Permissions | Group Permissions | Others Permissions |
 
+### `chmod`
+You can change the permissions by running this command in the terminal:
+```
+chmod xx file_name         # Enter the chosen operator and permission aliases (see below) instead of -x
+```
+
+| Operator | Meaning                |
+| :------- | :--------------------- |
+| `+`      | Add the file mode bits to the existing file mode bits of the item      |
+| `-`      | Remove the file mode bits from the existing file mode bits of the item |
+| `=`      | Substitutes the existing file mode bits of the item |
+
+| Permission | Meaning |
+| :--------- | :------ |
+| `r`        | Read    |
+| `w`        | Write   |
+| `x`        | Execute |
+
+---
+
+You can also set up the permissions altogether by using their respective values:
+```
+chmod xxx file_name        # Enter the chosen value (see below) instead of xxx
+```
+
 | Permission | Binary | Value | Meaning                |
-| ---------- | ------ | ----- | ---------------------- |
+| :--------- | :----- | :---- | :--------------------- |
 | `---`      | `000`  | `0`   | No permission          |
 | `--x`      | `001`  | `1`   | Execute only           |
 | `-w-`      | `010`  | `2`   | Write only             |

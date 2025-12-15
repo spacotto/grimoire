@@ -44,11 +44,10 @@ Data types that are used to store simple values.
 ### Sign Specifiers
 Data types that define the sign (negative or positive) of another data type.
 
-#### `signed`
->Lorem ipsum.
-
-#### `unsigned`
->Lorem ipsum.
+| Specifiers | Purpose                                              |
+| :--------- | :--------------------------------------------------- |
+| `signed`   |  |
+| `unsigned` |  |
 
 ### Size or Range Specifiers
 Data types that modify the size or range of another data type.
@@ -82,6 +81,7 @@ Data types that are defined by the user.
 
 #### Enumerations
 >Lorem ipsum.
+
 
 
 

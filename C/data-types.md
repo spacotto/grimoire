@@ -28,10 +28,10 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ### Primary Specifiers
 Data types that are used to store simple values.
 
-| Specifiers | Purpose                                              |
-| :--------- | :--------------------------------------------------- |
+| Specifiers | Purpose                                                                                           |
+| :--------- | :------------------------------------------------------------------------------------------------ |
 | `void`     |  |
-| `char`     | It is used to store a single character (like ASCII). |
+| `char`     | It is used to store a single character (like ASCII).                                              |
 | `int`      | It is used to store whole numbers (integers). It handles general-purpose counting and arithmetic. |
 | `float`    |  |
 
@@ -52,14 +52,11 @@ Data types that define the sign (negative or positive) of another data type.
 ### Size or Range Specifiers
 Data types that modify the size or range of another data type.
 
-#### `short`
->Lorem ipsum.
-
-#### `long`
->Lorem ipsum.
-
-#### `long long`
->Lorem ipsum.
+| Specifiers  | Purpose                                              |
+| :---------- | :--------------------------------------------------- |
+| `short`     |  |
+| `long`      |  |
+| `long long` |  |
 
 ### Derived Types
 Data types that are built from the basic types.
@@ -81,6 +78,7 @@ Data types that are defined by the user.
 
 #### Enumerations
 >Lorem ipsum.
+
 
 
 

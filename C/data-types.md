@@ -30,20 +30,16 @@ Data types that are used to store simple values.
 
 | Specifiers | Purpose                                              |
 | :--------- | :--------------------------------------------------- |
-| `void`     |                                                      |
+| `void`     |  |
 | `char`     | It is used to store a single character (like ASCII). |
+| `int`      | It is used to store whole numbers (integers). It handles general-purpose counting and arithmetic. |
+| `float`    |  |
 
 >[!NOTE]
->Since it is fundamentally an integer type, it stores the character's corresponding numerical value, usually following the ASCII standard.
-
-#### `int`
->It is used to store whole numbers (integers). It handles general-purpose counting and arithmetic.
+>Since `char` is fundamentally an integer type, it stores the character's corresponding numerical value, usually following the ASCII standard.
 
 >[!TIP]
->On 32-bit systems, its range goes from -2147483648 (`INT_MIN`) to 2147483647 (`INT_MAX`). This range can be extended or reduced using modifiers like `long` or `short` (see below).
-
-#### `float`
->Lorem ipsum.
+>On 32-bit systems, `int` range goes from -2147483648 (`INT_MIN`) to 2147483647 (`INT_MAX`). This range can be extended or reduced using modifiers like `long` or `short` (see below).
 
 ### Sign Specifiers
 Data types that define the sign (negative or positive) of another data type.
@@ -86,6 +82,7 @@ Data types that are defined by the user.
 
 #### Enumerations
 >Lorem ipsum.
+
 
 
 

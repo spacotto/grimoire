@@ -28,11 +28,10 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ### Primary Specifiers
 Data types that are used to store simple values.
 
-#### `void`
->Lorem ipsum.
-
-#### `char`
->It is used to store a single character (like ASCII).
+| Data Type | Purpose                                              |
+| :-------- | :--------------------------------------------------- |
+| `void`    |                                                      |
+| `char`    | It is used to store a single character (like ASCII). |
 
 >[!NOTE]
 >Since it is fundamentally an integer type, it stores the character's corresponding numerical value, usually following the ASCII standard.
@@ -87,3 +86,4 @@ Data types that are defined by the user.
 
 #### Enumerations
 >Lorem ipsum.
+

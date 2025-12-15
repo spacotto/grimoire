@@ -9,10 +9,25 @@ By adding the `-l` flag, the so-called **long listing format** is triggered.
 |    |     .------------------------------------------- Number of hard links
 |    |     |   .--------------------------------------- Owner (user) name or ID
 |    |     |   |     .--------------------------------- Group name or ID
-|    |     |   |     |    .---------------------------- File size in bytes
+|    |     |   |     |    .---------------------------- Item size in bytes
 |    |     |   |     |    |       .-------------------- Last modification (month, day, and time)
 |    |     |   |     |    |       |         .---------- Item name
 |    |     |   |     |    |       |         |
 -rw-r--r-- 1 owner group 256 Jan 1 15:15 file.txt
 ```
 
+## Data type
+
+## Permissions (read, write, execute)
+
+## Hard links
+
+## Owner
+
+## Group
+
+## Item size
+
+## Last modification
+
+## Item name

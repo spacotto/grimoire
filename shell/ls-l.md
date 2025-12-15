@@ -16,7 +16,17 @@ By adding the `-l` flag, the so-called **long listing format** is triggered.
 -rw-r--r-- 1 owner group 256 Jan 1 15:15 file.txt
 ```
 
-## Data type
+## Data types
+| Symbol | Type                    | Description                                                          |
+| ------ | ----------------------- | -------------------------------------------------------------------- |
+| `-`    | Regular file            | A normal file (text, binary, etc.)                                   |
+| `d`    | Directory               | A folder containing other files/directories                          |
+| `l`    | Symbolic link (symlink) | A shortcut or reference to another file                              |
+| `c`    | Character device file   | For devices that handle data as streams (e.g. keyboard, serial port) |
+| `b`    | Block device file       | For devices that handle data in blocks (e.g. hard drives)            |
+| `s`    | Socket                  | Used for inter-process communication                                 |
+| `p`    | Named pipe (FIFO)       | A special file for communication between processes                   |
+| `D`    | Door                    | Special type on Solaris for fast RPC                                 |
 
 ## Permissions (read, write, execute)
 

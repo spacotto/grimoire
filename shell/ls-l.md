@@ -18,7 +18,7 @@ By adding the `-l` flag, the so-called **long listing format** is triggered.
 
 ## Data types
 | Symbol | Type                    | Description                                                          |
-| ------ | ----------------------- | -------------------------------------------------------------------- |
+| :----- | :---------------------- | :------------------------------------------------------------------- |
 | `-`    | Regular file            | A normal file (text, binary, etc.)                                   |
 | `d`    | Directory               | A folder containing other files/directories                          |
 | `l`    | Symbolic link (symlink) | A shortcut or reference to another file                              |

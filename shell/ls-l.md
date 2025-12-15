@@ -29,6 +29,20 @@ By adding the `-l` flag, the so-called **long listing format** is triggered.
 | `D`    | Door                    | Special type on Solaris for fast RPC                                 |
 
 ## Permissions (read, write, execute)
+| `rwx`            | `rwx`             | `rwx`              |
+| ---------------- | ----------------- | ------------------ |
+| User Permissions | Group Permissions | Others Permissions |
+
+| Permission | Binary | Value | Meaning                |
+| ---------- | ------ | ----- | ---------------------- |
+| `---`      | `000`  | `0`   | No permission          |
+| `--x`      | `001`  | `1`   | Execute only           |
+| `-w-`      | `010`  | `2`   | Write only             |
+| `-wx`      | `011`  | `3`   | Write + Execute        |
+| `r--`      | `100`  | `4`   | Read only              |
+| `r-x`      | `101`  | `5`   | Read + Execute         |
+| `rw-`      | `110`  | `6`   | Read + Write           |
+| `rwx`      | `111`  | `7`   | Read + Write + Execute |
 
 ## Hard links
 

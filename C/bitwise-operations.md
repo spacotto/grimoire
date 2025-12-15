@@ -2,34 +2,40 @@
 Bitwise operations **manipulate individual bits in integer types**. They work on the **binary representation of numbers** and are fundamental for low-level programming, hardware control, and performance optimisation.
 
 ## Bitwise Operators
-AND (&) - Sets each bit to 1 if both bits are 1
+### AND (`&`)
+Sets each bit to 1 if both bits are 1
 ```
 5 & 3        // 0101 & 0011 = 0001 (result: 1)
 ```
 
-OR (|) - Sets each bit to 1 if at least one bit is 1
+### OR (`|`)
+Sets each bit to 1 if at least one bit is 1
 ```
 5 | 3        // 0101 | 0011 = 0111 (result: 7)
 ```
 
-XOR (^) - Sets each bit to 1 if bits are different
+### XOR (`^`)
+Sets each bit to 1 if bits are different
 ```
 5 ^ 3        // 0101 ^ 0011 = 0110 (result: 6)
 ```
 
-NOT (~) - Inverts all bits (unary operator)
+### NOT (`~`)
+Inverts all bits (unary operator)
 ```
 ~5           // ~0101 = 1010 (result depends on integer size)
 ```
 
-Left Shift (<<) - Shifts bits left, filling with zeros
+### Left Shift (`<<`)
+Shifts bits left, filling with zeros
 ```
 5 << 2       // 0101 << 2 = 10100 (result: 20)
 ```
 
-Right Shift (>>) - Shifts bits right
+### Right Shift (`>>`)
+Shifts bits right
 ```
-5 >> 1  // 0101 >> 1 = 0010 (result: 2)
+5 >> 1       // 0101 >> 1 = 0010 (result: 2)
 ```
 
 Common Use Cases

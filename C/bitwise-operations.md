@@ -50,8 +50,10 @@ unsigned char upper_nibble = value & 0xF0;  // Keep upper 4 bits
 ```
 
 ## Important Notes
-Bitwise operations work on integer types (char, short, int, long). The right shift behaviour for signed integers is implementation-defined—it may perform arithmetic shift (preserving sign bit) or logical shift (filling with zeros). For unsigned integers, right shift always fills with zeros.
-Avoid shifting by a negative amount or by more bits than the type width—this causes undefined behaviour.
+- Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
+- The right shift behaviour for signed integers is implementation-defined. It may perform an arithmetic shift (preserving the sign bit) or logical shift (filling with zeros).
+- For unsigned integers, right shift always fills with zeros.
+- Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
 
 Practical Example:
 ```

@@ -43,7 +43,7 @@ chmod xx file_name         # Enter the chosen operator and permission aliases (s
 | :------- | :--------------------- |
 | `+`      | Add the file mode bits to the existing file mode bits of the item      |
 | `-`      | Remove the file mode bits from the existing file mode bits of the item |
-| `=`      | Substitutes the existing file mode bits of the item |
+| `=`      | Substitutes the existing file mode bits of the item with the ones specified after the operator |
 
 | Permission | Meaning |
 | :--------- | :------ |

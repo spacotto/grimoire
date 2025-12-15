@@ -13,14 +13,11 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ## Type Qualifiers
 **Type Qualifiers** are keywords that change how the compiler treats a variable in memory or optimisation, but they do not change the data's range or size.
 
-#### `const`
->It makes a variable read-only.
-
-#### `volatile`
->It tells the compiler the value may change unexpectedly.
-
-#### `restrict`
->It tells the compiler that for the lifetime of the pointer, no other pointer will be used to access the object to which it points. It can be used in pointer declarations to make optimisations (for example, vectorisation)
+| Qualifiers | Purpose                                                  |
+| :--------- | :------------------------------------------------------- |
+| `const`    | It makes a variable read-only.                           |
+| `volatile` | It tells the compiler the value may change unexpectedly. |
+| `restrict` | It tells the compiler that for the lifetime of the pointer, no other pointer will be used to access the object to which it points. It can be used in pointer declarations to make optimisations (for example, vectorisation) |
 
 ## Type Specifiers (or Modifiers)
 **Type Specifiers** (or **Modifiers**) are keywords that define the variable's underlying data type and change its size and/or range of values.
@@ -86,4 +83,5 @@ Data types that are defined by the user.
 
 #### Enumerations
 >Lorem ipsum.
+
 

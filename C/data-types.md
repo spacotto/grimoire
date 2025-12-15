@@ -61,26 +61,16 @@ Data types that modify the size or range of another data type.
 ### Derived Types
 Data types that are built from the basic types.
 
-#### Pointers
->Lorem ipsum.
-
-#### Arrays & Strings
->Lorem ipsum.
+| Specifiers | Purpose                                              |
+| :--------- | :--------------------------------------------------- |
+| Pointers   |  |
+| Arrays     |  |
 
 ### User-Defined Types
 Data types that are defined by the user.
 
-#### Structures
->Lorem ipsum.
-
-#### Unions
->Lorem ipsum.
-
-#### Enumerations
->Lorem ipsum.
-
-
-
-
-
-
+| Specifiers   | Purpose                                              |
+| :----------- | :--------------------------------------------------- |
+| Structures   |  |
+| Unions       |  |
+| Enumerations |  |

@@ -88,18 +88,6 @@ unsigned char	reverse_bits(unsigned char octet)
 	return (result);
 }
 ```
-1. Initialise the counter `i` to 0.
-2. Initialise the byte `result` where the reversed bits will be built.
-3. Loop through all 8 positions (from `i = 0` to `i = 7`).
-	- Check the bit in the byte (octet).
-	- `(1 << i)` creates a mask like `00000001`, `00000010`, `00000100`, etc.
- 	- The condition is TRUE if the i-th bit of `octet` is `1`.
-4. Set the corresponding reversed bit in the `result`.
-	- `(1 << (7 - i))` creates a reverse mask:
-		- When `i = 0` (checking the LSB), (`7 - i`) is 7 (setting the MSB). Mask: `10000000`
-  		- When `i = 1`, (`7 - i`) is 6. Mask: `01000000`
-    	- When `i = 7` (checking the MSB), (7-i) is 0 (setting the LSB). Mask: `00000001`
-     	- `result |= ...` uses the bitwise OR (`|`) assignment to set that specific bit in 'result'.
 
 ### Swap Bits
 ```
@@ -116,13 +104,6 @@ int	is_power_of_2(unsigned int n)
 	return ((n > 0) && ((n & (n - 1)) == 0));
 }
 ```
->[!NOTE]
->A number n is a power of 2 if and only if:
->1. n is greater than 0 (powers of 2 are positive, aka `n > 0`)
->2. The bitwise AND (`&`) of n and `(n - 1)` is 0.
->
->`n & (n - 1)` clears the least significant set bit (the rightmost 1-bit) in n.
->If n is a power of 2, it has only one set bit, so clearing it results in 0.
 
 ## Important Notes
 - Bitwise operations work on integer types (`char`, `short`, `int`, `long`).

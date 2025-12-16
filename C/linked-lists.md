@@ -30,3 +30,102 @@ t_list	*ft_lstnew(void *content)
 	return (node);
 }
 ```
+
+
+### Adding at the Beginning
+```
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	if (!new)
+		return ;
+	new->next = *lst;
+	*lst = new;
+}
+```
+
+### Measuring the List
+```
+int	ft_lstsize(t_list *lst)
+{
+	int	size;
+
+	size = 0;
+	while (lst)
+	{
+		size++;
+		lst = lst->next;
+	}
+	return (size);
+}
+```
+
+### Adding at the End
+```
+void	ft_lstadd_back(t_list **lst, t_list *new)
+{
+	t_list	*last;
+
+	if (!lst || !new)
+		return ;
+	if (*lst == NULL)
+		*lst = new;
+	else
+	{
+		last = ft_lstlast(*lst);
+		last->next = new;
+	}
+}
+```
+
+### Deleting a Node
+```
+void    del(void *data)
+{
+	if (data)
+		free(data);
+	else
+		return ;
+}
+
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
+{
+	if (!lst || !del)
+		return ;
+	else
+	{
+		if (data)
+			free(data);
+		else
+			return ;
+	}
+	free(lst);
+}
+```
+
+### Deleting the List
+```
+void	ft_lstclear(t_list **lst, void (*del)(void*))
+{
+	t_list	*head;
+	t_list	*node;
+
+	if (!lst || !del)
+		return ;
+	head = *lst;
+	while (head)
+	{
+		node = head->next;
+		ft_lstdelone(head, del);
+		head = node;
+	}
+	*lst = NULL;
+}
+```
+
+### Traversing and Printing
+
+## Key Points
+- Always check for `NULL` pointers before dereferencing
+- Use double pointers (`**`) when modifying the head pointer
+- Always free allocated memory to prevent memory leaks
+- The head pointer is your only entry point to the list

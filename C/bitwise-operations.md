@@ -85,20 +85,32 @@ void	print_bits(unsigned char octet)			// The fn takes an unsigned char for its 
 ```
 unsigned char	reverse_bits(unsigned char octet)
 {
-	int				i;
-	unsigned char	result;
+    int             i;
+    unsigned char   result;
 
 	i = 0;
 	result = 0;
-	while (i < 8)						\\ Check until the 7th position
+	while (i < 8)
 	{
-		if (octet & (1 << i)) 			\\ Check the bit in the original byte
-			result |= (1 << (7 - i));	\\ Place it in the corresponding reversed position in a result byte
+		if (octet & (1 << i))
+			result |= (1 << (7 - i));
 		i++;
 	}
 	return (result);
 }
 ```
+1. Initialise the counter `i` to 0.
+2. Initialise the byte `result` where the reversed bits will be built.
+3. Loop through all 8 positions (from `i = 0` to `i = 7`).
+	- Check the bit in the byte (octet).
+	- `(1 << i)` creates a mask like `00000001`, `00000010`, `00000100`, etc.
+ 	- The condition is TRUE if the i-th bit of `octet` is `1`.
+4. Set the corresponding reversed bit in the `result`.
+	- `(1 << (7 - i))` creates a reverse mask:
+		- When `i = 0` (checking the LSB), (`7 - i`) is 7 (setting the MSB). Mask: `10000000`
+  		- When `i = 1`, (`7 - i`) is 6. Mask: `01000000`
+    	- When `i = 7` (checking the MSB), (7-i) is 0 (setting the LSB). Mask: `00000001`
+     	- `result |= ...` uses the bitwise OR (`|`) assignment to set that specific bit in 'result'.
 
 ### Swap Bits
 ```

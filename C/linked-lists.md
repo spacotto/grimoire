@@ -9,3 +9,8 @@ typedef struct s_list
 	struct s_list	*next;           // Pointer to the next node
 }	t_list;
 ```
+
+## Types of Linked Lists
+- **Singly Linked List.** Each node points to the next node. The last node points to `NULL`.
+- **Doubly Linked List.** Each node has pointers to both next and previous nodes.
+- **Circular Linked List.** The last node points back to the first node instead of `NULL`.

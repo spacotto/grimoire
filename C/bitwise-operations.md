@@ -38,27 +38,16 @@ Shifts bits right
 5 >> 1       // 0101 >> 1 = 0010 (result: 2)
 ```
 
-## Common Use Cases
-- Setting a bit: `num |= (1 << n)` sets the nth bit to 1
-- Clearing a bit: `num &= ~(1 << n)` sets the nth bit to 0
-- Toggling a bit: `num ^= (1 << n)` flips the nth bit
-- Checking a bit: `(num & (1 << n)) != 0` tests if nth bit is 1
-- Creating masks: Use combinations to isolate specific bits
+## Common Bitwise Syntax Patterns
+Creating a bit mask: 
 ```
-unsigned char lower_nibble = value & 0x0F;  // Keep lower 4 bits
-unsigned char upper_nibble = value & 0xF0;  // Keep upper 4 bits
+(1 << n)				\\ Creates a mask with only the nth bit set
 ```
 
-## Important Notes
-- Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
-- The right shift behaviour for signed integers is implementation-defined. It may perform an arithmetic shift (preserving the sign bit) or logical shift (filling with zeros).
-- For unsigned integers, right shift always fills with zeros.
-- Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
-- The **octet** is a unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
+Setting a bit: 
 ```
-0000 0010				// This is how an octet looks like
+num |= (1 << n) 		\\ Sets the nth bit to 1
 ```
-- A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.
 
 ## Examples
 ### Print Bits
@@ -134,3 +123,14 @@ int	is_power_of_2(unsigned int n)
 >
 >`n & (n - 1)` clears the least significant set bit (the rightmost 1-bit) in n.
 >If n is a power of 2, it has only one set bit, so clearing it results in 0.
+
+## Important Notes
+- Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
+- The right shift behaviour for signed integers is implementation-defined. It may perform an arithmetic shift (preserving the sign bit) or logical shift (filling with zeros).
+- For unsigned integers, right shift always fills with zeros.
+- Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
+- The **octet** is a unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
+```
+0000 0010				// This is how an octet looks like
+```
+- A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.

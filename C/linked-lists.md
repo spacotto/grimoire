@@ -5,7 +5,7 @@ A linked list is a dynamic data structure where elements (**nodes**) are **conne
 ```
 typedef struct s_list
 {
-	void			    *content;        // The value stored in the node
+	void			*content;        // The value stored in the node
 	struct s_list	*next;           // Pointer to the next node
 }	t_list;
 ```

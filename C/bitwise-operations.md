@@ -55,18 +55,22 @@ unsigned char upper_nibble = value & 0xF0;  // Keep upper 4 bits
 - For unsigned integers, right shift always fills with zeros.
 - Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
 
-Practical Example:
+## Print Bits
+You can extract and display each bit of a byte by iterating through each bit position. 
 ```
-#define FLAG_READ  (1 << 0)               // 0001
-#define FLAG_WRITE (1 << 1)               // 0010
-#define FLAG_EXEC  (1 << 2)               // 0100
+#include <unistd.h>
 
-unsigned char permissions = 0;
-permissions |= FLAG_READ | FLAG_WRITE;    // Set read and write
+void	print_bits(unsigned char octet)
+{
+	int	            i;
+	unsigned char	bit;
 
-if (permissions & FLAG_WRITE) {
-    // Write permission is set
+	i = 7;
+	while (i >= 0)
+	{
+		bit = (octet & (1 << i)) ? '1' : '0';
+		write(1, &bit, 1);
+		i--;
+	}
 }
-
-permissions &= ~FLAG_WRITE;               // Remove write permission
 ```

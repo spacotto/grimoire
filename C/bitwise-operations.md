@@ -125,6 +125,23 @@ Moving bits to position: Shift then mask or mask then shift
 (value >> 5) & 0x01;  // Move bit 5 to bit 0
 ```
 
+### Combining Operations
+Swap nibbles:
+```
+((num & 0x0F) << 4) | (num >> 4)
+```
+
+Clear then set: 
+```
+num = (num & ~mask) | new_bits
+```
+
+Multiple bits at once: Use combined masks
+```
+octet |= (1 << 2) | (1 << 5);   // Set bits 2 and 5
+octet &= ~((1 << 1) | (1 << 3)); // Clear bits 1 and 3
+```
+
 ## Examples
 ### Print Bits
 You can extract and display each bit of a byte by iterating through each bit position. 

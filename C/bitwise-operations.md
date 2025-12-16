@@ -60,7 +60,8 @@ unsigned char upper_nibble = value & 0xF0;  // Keep upper 4 bits
 ```
 - A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.
 
-## Print Bits
+## Examples
+### Print Bits
 You can extract and display each bit of a byte by iterating through each bit position. 
 ```
 #include <unistd.h>
@@ -80,7 +81,7 @@ void	print_bits(unsigned char octet)			// The fn takes an unsigned char for its 
 }
 ```
 
-## Reverse Bits
+### Reverse Bits
 ```
 unsigned char	reverse_bits(unsigned char octet)
 {
@@ -99,7 +100,7 @@ unsigned char	reverse_bits(unsigned char octet)
 }
 ```
 
-## Swap Bits
+### Swap Bits
 ```
 unsigned char	swap_bits(unsigned char octet)
 {

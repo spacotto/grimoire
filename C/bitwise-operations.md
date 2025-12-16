@@ -67,10 +67,10 @@ void	print_bits(unsigned char octet)			// The fn takes an unsigned char for its 
 	int	            i;
 	unsigned char	bit;
 
-	i = 7;										// i is initialised at 7 
+	i = 7;										// i is initialised at 7 since we start from 0 for a total of 8
 	while (i >= 0)
 	{
-		bit = (octet & (1 << i)) ? '1' : '0';	//
+		bit = (octet & (1 << i)) ? '1' : '0';	
 		write(1, &bit, 1);
 		i--;
 	}

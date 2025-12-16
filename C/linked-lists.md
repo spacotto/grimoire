@@ -99,6 +99,19 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 ### Searching Content
 ```
+int	ft_lst_search(t_list *lst, int key)
+{
+    if (!lst)
+		return (NULL);
+	struct Node* temp = head;
+    while (temp != NULL)
+	{
+        if (temp->data == key)
+            return (1);  // Found
+        temp = temp->next;
+    }
+    return (0);  // Not found
+}
 ```
 
 ### Deleting a Node

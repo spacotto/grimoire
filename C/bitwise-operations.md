@@ -1,7 +1,17 @@
 # About Bitwise Operations
 Bitwise operations **manipulate individual bits in integer types**. They work on the **binary representation of numbers** and are fundamental for low-level programming, hardware control, and performance optimisation.
 
-Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
+>[!NOTE]
+>Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
+
+## Useful Terms
+- **Octet.** A unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
+```
+0000 0010				// This is how an octet looks like
+```
+
+>[!TIP]
+>Use a **Programmer Calculator** to visualise bytes and bits.
 
 ## Bitwise Operators
 ### AND (`&`)
@@ -114,8 +124,5 @@ int	is_power_of_2(unsigned int n)
 ```
 
 ## Important Notes
-- The **octet** is a unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
-```
-0000 0010				// This is how an octet looks like
-```
+- 
 - A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.

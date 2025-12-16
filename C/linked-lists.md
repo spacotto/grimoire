@@ -14,3 +14,5 @@ typedef struct s_list
 - **Singly Linked List.** Each node points to the next node. The last node points to `NULL`.
 - **Doubly Linked List.** Each node has pointers to both next and previous nodes.
 - **Circular Linked List.** The last node points back to the first node instead of `NULL`.
+
+## Essential Operations

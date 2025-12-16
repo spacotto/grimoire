@@ -119,5 +119,6 @@ int	is_power_of_2(unsigned int n)
 >A number n is a power of 2 if and only if:
 >1. n is greater than 0 (powers of 2 are positive, aka `n > 0`)
 >2. The bitwise AND (`&`) of n and `(n - 1)` is 0.
+>
 >`n & (n - 1)` clears the least significant set bit (the rightmost 1-bit) in n.
 >If n is a power of 2, it has only one set bit, so clearing it results in 0.

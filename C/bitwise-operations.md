@@ -91,10 +91,18 @@ unsigned char	reverse_bits(unsigned char octet)
 	result = 0;
 	while (i < 8)						\\ Check until the 7th position
 	{
-		if (octet & (1 << i)) 			\\ Check each bit in the original byte
+		if (octet & (1 << i)) 			\\ Check the bit in the original byte
 			result |= (1 << (7 - i));	\\ Place it in the corresponding reversed position in a result byte
 		i++;
 	}
 	return (result);
+}
+```
+
+## Swap Bits
+```
+unsigned char	swap_bits(unsigned char octet)
+{
+	return ((octet & 0x0F) << 4) | (octet >> 4);
 }
 ```

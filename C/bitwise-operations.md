@@ -67,7 +67,7 @@ void	print_bits(unsigned char octet)			// The fn takes an unsigned char for its 
 	int	            i;
 	unsigned char	bit;
 
-	i = 7;
+	i = 7;										// i is initialised at 7 
 	while (i >= 0)
 	{
 		bit = (octet & (1 << i)) ? '1' : '0';	//

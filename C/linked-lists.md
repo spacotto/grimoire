@@ -1,6 +1,20 @@
 # Linked Lists
 A linked list is a dynamic data structure where elements (**nodes**) are **connected** through **pointers**. Unlike arrays, linked lists **don't require contiguous memory** and can **grow or shrink during runtime**.
 
+## Characteristics
+- **Dynamic structure.** Nodes connected through pointers, not stored contiguously in memory like arrays
+- **Node composition.** Each node contains data and a pointer to the next node; the last node points to NULL
+- **Flexible memory.** No pre-allocated fixed size required; grows and shrinks at runtime by allocating/freeing individual nodes
+- **Sequential access.** Must traverse from the head to reach elements, resulting in O(n) access time (no direct indexing)
+- **Efficient insertions/deletions.** Adding or removing nodes only requires pointer manipulation, not shifting elements
+- **Memory overhead.** Uses extra memory to store pointers alongside data
+- **Best use cases.** Ideal when frequent insertions/deletions are needed and random access isn't a priority
+
+## Types of Linked Lists
+- **Singly Linked List.** Each node points to the next node. The last node points to `NULL`.
+- **Doubly Linked List.** Each node has pointers to both next and previous nodes.
+- **Circular Linked List.** The last node points back to the first node instead of `NULL`.
+
 ## Basic Node Structure
 ```
 typedef struct s_list
@@ -9,11 +23,6 @@ typedef struct s_list
 	struct s_list	*next;           // Pointer to the next node
 }	t_list;
 ```
-
-## Types of Linked Lists
-- **Singly Linked List.** Each node points to the next node. The last node points to `NULL`.
-- **Doubly Linked List.** Each node has pointers to both next and previous nodes.
-- **Circular Linked List.** The last node points back to the first node instead of `NULL`.
 
 ## Essential Operations
 ### Creating a Node

@@ -1,6 +1,8 @@
 # About Bitwise Operations
 Bitwise operations **manipulate individual bits in integer types**. They work on the **binary representation of numbers** and are fundamental for low-level programming, hardware control, and performance optimisation.
 
+Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
+
 ## Bitwise Operators
 ### AND (`&`)
 Sets each bit to 1 if both bits are 1
@@ -37,6 +39,12 @@ Shifts bits right
 ```
 5 >> 1       // 0101 >> 1 = 0010 (result: 2)
 ```
+
+>[!IMPORTANT]
+>The right shift behaviour for `int` is implementation-defined: it may perform an arithmetic shift (preserving the sign bit) or logical shift (filling with zeros). For `unsigned int`, right shift always fills with zeros.
+
+>[!CAUTION]
+>Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
 
 ## Common Bitwise Syntax Patterns
 Creating a bit mask: 
@@ -106,10 +114,6 @@ int	is_power_of_2(unsigned int n)
 ```
 
 ## Important Notes
-- Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
-- The right shift behaviour for signed integers is implementation-defined. It may perform an arithmetic shift (preserving the sign bit) or logical shift (filling with zeros).
-- For unsigned integers, right shift always fills with zeros.
-- Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
 - The **octet** is a unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
 ```
 0000 0010				// This is how an octet looks like

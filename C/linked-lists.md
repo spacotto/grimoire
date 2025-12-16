@@ -31,7 +31,6 @@ t_list	*ft_lstadd_node(void *content)
 }
 ```
 
-
 ### Adding at the Beginning
 ```
 void	ft_lstadd_front(t_list **lst, t_list *new)
@@ -59,6 +58,18 @@ int	ft_lstsize(t_list *lst)
 }
 ```
 
+### Travelling the List
+```
+t_list	*ft_lstlast(t_list *lst)
+{
+	if (!lst)
+		return (NULL);
+	while (lst && lst->next)
+		lst = lst->next;
+	return (lst);
+}
+```
+
 ### Adding at the End
 ```
 void	ft_lstadd_back(t_list **lst, t_list *new)
@@ -78,6 +89,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 ```
 
 ### Searching Content
+```
+```
 
 ### Deleting a Node
 ```

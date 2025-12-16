@@ -54,6 +54,7 @@ unsigned char upper_nibble = value & 0xF0;  // Keep upper 4 bits
 - The right shift behaviour for signed integers is implementation-defined. It may perform an arithmetic shift (preserving the sign bit) or logical shift (filling with zeros).
 - For unsigned integers, right shift always fills with zeros.
 - Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
+- The **octet** is a unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
 
 ## Print Bits
 You can extract and display each bit of a byte by iterating through each bit position. 

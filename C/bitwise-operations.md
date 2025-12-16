@@ -5,13 +5,17 @@ Bitwise operations **manipulate individual bits in integer types**. They work on
 >Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
 
 ## Useful Terms
-- **Octet.** A unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
+### Octet
+A unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
 ```
 0000 0010				// This is how an octet looks like
 ```
 
 >[!TIP]
 >Use a **Programmer Calculator** to visualise bytes and bits.
+
+### Mask
+A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.
 
 ## Bitwise Operators
 ### AND (`&`)
@@ -122,7 +126,3 @@ int	is_power_of_2(unsigned int n)
 	return ((n > 0) && ((n & (n - 1)) == 0));
 }
 ```
-
-## Important Notes
-- 
-- A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.

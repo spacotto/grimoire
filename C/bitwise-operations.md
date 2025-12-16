@@ -55,13 +55,14 @@ unsigned char upper_nibble = value & 0xF0;  // Keep upper 4 bits
 - For unsigned integers, right shift always fills with zeros.
 - Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
 - The **octet** is a unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
+- A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.
 
 ## Print Bits
 You can extract and display each bit of a byte by iterating through each bit position. 
 ```
 #include <unistd.h>
 
-void	print_bits(unsigned char octet)
+void	print_bits(unsigned char octet)			// The fn takes an unsigned char for its size is 1 byte (1 octet, 8 bits)
 {
 	int	            i;
 	unsigned char	bit;
@@ -69,7 +70,7 @@ void	print_bits(unsigned char octet)
 	i = 7;
 	while (i >= 0)
 	{
-		bit = (octet & (1 << i)) ? '1' : '0';
+		bit = (octet & (1 << i)) ? '1' : '0';	//
 		write(1, &bit, 1);
 		i--;
 	}

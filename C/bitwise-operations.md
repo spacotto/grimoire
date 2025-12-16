@@ -61,6 +61,7 @@ Shifts bits right
 >Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
 
 ## Common Bitwise Syntax Patterns
+### Bit Manipulation Fundamentals
 Creating a bit mask: 
 ```
 (1 << n)				\\ Creates a mask with only the nth bit set
@@ -69,6 +70,59 @@ Creating a bit mask:
 Setting a bit: 
 ```
 num |= (1 << n) 		\\ Sets the nth bit to 1
+```
+
+Clearing a bit: 
+```
+num &= ~(1 << n) 		\\ Sets the nth bit to 0
+```
+
+Toggling a bit: 
+```
+num ^= (1 << n) flips the nth bit
+```
+
+Checking a bit: 
+```
+(num & (1 << n)) isolates the nth bit (non-zero if set)
+```
+
+Testing if bit is set: 
+```
+(num & (1 << n)) != 0 explicitly tests for 1
+```
+
+### Masking Operations
+Isolating lower bits: 
+```
+num & 0x0F keeps only the lower 4 bits (nibble)
+```
+
+Isolating upper bits: 
+```
+num & 0xF0 keeps only the upper 4 bits
+```
+
+Extracting bit range: Combine shift and mask operations
+```
+unsigned char middle = (octet >> 2) & 0x07;  // Extract bits 2-4
+```
+
+### Shift Operations
+Multiply by power of 2: 
+```
+num << n multiplies by 2^n
+```
+
+Divide by power of 2: 
+```
+num >> n divides by 2^n (for unsigned)
+```
+
+Moving bits to position: Shift then mask or mask then shift
+```
+(value & 0x01) << 7;  // Move bit 0 to bit 7
+(value >> 5) & 0x01;  // Move bit 5 to bit 0
 ```
 
 ## Examples

@@ -18,7 +18,7 @@ typedef struct s_list
 ## Essential Operations
 ### Creating a Node
 ```
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstadd_node(void *content)
 {
 	t_list	*node;
 
@@ -76,6 +76,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 }
 ```
+
+### Searching Content
 
 ### Deleting a Node
 ```

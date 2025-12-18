@@ -5,6 +5,9 @@ Bitwise operations **manipulate individual bits in integer types**. They work on
 >Bitwise operations work on integer types (`char`, `short`, `int`, `long`).
 
 ## Useful Terms
+### Mask
+A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.
+
 ### Octet
 A unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
 ```
@@ -13,9 +16,6 @@ A unit of digital information in computing and telecommunications that consists 
 
 >[!TIP]
 >Use a **Programmer Calculator** to visualise bytes and bits.
-
-### Mask
-A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.
 
 ## Bitwise Operators
 ### AND (`&`)

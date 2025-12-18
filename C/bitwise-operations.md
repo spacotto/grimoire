@@ -154,9 +154,16 @@ int	is_power_of_2(unsigned int n)
 	return ((n > 0) && ((n & (n - 1)) == 0));
 }
 ```
+### Function Explained
+Check if the number is positive since powers of 2 are always positive:
+```
+n > 0
+```
 
-1. `n > 0` checks if the number is positive since powers of 2 are always positive.
-2. `((n & (n - 1)) == 0)` checks if by subtracting 1 to n, all the less significant bits become `1`.
+Compare `n` and `n-1`: do all the less significant bits become `1`? If yes (`== 0`), than we have a power of 2:
+```
+((n & (n - 1)) == 0)
+```
 
 >[!NOTE]
 >This works because subtracting 1 from a power of 2 flips the single `1` bit to `0`, and sets all the less significant bits (to the right of the original `1`) to `1`.
@@ -172,24 +179,34 @@ int	is_power_of_2(unsigned int n)
 >```
 
 ## Print Bits
-You can extract and display each bit of a byte by iterating through each bit position. 
+The function iterates from the most significant bit (MSB, position `7`) down to the least significant bit (LSB, position `0`), using a mask to check the value of the bit at the current position.
 ```
 #include <unistd.h>
 
 void	print_bits(unsigned char octet)
 {
-	int	            i;
-	unsigned char	bit;
+	int index = 7;
+	unsigned char bit;
 
-	i = 7;
-	while (i >= 0)
+	while (index >= 0)
 	{
-		bit = (octet & (1 << i)) ? '1' : '0';
+		bit = (octet & (1 << index)) ? '1' : '0';
 		write(1, &bit, 1);
 		i--;
 	}
 }
 ```
+
+### Function Explained
+Create an `index` which is a signed `int` so we can reach `-1`, and initialise it at `7` to start at the **highest bit position** (bit 7):
+```
+int index = 7;
+```
+
+Create an `unsigned char result` where we are going to stock the final result that we are going to return.
+
+>[!TIP]
+>We are given (and we are going to return) an `unsigned char` since this datatype has a size of `1 byte` (or `1 octet`), aka `8 bits`. `unsigned char` are often used in bitwise operations instead of `char` (whose size is `1 byte` as well)
 
 ## Reverse Bits
 ```

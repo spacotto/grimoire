@@ -262,6 +262,16 @@ while (i < 8)
 }
 ```
 
+4. Create a mask (`(1 << i)`) to isolate each bit and execute the **AND** (`&`) operation on it (sets the bit to `1` if both bits are `1`).
+```
+if (octet & (1 << i))
+```
+
+5. 
+```
+result |= (1 << (7 - i));
+```
+
 ## Swap Bits
 ```
 unsigned char	swap_bits(unsigned char octet)

@@ -203,10 +203,22 @@ Create an `index` which is a signed `int` so we can reach `-1`, and initialise i
 int index = 7;
 ```
 
-Create an `unsigned char result` where we are going to stock the final result that we are going to return.
+Create an `unsigned char bit` where we are going to stock the bit we want to write:
+```
+unsigned char bit;
+```
 
 >[!TIP]
->We are given (and we are going to return) an `unsigned char` since this datatype has a size of `1 byte` (or `1 octet`), aka `8 bits`. `unsigned char` are often used in bitwise operations instead of `char` (whose size is `1 byte` as well)
+>We are given (and, due to compatibility needs, we are going to use) an `unsigned char` since this data type has a size of `1 byte` (or `1 octet`), aka `8 bits`. `unsigned char` are often used in bitwise operations instead of `char` (whose size is `1 byte` as well) to avoid negative values. In this case, you can use `char` as well. However, getting the habit of using `unsigned char` with bitwise operations is a good practice worth learning since the start.
+
+```
+while (index >= 0)
+{
+	bit = (octet & (1 << index)) ? '1' : '0';
+	write(1, &bit, 1);
+	i--;
+}
+```
 
 ## Reverse Bits
 ```
@@ -227,6 +239,9 @@ unsigned char	reverse_bits(unsigned char octet)
 }
 ```
 
+### Function Explained
+-
+
 ## Swap Bits
 ```
 unsigned char	swap_bits(unsigned char octet)
@@ -234,3 +249,5 @@ unsigned char	swap_bits(unsigned char octet)
 	return ((octet & 0x0F) << 4) | (octet >> 4);
 }
 ```
+### Function Explained
+-

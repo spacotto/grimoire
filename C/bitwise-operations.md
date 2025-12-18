@@ -161,7 +161,7 @@ int	is_power_of_2(unsigned int n)
 >[!NOTE]
 >This works because subtracting 1 from a power of 2 flips the single `1` bit to `0`, and sets all the less significant bits (to the right of the original `1`) to `1`.
 >```
->0000 0001 (2^0 = 1)
+>0000 0001 (2^0 = 1)	>	0000 0000 (0)
 >0000 0010 (2^1 = 2)	>	0000 0001 (1)
 >0000 0100 (2^2 = 4)	>	0000 0011 (3)
 >0000 1000 (2^3 = 8)	>	0000 0111 (7)

@@ -155,6 +155,9 @@ int	is_power_of_2(unsigned int n)
 }
 ```
 
+1. `n > 0` checks if the number is positive since powers of 2 are always positive.
+2. `((n & (n - 1)) == 0)` checks if by subtracting 1 to n, all the less significant bits become `1`. For example, `0000 1000` (`8`) becomes `0000 0111` (`7`).
+
 ## Print Bits
 You can extract and display each bit of a byte by iterating through each bit position. 
 ```

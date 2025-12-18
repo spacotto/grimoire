@@ -99,7 +99,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 ### Searching Content
 ```
-int	ft_lst_search(t_list *lst, int key)
+int	ft_lst_search(t_list *lst, int target)
 {
     if (!lst)
 		return (NULL);
@@ -111,6 +111,21 @@ int	ft_lst_search(t_list *lst, int key)
         temp = temp->next;
     }
     return (0);  // Not found
+}
+```
+
+### Sorting Content
+```
+int ascending(int a, int b)
+{
+	return (a <= b);
+}
+
+t_list	*ft_sort_list(t_list* lst, int (*cmp)(int, int))
+{
+	t_list	sorted;
+
+	return (sorted);
 }
 ```
 
@@ -129,18 +144,21 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	if (!lst || !del)
 		return ;
 	else
-	{
-		if (data)
-			free(data);
-		else
-			return ;
-	}
+		del(lst->content);
 	free(lst);
 }
 ```
 
 ### Deleting the List
 ```
+void	del(void *data)
+{
+	if (data)
+		free(data);
+	else
+		return ;
+}
+
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*head;

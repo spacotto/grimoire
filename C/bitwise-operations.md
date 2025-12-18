@@ -96,7 +96,7 @@ Testing if bit is set:
 (num & (1 << n)) != 0 								// Explicitly tests for 1
 ```
 
-### Masking Operations
+## Masking Operations
 Isolating lower bits: 
 ```
 num & 0x0F 											// Keeps only the lower 4 bits (nibble)

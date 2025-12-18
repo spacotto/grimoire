@@ -287,7 +287,12 @@ unsigned char	swap_bits(unsigned char octet)
 }
 ```
 ### Function Explained
-This operation swaps
+This operation swaps the 2 halves of the byte:
 ```
 (octet << 4) | (octet >> 4)
+```
+
+Add a mask to make the process safe and to avoid data corruption:
+```
+((octet & 0x0F) << 4)
 ```

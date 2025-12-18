@@ -8,6 +8,13 @@ Bitwise operations **manipulate individual bits in integer types**. They work on
 ### Mask
 A **(bit)mask** is a binary value used to selectively manipulate specific bits within another binary value through bitwise operations.
 
+### Nibble
+A unit of digital information that consists of 4 bits (half of a byte).
+```
+0000 0010				// An octet or a byte
+	 0010				// A nibble	
+```
+
 ### Octet
 A unit of digital information in computing and telecommunications that consists of **8 bits**. The term is often used when **the term byte might be ambiguous**, as the term byte has historically been used for storage units of a variety of sizes.
 ```
@@ -280,4 +287,7 @@ unsigned char	swap_bits(unsigned char octet)
 }
 ```
 ### Function Explained
--
+This operation swaps
+```
+(octet << 4) | (octet >> 4)
+```

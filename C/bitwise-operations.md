@@ -198,12 +198,12 @@ void	print_bits(unsigned char octet)
 ```
 
 ### Function Explained
-Create an `index` which is a signed `int` so we can reach `-1`, and initialise it at `7` to start at the **highest bit position** (bit 7):
+1. Create an `index` which is a signed `int` so we can reach `-1`, and initialise it at `7` to start at the **highest bit position** (bit 7):
 ```
 int index = 7;
 ```
 
-Create an `unsigned char bit` where we are going to stock the bit we want to write:
+2. Create an `unsigned char bit` where we are going to stock the bit we want to write:
 ```
 unsigned char bit;
 ```
@@ -220,9 +220,9 @@ while (index >= 0)
 }
 ```
 
-...
+3. Create a mask (`(1 << index)`, a temporary number with only the bit at position `index` set to `1`). Then, isolate the bit (`(octet & (1 << index))`). At last, check with a ternary: is the bit `1`? If yes, then write `1`. Otherwise, `0`.
 ```
-bit = (octet & (1 << i)) ? '1' : '0';
+bit = (octet & (1 << index)) ? '1' : '0';
 ```
 
 ## Reverse Bits

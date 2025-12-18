@@ -146,7 +146,7 @@ octet |= (1 << 2) | (1 << 5);   // Set bits 2 and 5
 octet &= ~((1 << 1) | (1 << 3)); // Clear bits 1 and 3
 ```
 
-# Examples
+# Practical Examples
 ## Power of 2?
 ```
 int	is_power_of_2(unsigned int n)

@@ -64,48 +64,48 @@ Shifts bits right
 ### Bit Manipulation Fundamentals
 Creating a bit mask: 
 ```
-(1 << n)				\\ Creates a mask with only the nth bit set
+(1 << n)											// Creates a mask with only the nth bit set
 ```
 
 Setting a bit: 
 ```
-num |= (1 << n) 		\\ Sets the nth bit to 1
+num |= (1 << n) 									// Sets the nth bit to 1
 ```
 
 Clearing a bit: 
 ```
-num &= ~(1 << n) 		\\ Sets the nth bit to 0
+num &= ~(1 << n) 									// Sets the nth bit to 0
 ```
 
 Toggling a bit: 
 ```
-num ^= (1 << n) 		\\ Flips the nth bit
+num ^= (1 << n) 									// Flips the nth bit
 ```
 
 Checking a bit: 
 ```
-(num & (1 << n))		\\ Isolates the nth bit (non-zero if set)
+(num & (1 << n))									// Isolates the nth bit (non-zero if set)
 ```
 
 Testing if bit is set: 
 ```
-(num & (1 << n)) != 0 	\\ Explicitly tests for 1
+(num & (1 << n)) != 0 								// Explicitly tests for 1
 ```
 
 ### Masking Operations
 Isolating lower bits: 
 ```
-num & 0x0F keeps only the lower 4 bits (nibble)
+num & 0x0F 											// Keeps only the lower 4 bits (nibble)
 ```
 
 Isolating upper bits: 
 ```
-num & 0xF0 keeps only the upper 4 bits
+num & 0xF0 											// Keeps only the upper 4 bits
 ```
 
 Extracting bit range: Combine shift and mask operations
 ```
-unsigned char middle = (octet >> 2) & 0x07;  // Extract bits 2-4
+unsigned char middle = (octet >> 2) & 0x07;			// Extract bits 2-4
 ```
 
 ### Shift Operations

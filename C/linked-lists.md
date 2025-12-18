@@ -99,18 +99,20 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 ### Searching Content
 ```
-int	ft_lst_search(t_list *lst, int target)
+t_list	*ft_lstchr(t_list *haystack, int needle)
 {
-    if (!lst)
+	t_list	*location;
+
+    if (!haystack || !needle)
 		return (NULL);
-	struct Node* temp = head;
-    while (temp != NULL)
+	location = haystack;
+    while (location != NULL)
 	{
-        if (temp->data == key)
-            return (1);  // Found
-        temp = temp->next;
+        if (location->content == needle)
+            return (location);
+        location = location->next;
     }
-    return (0);  // Not found
+    return (NULL);
 }
 ```
 

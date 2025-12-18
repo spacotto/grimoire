@@ -229,11 +229,9 @@ bit = (octet & (1 << index)) ? '1' : '0';
 ```
 unsigned char	reverse_bits(unsigned char octet)
 {
-    int             i;
-    unsigned char   result;
+    int i = 0;
+    unsigned char result = 0;
 
-	i = 0;
-	result = 0;
 	while (i < 8)
 	{
 		if (octet & (1 << i))
@@ -245,7 +243,24 @@ unsigned char	reverse_bits(unsigned char octet)
 ```
 
 ### Function Explained
--
+1. Create an index `i`, and initialise it to `0`.
+```
+int i = 0;
+```
+
+2. Create and initialise an `unsigned char` variable where we are going to store the reverse bits we are going to return.
+```
+unsigned char result = 0;
+```
+
+3. Loop 8 times through the byte to reverse all the bits.
+```
+while (i < 8)
+{
+	...
+	i++;
+}
+```
 
 ## Swap Bits
 ```

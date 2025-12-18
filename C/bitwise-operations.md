@@ -17,41 +17,40 @@ A unit of digital information in computing and telecommunications that consists 
 >[!TIP]
 >Use a **Programmer Calculator** to visualise bytes and bits.
 
-# Syntax
+# Bitwise Operators
 Bitwise operations manipulate individual bits within integers using specific operators.
 
-## Bitwise Operators
-### AND (`&`)
+## AND (`&`)
 Sets each bit to 1 if both bits are 1
 ```
 5 & 3        // 0101 & 0011 = 0001 (result: 1)
 ```
 
-### OR (`|`)
+## OR (`|`)
 Sets each bit to 1 if at least one bit is 1
 ```
 5 | 3        // 0101 | 0011 = 0111 (result: 7)
 ```
 
-### XOR (`^`)
+## XOR (`^`)
 Sets each bit to 1 if bits are different
 ```
 5 ^ 3        // 0101 ^ 0011 = 0110 (result: 6)
 ```
 
-### NOT (`~`)
+## NOT (`~`)
 Inverts all bits (unary operator)
 ```
 ~5           // ~0101 = 1010 (result depends on integer size)
 ```
 
-### Left Shift (`<<`)
+## Left Shift (`<<`)
 Shifts bits left, filling with zeros
 ```
 5 << 2       // 0101 << 2 = 10100 (result: 20)
 ```
 
-### Right Shift (`>>`)
+## Right Shift (`>>`)
 Shifts bits right
 ```
 5 >> 1       // 0101 >> 1 = 0010 (result: 2)
@@ -63,8 +62,10 @@ Shifts bits right
 >[!CAUTION]
 >Avoid shifting by a negative amount or by more bits than the type width. This causes undefined behaviour.
 
-## Common Bitwise Syntax Patterns
-### Bit Manipulation Fundamentals
+# Common Bitwise Syntax Patterns
+Common bitwise syntax patterns include the use of operators such as AND (`&`), OR (`∣`), XOR (`^`), NOT (`~`), left shift (`<<`), right shift (`>>`), and zero-fill right shift (`>>>`). These operators are used to manipulate individual bits within integers, enabling efficient operations like setting, clearing, toggling, or testing specific bits.
+ 
+## Bit Manipulation Fundamentals
 Creating a bit mask: 
 ```
 (1 << n)											// Creates a mask with only the nth bit set

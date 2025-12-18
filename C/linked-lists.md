@@ -1,4 +1,4 @@
-# Linked Lists
+# About Linked Lists
 A linked list is a dynamic data structure where elements (**nodes**) are **connected** through **pointers**. Unlike arrays, linked lists **don't require contiguous memory** and can **grow or shrink during runtime**.
 
 ## Characteristics
@@ -15,7 +15,14 @@ A linked list is a dynamic data structure where elements (**nodes**) are **conne
 - **Doubly Linked List.** Each node has pointers to both next and previous nodes.
 - **Circular Linked List.** The last node points back to the first node instead of `NULL`.
 
-## Basic Node Structure
+## Key Points
+- Always check for `NULL` pointers before dereferencing
+- Use double pointers (`**`) when modifying the head pointer
+- Always free allocated memory to prevent memory leaks
+- The head pointer is your only entry point to the list
+
+# Linked Lists Syntax
+### Basic Node Structure
 ```
 typedef struct s_list
 {
@@ -24,7 +31,7 @@ typedef struct s_list
 }	t_list;
 ```
 
-## Essential Operations
+## Creation
 ### Creating a Node
 ```
 t_list	*ft_lstadd_node(void *content)
@@ -40,6 +47,7 @@ t_list	*ft_lstadd_node(void *content)
 }
 ```
 
+## Addition
 ### Adding at the Beginning
 ```
 void	ft_lstadd_front(t_list **lst, t_list *new)
@@ -48,34 +56,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		return ;
 	new->next = *lst;
 	*lst = new;
-}
-```
-
-### Measuring the List
-```
-int	ft_lstsize(t_list *lst)
-{
-	int	size;
-
-	size = 0;
-	while (lst)
-	{
-		size++;
-		lst = lst->next;
-	}
-	return (size);
-}
-```
-
-### Travelling the List
-```
-t_list	*ft_lstlast(t_list *lst)
-{
-	if (!lst)
-		return (NULL);
-	while (lst && lst->next)
-		lst = lst->next;
-	return (lst);
 }
 ```
 
@@ -97,6 +77,36 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 }
 ```
 
+## Travelling
+### Travelling to the End
+```
+t_list	*ft_lstlast(t_list *lst)
+{
+	if (!lst)
+		return (NULL);
+	while (lst && lst->next)
+		lst = lst->next;
+	return (lst);
+}
+```
+
+### Measuring the List
+```
+int	ft_lstsize(t_list *lst)
+{
+	int	size;
+
+	size = 0;
+	while (lst)
+	{
+		size++;
+		lst = lst->next;
+	}
+	return (size);
+}
+```
+
+## Searching
 ### Searching Content
 ```
 t_list	*ft_lstchr(t_list *haystack, int needle)
@@ -116,6 +126,7 @@ t_list	*ft_lstchr(t_list *haystack, int needle)
 }
 ```
 
+## Sorting
 ### Sorting Content
 ```
 int ascending(int a, int b)
@@ -131,6 +142,7 @@ t_list	*ft_sort_list(t_list* lst, int (*cmp)(int, int))
 }
 ```
 
+## Deleting
 ### Deleting a Node
 ```
 void    del(void *data)
@@ -178,11 +190,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	*lst = NULL;
 }
 ```
-
-### Traversing and Printing
-
-## Key Points
-- Always check for `NULL` pointers before dereferencing
-- Use double pointers (`**`) when modifying the head pointer
-- Always free allocated memory to prevent memory leaks
-- The head pointer is your only entry point to the list

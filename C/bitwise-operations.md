@@ -107,26 +107,26 @@ Isolating upper bits:
 num & 0xF0 											// Keeps only the upper 4 bits
 ```
 
-Extracting bit range: Combine shift and mask operations
+Extracting bit range: 
 ```
-unsigned char middle = (octet >> 2) & 0x07;			// Extract bits 2-4
+unsigned char middle = (octet >> 2) & 0x07;			// Combine shift and mask operations to extract bits 2-4
 ```
 
 ## Shift Operations
 Multiply by power of 2: 
 ```
-num << n multiplies by 2^n
+num << n 											// Multiplies by 2^n
 ```
 
 Divide by power of 2: 
 ```
-num >> n divides by 2^n (for unsigned)
+num >> n 											// Divides by 2^n (for unsigned)
 ```
 
-Moving bits to position: Shift then mask or mask then shift
+Moving bits to position (shift then mask or mask then shift):
 ```
-(value & 0x01) << 7;  // Move bit 0 to bit 7
-(value >> 5) & 0x01;  // Move bit 5 to bit 0
+(value & 0x01) << 7;  								// Move bit 0 to bit 7
+(value >> 5) & 0x01;  								// Move bit 5 to bit 0
 ```
 
 ## Combining Operations
@@ -142,8 +142,8 @@ num = (num & ~mask) | new_bits
 
 Multiple bits at once: Use combined masks
 ```
-octet |= (1 << 2) | (1 << 5);   // Set bits 2 and 5
-octet &= ~((1 << 1) | (1 << 3)); // Clear bits 1 and 3
+octet |= (1 << 2) | (1 << 5);   					// Set bits 2 and 5
+octet &= ~((1 << 1) | (1 << 3)); 					// Clear bits 1 and 3
 ```
 
 # Practical Examples
@@ -160,15 +160,15 @@ You can extract and display each bit of a byte by iterating through each bit pos
 ```
 #include <unistd.h>
 
-void	print_bits(unsigned char octet)			// The fn takes an unsigned char for its size is 1 byte (1 octet, 8 bits)
+void	print_bits(unsigned char octet)
 {
 	int	            i;
 	unsigned char	bit;
 
-	i = 7;										// i is initialised at 7 since we start from 0 for a total of 8
+	i = 7;
 	while (i >= 0)
 	{
-		bit = (octet & (1 << i)) ? '1' : '0';	// The mask checks each bit from position 7 to position 0
+		bit = (octet & (1 << i)) ? '1' : '0';
 		write(1, &bit, 1);
 		i--;
 	}

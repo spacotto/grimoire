@@ -17,6 +17,9 @@ A unit of digital information in computing and telecommunications that consists 
 >[!TIP]
 >Use a **Programmer Calculator** to visualise bytes and bits.
 
+# Syntax
+Bitwise operations manipulate individual bits within integers using specific operators.
+
 ## Bitwise Operators
 ### AND (`&`)
 Sets each bit to 1 if both bits are 1

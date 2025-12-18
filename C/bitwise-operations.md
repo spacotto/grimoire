@@ -203,7 +203,7 @@ void	print_bits(unsigned char octet)
 int index = 7;
 ```
 
-2. Create an `unsigned char bit` where we are going to stock the bit we want to write:
+2. Create an `unsigned char bit` where we are going to store the bit we want to write:
 ```
 unsigned char bit;
 ```
@@ -267,7 +267,7 @@ while (i < 8)
 if (octet & (1 << i))
 ```
 
-5. 
+5. Use `result |=` to set the calculated output bit in result to `1` without affecting any bits that may have been set in previous iterations. Due to the `if` condition, if the bit is equal to `1`, we set it to one. Otherwise, we skip it, and it stays `0`.
 ```
 result |= (1 << (7 - i));
 ```

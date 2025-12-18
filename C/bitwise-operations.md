@@ -192,7 +192,7 @@ void	print_bits(unsigned char octet)
 	{
 		bit = (octet & (1 << index)) ? '1' : '0';
 		write(1, &bit, 1);
-		i--;
+		index--;
 	}
 }
 ```
@@ -211,13 +211,18 @@ unsigned char bit;
 >[!TIP]
 >We are given (and, due to compatibility needs, we are going to use) an `unsigned char` since this data type has a size of `1 byte` (or `1 octet`), aka `8 bits`. `unsigned char` are often used in bitwise operations instead of `char` (whose size is `1 byte` as well) to avoid negative values. In this case, you can use `char` as well. However, getting the habit of using `unsigned char` with bitwise operations is a good practice worth learning since the start.
 
+Loop until the lowest bit position (bit 0) is checked (aka until we reach `-1` and exit the loop):
 ```
 while (index >= 0)
 {
-	bit = (octet & (1 << index)) ? '1' : '0';
-	write(1, &bit, 1);
-	i--;
+	...
+	index--;
 }
+```
+
+...
+```
+bit = (octet & (1 << i)) ? '1' : '0';
 ```
 
 ## Reverse Bits

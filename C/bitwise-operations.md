@@ -79,17 +79,17 @@ num &= ~(1 << n) 		\\ Sets the nth bit to 0
 
 Toggling a bit: 
 ```
-num ^= (1 << n) flips the nth bit
+num ^= (1 << n) 		\\ Flips the nth bit
 ```
 
 Checking a bit: 
 ```
-(num & (1 << n)) isolates the nth bit (non-zero if set)
+(num & (1 << n))		\\ Isolates the nth bit (non-zero if set)
 ```
 
 Testing if bit is set: 
 ```
-(num & (1 << n)) != 0 explicitly tests for 1
+(num & (1 << n)) != 0 	\\ Explicitly tests for 1
 ```
 
 ### Masking Operations

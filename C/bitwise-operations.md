@@ -112,7 +112,7 @@ Extracting bit range: Combine shift and mask operations
 unsigned char middle = (octet >> 2) & 0x07;			// Extract bits 2-4
 ```
 
-### Shift Operations
+## Shift Operations
 Multiply by power of 2: 
 ```
 num << n multiplies by 2^n
@@ -129,7 +129,7 @@ Moving bits to position: Shift then mask or mask then shift
 (value >> 5) & 0x01;  // Move bit 5 to bit 0
 ```
 
-### Combining Operations
+## Combining Operations
 Swap nibbles:
 ```
 ((num & 0x0F) << 4) | (num >> 4)
@@ -146,8 +146,16 @@ octet |= (1 << 2) | (1 << 5);   // Set bits 2 and 5
 octet &= ~((1 << 1) | (1 << 3)); // Clear bits 1 and 3
 ```
 
-## Examples
-### Print Bits
+# Examples
+## Power of 2?
+```
+int	is_power_of_2(unsigned int n)
+{
+	return ((n > 0) && ((n & (n - 1)) == 0));
+}
+```
+
+## Print Bits
 You can extract and display each bit of a byte by iterating through each bit position. 
 ```
 #include <unistd.h>
@@ -167,7 +175,7 @@ void	print_bits(unsigned char octet)			// The fn takes an unsigned char for its 
 }
 ```
 
-### Reverse Bits
+## Reverse Bits
 ```
 unsigned char	reverse_bits(unsigned char octet)
 {
@@ -186,18 +194,10 @@ unsigned char	reverse_bits(unsigned char octet)
 }
 ```
 
-### Swap Bits
+## Swap Bits
 ```
 unsigned char	swap_bits(unsigned char octet)
 {
 	return ((octet & 0x0F) << 4) | (octet >> 4);
-}
-```
-
-### Power of 2?
-```
-int	is_power_of_2(unsigned int n)
-{
-	return ((n > 0) && ((n & (n - 1)) == 0));
 }
 ```

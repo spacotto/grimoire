@@ -92,10 +92,24 @@ endswith(suffix)
 ```
 
 ### Modification
+Removes whitespace from both ends:
+```
+strip()
+```
 
-strip() - removes whitespace from both ends
-replace(old, new) - replaces all occurrences
-split(separator) - splits string into list
-join(iterable) - joins list into string
+Replaces all occurrences:
+```
+replace(old, new)
+```
+
+Splits string into list:
+```
+split(separator)
+```
+
+Joins list into string:
+```
+join(iterable)
+```
 
 ## String Formatting

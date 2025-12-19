@@ -17,3 +17,10 @@ message = 'Hello, World!'
 paragraph = """This spans
 multiple lines"""
 ```
+
+## String Operations
+### Concatenation
+Join strings with `+`
+```
+greeting = "Hello" + " " + "World"  # "Hello World"
+```

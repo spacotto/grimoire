@@ -155,3 +155,19 @@ r"C:\new\path"  # backslash treated literally
 "abc123".isalnum()   # True (letters or digits)
 "   ".isspace()      # True (all whitespace)
 ```
+
+## Membership Testing
+```
+"cat" in "concatenate"     # True
+"dog" not in "cat"         # True
+```
+
+## String Immutability
+Strings cannot be modified in place:
+```
+text = "hello"
+text[0] = "H"  # Error! Cannot change character
+
+# Instead, create a new string:
+text = "H" + text[1:]  # "Hello"
+```

@@ -113,3 +113,23 @@ join(iterable)
 ```
 
 ## String Formatting
+f-strings (recommended, Python 3.6+):
+```
+pythonname = "Alice"
+age = 30
+f"My name is {name} and I'm {age}"   # "My name is Alice and I'm 30"
+f"{10 / 3:.2f}"                      # "3.33" (2 decimal places)
+```
+
+`format()` method:
+```
+python"Hello, {}!".format("World")              # "Hello, World!"
+"{0} {1}".format("Hello", "World")              # "Hello World"
+"{name} is {age}".format(name="Bob", age=25)
+```
+
+%-formatting (older style):
+```
+python"Hello, %s!" % "World"           # "Hello, World!"
+"%d items" % 5                         # "5 items"
+```

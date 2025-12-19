@@ -133,3 +133,17 @@ python"Hello, {}!".format("World")              # "Hello, World!"
 python"Hello, %s!" % "World"           # "Hello, World!"
 "%d items" % 5                         # "5 items"
 ```
+
+## Escape Characters
+Use backslash `\` for special characters:
+```
+"Hello\nWorld"   # newline
+"Tab\there"      # tab
+"Quote: \"Hi\""  # escaped quote
+"Path: C:\\dir"  # backslash (doubled)
+```
+
+Use raw strings to ignore escapes:
+```
+r"C:\new\path"  # backslash treated literally
+```

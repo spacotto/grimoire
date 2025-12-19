@@ -77,8 +77,34 @@ x = y = z = 0
 
 ## Variable Scope
 ### Local variables
-Exist only inside a function
+Exists only inside a function
 ```
 def my_function():
     local_var = 5  # only accessible here
 ```
+
+### Global variables
+Exists throughout the program
+```
+global_var = 10
+
+def my_function():
+    print(global_var)  # can read global
+```
+
+To modify a global variable inside a function:
+```
+count = 0
+
+def increment():
+    global count
+    count += 1
+```
+
+## Constants
+Python doesn't have built-in constants, but by convention, use uppercase names for values that shouldn't change.
+```
+PI = 3.14159
+MAX_SIZE = 100
+```
+

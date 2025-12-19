@@ -47,3 +47,12 @@ text[1:4]    # 'yth' (slice from index 1 to 3)
 text[:3]     # 'Pyt' (first 3 characters)
 text[3:]     # 'hon' (from index 3 to end)
 ```
+
+## Common String Methods
+### Case conversion
+Converts to uppercase:
+```
+upper()
+```
+
+### Searching

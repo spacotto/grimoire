@@ -12,3 +12,6 @@ def function_name(parameters):
 ```
 
 ### Code Breakdown
+| Code | Description |
+| :--- | :---------- |
+| `def` | Keyword that starts a function definition |

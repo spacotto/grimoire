@@ -108,3 +108,8 @@ PI = 3.14159
 MAX_SIZE = 100
 ```
 
+## Best Practices
+- Use descriptive names: `user_age` instead of `x`
+- Follow naming conventions: lowercase with underscores for variables (`my_variable`)
+- Don't use single letters except for counters (`i`, `j`, `k`) or mathematical formulas
+- Keep names concise but clear

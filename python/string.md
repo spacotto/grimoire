@@ -55,4 +55,19 @@ Converts to uppercase:
 upper()
 ```
 
+Converts to lowercase:
+```
+lower()
+```
+
+Capitalizes first letter:
+```
+capitalize()
+```
+
+Capitalizes each word
+```
+title()
+```
+
 ### Searching

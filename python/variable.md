@@ -23,7 +23,23 @@ is_student = True
 - Contain only letters, numbers, and underscores
 - Are case-sensitive (`age` and `Age` are different)
 
-**Must NOT**
+**Must NOT:**
 - Start with a number
 - Contain spaces or special characters (`!`, `@`, `#`, etc.)
 - Use Python keywords (like `if`, `for`, `class`)
+
+### Examples
+**Valid:**
+```
+user_name = "Bob"
+total_count = 100
+_private_var = "hidden"
+firstName = "John"
+```
+
+**NOT valid:**
+```
+2nd_place = "Invalid"  # starts with number
+my-var = 5             # contains hyphen
+class = "Math"         # uses keyword
+```

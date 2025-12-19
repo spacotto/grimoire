@@ -24,3 +24,26 @@ Join strings with `+`
 ```
 greeting = "Hello" + " " + "World"  # "Hello World"
 ```
+
+### Repetition
+Repeat strings with `*`
+```
+pythonecho = "Ha" * 3  # "HaHaHa"
+```
+
+### Length
+Get string length with `len()`
+```
+pythonlen("Python")  # 6
+```
+
+### Indexing and Slicing
+Access characters by position (zero-indexed):
+```
+text = "Python"
+text[0]      # 'P' (first character)
+text[-1]     # 'n' (last character)
+text[1:4]    # 'yth' (slice from index 1 to 3)
+text[:3]     # 'Pyt' (first 3 characters)
+text[3:]     # 'hon' (from index 3 to end)
+```

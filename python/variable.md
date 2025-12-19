@@ -43,3 +43,14 @@ firstName = "John"
 my-var = 5             # contains hyphen
 class = "Math"         # uses keyword
 ```
+
+## Variable Types
+Python automatically determines the type based on the value assigned.
+```
+x = 10             # int (integer)
+y = 3.14           # float (decimal)
+name = "Python"    # str (string)
+is_valid = True    # bool (boolean)
+items = [1,2,3]    # list
+data = None        # NoneType
+```

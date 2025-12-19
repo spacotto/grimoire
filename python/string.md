@@ -65,9 +65,37 @@ Capitalizes first letter:
 capitalize()
 ```
 
-Capitalizes each word
+Capitalizes each word:
 ```
 title()
 ```
 
 ### Searching
+Returns index of first occurrence, -1 if not found:
+```
+find(substring)
+```
+
+Counts occurrences:
+```
+count(substring)
+```
+
+Checks if string starts with prefix:
+```
+startswith(prefix)
+```
+
+Checks if string ends with suffix:
+```
+endswith(suffix)
+```
+
+### Modification
+
+strip() - removes whitespace from both ends
+replace(old, new) - replaces all occurrences
+split(separator) - splits string into list
+join(iterable) - joins list into string
+
+## String Formatting

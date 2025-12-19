@@ -12,6 +12,9 @@ def function_name(parameters):
 ```
 
 ### Code Breakdown
-| Code | Description |
-| :--- | :---------- |
-| `def` | Keyword that starts a function definition |
+| Code            | Description                               |
+| :-------------- | :---------------------------------------- |
+| `def`           | Keyword that starts a function definition |
+| `function_name` | The name you give your function           |
+| `parameters`    | Inputs the function accepts (optional)    |
+| `return`        | Sends a result back (optional)            |

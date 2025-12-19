@@ -60,3 +60,25 @@ data = None        # NoneType
 >```
 >type(x)  # returns <class 'int'>
 >```
+
+## Reassigning Variables
+Variables can be reassigned to new values, even of different types.
+```
+x = 10        # x is an integer
+x = "hello"   # now x is a string
+```
+
+## Multiple Assignment
+Assign multiple variables at once:
+```
+a, b, c = 1, 2, 3
+x = y = z = 0
+```
+
+## Variable Scope
+### Local variables
+Exist only inside a function
+```
+def my_function():
+    local_var = 5  # only accessible here
+```

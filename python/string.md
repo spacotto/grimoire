@@ -147,3 +147,11 @@ Use raw strings to ignore escapes:
 ```
 r"C:\new\path"  # backslash treated literally
 ```
+
+## Checking String Content
+```
+"123".isdigit()      # True (all digits)
+"abc".isalpha()      # True (all letters)
+"abc123".isalnum()   # True (letters or digits)
+"   ".isspace()      # True (all whitespace)
+```

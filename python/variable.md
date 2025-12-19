@@ -54,3 +54,9 @@ is_valid = True    # bool (boolean)
 items = [1,2,3]    # list
 data = None        # NoneType
 ```
+
+>[!TIP]
+>Check a variable's type:
+>```
+>type(x)  # returns <class 'int'>
+>```

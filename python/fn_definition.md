@@ -18,3 +18,14 @@ def function_name(parameters):
 | `function_name` | The name you give your function           |
 | `parameters`    | Inputs the function accepts (optional)    |
 | `return`        | Sends a result back (optional)            |
+
+### Example
+```
+# Define the function
+def greet(name):
+    return f"Hello, {name}!"
+
+# Use the function
+message = greet("World")
+print(message)  # Output: Hello, World!
+```

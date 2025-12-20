@@ -41,15 +41,13 @@ Data types that are used to store simple values.
 >Since `char` is fundamentally an integer type, it stores the character's corresponding numerical value, usually following the ASCII standard.
 
 ### `int`
-- **Purpose** — Stores whole numbers (integers). Used for general-purpose counting and arithmetic operations.
-- **Size** — 4 bytes
+[4 bytes] Stores whole numbers (integers). Used for general-purpose counting and arithmetic operations.
 
 >[!TIP]
 >On 32-bit systems, `int` range goes from -2147483648 (`INT_MIN`) to 2147483647 (`INT_MAX`). This range can be extended or reduced using modifiers like `long` or `short` (see below).
 
 ### `float`
-- **Purpose** — Stores single-precision floating-point numbers. Used for decimal values with moderate precision.
-- **Size** — 4 bytes
+[4 bytes] Stores single-precision floating-point numbers. Used for decimal values with moderate precision.
 
 ## Sign Specifiers
 Data types that define the sign (negative or positive) of another data type.
@@ -84,6 +82,7 @@ Data types that are defined by the user.
 | Structures   | Group related variables of different types under a single name. Used to create custom data types representing real-world entities. |
 | Unions       | Store different data types in the same memory location. Only one member can hold a value at a time. Used for memory-efficient type variants. |
 | Enumerations | Define named integer constants for better code readability. Used for variables that can only take specific predefined values. |
+
 
 
 

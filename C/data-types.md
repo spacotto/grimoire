@@ -44,10 +44,10 @@ Data types that are used to store simple values.
 ### Sign Specifiers
 Data types that define the sign (negative or positive) of another data type.
 
-| Specifiers | Purpose                                              |
-| :--------- | :--------------------------------------------------- |
-| `signed`   |  |
-| `unsigned` |  |
+| Specifiers | Purpose                                              | Effect on Range |
+| :--------- | :--------------------------------------------------- | :-------------- |
+| `signed`   | Indicates the data type can store both negative and positive values. This is the default for `int` and `char` on most systems. | Uses one bit for sign, reducing positive range but allowing negatives. |
+| `unsigned` | Indicates the data type can store only positive values (including zero). Eliminates the sign bit to double the positive range. | All bits used for magnitude, doubling the maximum positive value. |
 
 ### Size or Range Specifiers
 Data types that modify the size or range of another data type.
@@ -74,5 +74,6 @@ Data types that are defined by the user.
 | Structures   |  |
 | Unions       |  |
 | Enumerations |  |
+
 
 

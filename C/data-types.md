@@ -32,12 +32,10 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 Data types that are used to store simple values.
 
 ### `void`
-- **Purpose** — Represents the absence of type. Used for functions that return no value or generic pointers.
-- **Size** — 0 bytes
-
+[0 bytes] Represents the absence of type. Used for functions that return no value or generic pointers.
+ 
 ### `char`
-- **Purpose** — Stores a single character (ASCII/UTF-8). Used for text and small integer values.
-- **Size** — 1 bytes
+[1 bytes] Stores a single character (ASCII/UTF-8). Used for text and small integer values.
 
 >[!NOTE]
 >Since `char` is fundamentally an integer type, it stores the character's corresponding numerical value, usually following the ASCII standard.
@@ -86,5 +84,6 @@ Data types that are defined by the user.
 | Structures   | Group related variables of different types under a single name. Used to create custom data types representing real-world entities. |
 | Unions       | Store different data types in the same memory location. Only one member can hold a value at a time. Used for memory-efficient type variants. |
 | Enumerations | Define named integer constants for better code readability. Used for variables that can only take specific predefined values. |
+
 
 

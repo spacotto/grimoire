@@ -28,12 +28,12 @@ A **data type** in C is a keyword that tells the compiler **how much memory** to
 ### Primary Specifiers
 Data types that are used to store simple values.
 
-| Specifiers | Purpose                                                                                               | Size (typical) |
-| :--------- | :---------------------------------------------------------------------------------------------------- | :------------- |
-| `void`     | Represents the absence of type. Used for functions that return no value or generic pointers.          | 0 bytes        |
-| `char`     | Stores a single character (ASCII/UTF-8). Used for text and small integer values.                      | 1 bytes        |
-| `int`      | Stores whole numbers (integers). Used for general-purpose counting and arithmetic operations.4 bytes. | 4 bytes        |
-| `float`    | Stores single-precision floating-point numbers. Used for decimal values with moderate precision.      | 4 bytes        |
+| Specifiers | Purpose                                                                                          | Size (typical) |
+| :--------- | :----------------------------------------------------------------------------------------------- | :------------- |
+| `void`     | Represents the absence of type. Used for functions that return no value or generic pointers.     | 0 bytes        |
+| `char`     | Stores a single character (ASCII/UTF-8). Used for text and small integer values.                 | 1 bytes        |
+| `int`      | Stores whole numbers (integers). Used for general-purpose counting and arithmetic operations.    | 4 bytes        |
+| `float`    | Stores single-precision floating-point numbers. Used for decimal values with moderate precision. | 4 bytes        |
 
 >[!NOTE]
 >Since `char` is fundamentally an integer type, it stores the character's corresponding numerical value, usually following the ASCII standard.
@@ -74,4 +74,5 @@ Data types that are defined by the user.
 | Structures   |  |
 | Unions       |  |
 | Enumerations |  |
+
 

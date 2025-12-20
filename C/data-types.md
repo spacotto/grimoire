@@ -63,18 +63,14 @@ Data types that are built from the basic types.
 
 | Specifiers | Purpose                                              |
 | :--------- | :--------------------------------------------------- |
-| Pointers   |  |
-| Arrays     |  |
+| Pointers   | Store memory addresses of other variables. Used for dynamic memory allocation, passing by reference, and efficient data manipulation. |
+| Arrays     | Store multiple elements of the same type in contiguous memory locations. Used for collections of data with fixed size. |
 
 ### User-Defined Types
 Data types that are defined by the user.
 
 | Specifiers   | Purpose                                              |
 | :----------- | :--------------------------------------------------- |
-| Structures   |  |
-| Unions       |  |
-| Enumerations |  |
-
-
-
-
+| Structures   | Group related variables of different types under a single name. Used to create custom data types representing real-world entities. |
+| Unions       | Store different data types in the same memory location. Only one member can hold a value at a time. Used for memory-efficient type variants. |
+| Enumerations | Define named integer constants for better code readability. Used for variables that can only take specific predefined values. |

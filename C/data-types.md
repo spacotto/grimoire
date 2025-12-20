@@ -52,11 +52,11 @@ Data types that define the sign (negative or positive) of another data type.
 ### Size or Range Specifiers
 Data types that modify the size or range of another data type.
 
-| Specifiers  | Purpose                                              |
-| :---------- | :--------------------------------------------------- |
-| `short`     |  |
-| `long`      |  |
-| `long long` |  |
+| Specifiers  | Purpose                                                                                                                    | Typical Size  | Effect on Range                      |
+| :---------- | :------------------------------------------------------------------------------------------------------------------------- | :------------ | :----------------------------- |
+| `short`     | Reduces the size and range of an integer type. Used when memory efficiency is important and smaller values are sufficient. | 2 bytes       | Smaller range                  |
+| `long`      | Increases the size and range of an integer or floating-point type. Used when larger values are needed.                     | 4/8 bytes     | Larger range than standard int |
+| `long long` | Provides the largest integer size. Guarantees at least 8 bytes. Used for very large integer values.                        | 8 bytes min   | Very large range               |
 
 ### Derived Types
 Data types that are built from the basic types.
@@ -74,6 +74,7 @@ Data types that are defined by the user.
 | Structures   |  |
 | Unions       |  |
 | Enumerations |  |
+
 
 
 

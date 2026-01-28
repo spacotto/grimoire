@@ -32,6 +32,5 @@ message = greet("World")
 print(message)  # Output: Hello, World!
 ```
 
->[TIP]
+>[!TIP]
 >The function name should be descriptive and follow `snake_case` convention.
-

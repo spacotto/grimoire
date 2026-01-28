@@ -22,7 +22,7 @@ def function_name(parameters):
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
 
 ### Example
-```
+```python
 # Define the function
 def greet(name):
     return f"Hello, {name}!"
@@ -34,3 +34,4 @@ print(message)  # Output: Hello, World!
 
 >[TIP]
 >The function name should be descriptive and follow `snake_case` convention.
+

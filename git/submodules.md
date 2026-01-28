@@ -49,3 +49,26 @@ When you add a submodule, Git creates:
 - A special commit reference (not the actual files)
 
 The parent repository only stores a pointer to a specific commit in the submodule, not the submodule's files.
+
+## Working with Submodules
+Making Changes Inside a Submodule:
+```bash
+cd <submodule-path>
+git checkout main
+# Make changes
+git add .
+git commit -m "Update submodule"
+git push
+
+# Return to parent repository
+cd ..
+git add <submodule-path>
+git commit -m "Update submodule reference"
+git push
+```
+
+Pulling Changes from Parent Repository:
+```bash
+git pull
+git submodule update --init --recursive
+```

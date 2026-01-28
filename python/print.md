@@ -59,8 +59,6 @@ with open("output.txt", "w") as f:
 ## `print("...")` vs. `print(f"...")`
 When using `print()`, you can choose between plain strings (`"..."`) and f-strings (`f"..."`). Plain strings print **exactly what's written**, while **f-strings allow you to embed variables and expressions** inside curly braces `{}`. For example, `print("Total: cost")` outputs literally "Total: cost", but `print(f"Total: {cost}")` evaluates the `cost` variable and inserts its value. F-strings also support expressions like `{2 + 2}`, method calls like `{name.upper()}`, and formatting options like `{pi:.2f}` for two decimal places. Use plain strings for static text and f-strings when you need dynamic content.
 
-## Comparison Table
-
 | Feature | Plain String `"..."` | f-string `f"..."` |
 |---------|---------------------|-------------------|
 | Variable insertion | ❌ Not supported | ✅ `{variable}` |

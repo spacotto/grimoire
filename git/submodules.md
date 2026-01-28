@@ -72,3 +72,8 @@ Pulling Changes from Parent Repository:
 git pull
 git submodule update --init --recursive
 ```
+
+## Important Concepts
+- **Detached HEAD.** By default, submodules are in detached HEAD state. Always checkout a branch before making changes.
+- **Two-step commits.** Changes inside a submodule require committing in the submodule, then committing the updated reference in the parent repository.
+- **Version pinning.** The parent repository tracks a specific commit, not a branch. This ensures reproducible builds.

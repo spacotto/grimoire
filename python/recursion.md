@@ -64,6 +64,7 @@ def ft_count_harvest_recursive(current=1, limit=None):
     ft_count_harvest_recursive(current + 1, limit)
 ```
 
+### Comparison Table
 | Approach | Best for... | Why? |
 | :--- | :--- | :--- |
 | Nested Helper | One-off tasks | Keeps the helper function hidden inside the main function so it can't be called by mistake from elsewhere in your code. |

@@ -236,23 +236,23 @@ bit = (octet & (1 << index)) ? '1' : '0';
 ```
 unsigned char	reverse_bits(unsigned char octet)
 {
-    int i = 0;
+    int index = 0;
     unsigned char result = 0;
 
-	while (i < 8)
+	while (index < 8)
 	{
-		if (octet & (1 << i))
-			result |= (1 << (7 - i));
-		i++;
+		if (octet & (1 << index))
+			result |= (1 << (7 - index));
+		index++;
 	}
 	return (result);
 }
 ```
 
 ### Function Explained
-1. Create an index `i`, and initialise it to `0`.
+1. Create an `index`, and initialise it to `0`.
 ```
-int i = 0;
+int index = 0;
 ```
 
 2. Create and initialise an `unsigned char` variable where we are going to store the reverse bits we are going to return.
@@ -262,21 +262,21 @@ unsigned char result = 0;
 
 3. Loop 8 times through the byte to reverse all the bits.
 ```
-while (i < 8)
+while (index < 8)
 {
 	...
-	i++;
+	index++;
 }
 ```
 
-4. Create a mask (`(1 << i)`) to isolate each bit and execute the **AND** (`&`) operation on it (sets the bit to `1` if both bits are `1`).
+4. Create a mask (`(1 << index)`) to isolate each bit and execute the **AND** (`&`) operation on it (sets the bit to `1` if both bits are `1`).
 ```
-if (octet & (1 << i))
+if (octet & (1 << index))
 ```
 
 5. Use `result |=` to set the calculated output bit in result to `1` without affecting any bits that may have been set in previous iterations. Due to the `if` condition, if the bit is equal to `1`, we set it to one. Otherwise, we skip it, and it stays `0`.
 ```
-result |= (1 << (7 - i));
+result |= (1 << (7 - index));
 ```
 
 ## Swap Bits

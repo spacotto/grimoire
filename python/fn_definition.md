@@ -60,6 +60,12 @@ greet_gardener("Alice", 50)
 | Default | `def func(a=10)` | If no argument is provided, it uses the value 10. |
 | Type-Hinted | `def func(a: int)` | Tells developers/tools what data type is expected. |
 
+### 4. How Data Flows
+1. Input: You pass an argument into the function call.
+2. Assignment: The parameter variable is "assigned" that value internally.
+3. Execution: The function uses that variable to perform its logic.
+4. Scope: Once the function finishes, the parameter variables are deleted from memory.
+
 ## Function Signatures: Explicit Return Hints
 In Python, specifying a return type (e.g., `-> None`) is part of **Type Hinting**. While the Python interpreter doesn't require it to run the code, it is a standard practice for maintainable software.
 
@@ -73,3 +79,4 @@ In Python, specifying a return type (e.g., `-> None`) is part of **Type Hinting*
 | :--- | :--- | :--- |
 | **Value-Returning** | `def add(a: int) -> int:` | Returns data to be used in further logic. |
 | **Side-Effect Only** | `def log(a: int) -> None:` | Performs an action; returns nothing useful. |
+

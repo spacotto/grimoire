@@ -35,6 +35,31 @@ print(message)  # Output: Hello, World!
 >[!TIP]
 >The function name should be descriptive and follow `snake_case` convention.
 
+## Parameters
+Parameters allow functions to be **reusable**. Instead of writing a function that only knows how to handle "Carrots," you use a parameter so it can handle any `seed_type` you provide.
+
+### 1. Parameters vs. Arguments
+* **Parameters:** The variable names listed in the function definition (the "labels").
+* **Arguments:** The actual values you pass into the function when you call it (the "data").
+
+### 2. Anatomy of a Parameterized Function
+```python
+# 'name' and 'count' are parameters
+def greet_gardener(name: str, count: int) -> None:
+    print(f"Hello {name}, you have {count} seeds.")
+
+# "Alice" and 50 are arguments
+greet_gardener("Alice", 50)
+```
+
+### 3. Common Parameter Types
+| Type | Syntax Example | Description |
+| :--- | :--- | :--- |
+| Positional | `def func(a, b):` | Values must be passed in the exact order defined. |
+| Keyword | `func(b=2, a=1)` | You specify the name, so the order doesn't matter. |
+| Default | `def func(a=10)` | If no argument is provided, it uses the value 10. |
+| Type-Hinted | `def func(a: int)` | Tells developers/tools what data type is expected. |
+
 ## Function Signatures: Explicit Return Hints
 In Python, specifying a return type (e.g., `-> None`) is part of **Type Hinting**. While the Python interpreter doesn't require it to run the code, it is a standard practice for maintainable software.
 

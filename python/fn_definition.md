@@ -34,3 +34,17 @@ print(message)  # Output: Hello, World!
 
 >[!TIP]
 >The function name should be descriptive and follow `snake_case` convention.
+
+## Function Signatures: Explicit Return Hints
+In Python, specifying a return type (e.g., `-> None`) is part of **Type Hinting**. While the Python interpreter doesn't require it to run the code, it is a standard practice for maintainable software.
+
+### Why use `-> None`?
+* **Communication:** It explicitly tells other developers that the function is a **side-effect** function (it performs an action like printing or saving a file) and does not produce a data result.
+* **Static Analysis:** Tools like `Mypy` or IDEs (VS Code, PyCharm) use this to ensure you don't accidentally try to assign the result of a "void" function to a variable.
+* **Consistency:** If your codebase uses type hints for parameters (`seed_type: str`), it is best practice to provide the return type for a complete signature.
+
+### Example Comparison
+| Type | Definition | Usage Intent |
+| :--- | :--- | :--- |
+| **Value-Returning** | `def add(a: int) -> int:` | Returns data to be used in further logic. |
+| **Side-Effect Only** | `def log(a: int) -> None:` | Performs an action; returns nothing useful. |

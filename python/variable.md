@@ -108,6 +108,9 @@ PI = 3.14159
 MAX_SIZE = 100
 ```
 
+>[!WARNING]
+>Unlike C, Python does NOT have macros (`#define`). Constant global variables are the closest elements to C macros.
+
 ## Best Practices
 - Use descriptive names: `user_age` instead of `x`
 - Follow naming conventions: lowercase with underscores for variables (`my_variable`)

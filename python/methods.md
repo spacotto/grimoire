@@ -1,12 +1,11 @@
 # About Python Methods
-**Methods** are **functions** that belong to objects. They are called using dot notation and can access/modify the object's data.
+**Methods** are **functions** that belong to objects. They are called using **dot notation** and can **access/modify the object's data**.
 ```python
 # Method call syntax
 object.method(arguments)
 ```
 
 ## Instance Methods
-
 Most common type. Operate on instance data and take `self` as first parameter.
 ```python
 class Dog:
@@ -21,7 +20,6 @@ dog.bark()  # "Max says woof!"
 ```
 
 ## Class Methods
-
 Operate on class itself, not instances. Use `@classmethod` decorator and take `cls` as first parameter.
 ```python
 class Dog:
@@ -40,7 +38,6 @@ puppy = Dog.create_puppy("Buddy")
 ```
 
 ## Static Methods
-
 Don't access instance or class data. Use `@staticmethod` decorator. No `self` or `cls` parameter.
 ```python
 class MathUtils:
@@ -52,7 +49,6 @@ MathUtils.add(5, 3)  # 8
 ```
 
 ## Magic Methods (Dunder Methods)
-
 Special methods with double underscores. Define how objects behave with built-in operations.
 ```python
 class Point:
@@ -77,7 +73,6 @@ p1 == p2        # False
 ```
 
 ### Common Magic Methods
-
 | Method | Purpose | Example |
 |--------|---------|---------|
 | `__init__` | Constructor | `obj = MyClass()` |
@@ -92,7 +87,6 @@ p1 == p2        # False
 | `__add__` | Addition | `obj1 + obj2` |
 
 ## Property Methods
-
 Use `@property` to create managed attributes with getter/setter logic.
 ```python
 class Temperature:
@@ -120,7 +114,6 @@ temp.celsius = 30        # Uses setter
 ```
 
 ## Method Types Summary
-
 | Type | Decorator | First Parameter | Access To |
 |------|-----------|-----------------|-----------|
 | Instance | None | `self` | Instance data |
@@ -129,7 +122,6 @@ temp.celsius = 30        # Uses setter
 | Property | `@property` | `self` | Instance data |
 
 ## Best Practices
-
 - Use instance methods for operations on object data
 - Use class methods for alternative constructors or class-level operations
 - Use static methods for utility functions related to the class

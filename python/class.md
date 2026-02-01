@@ -12,6 +12,12 @@ class Dog:
         return f"{self.name} says woof!"
 ```
 
+>[!IMPORTANT]
+>`__init__` is a special method called the **constructor**: it automatically runs when you create a new object.
+
+>[!IMPORTANT]
+>`self` is a **reference to the instance being created**: it must be the first parameter in instance methods.
+
 ## Creating Instances
 ```python
 my_dog = Dog("Buddy", 3)

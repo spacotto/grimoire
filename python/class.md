@@ -3,13 +3,14 @@ A **class** is a **user-defined data type that bundles data and functionality to
 
 ## Basic Class Definition
 ```python
-class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+class Plant:
+    def __init__(self, name: str, height: int, age: int) -> None:
+        self.name: str = name
+        self.height: int = height
+        self.age: int = age
     
-    def bark(self):
-        return f"{self.name} says woof!"
+    def grow(self):
+        return f"{self.name} is growing!"
 ```
 
 >[!IMPORTANT]

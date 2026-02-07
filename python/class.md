@@ -25,8 +25,9 @@ Python follows the PEP 8 style guide for naming conventions within classes, whic
 - **Method names** and **instance variables** should use `lowercase_with_underscores` (**snake_case**), such as `get_balance()`, `calculate_total()`, or `user_name`.
 - **Constants** (class-level variables that shouldn't change) should be in `ALL_CAPS_WITH_UNDERSCORES`, like `MAX_SIZE` or `DEFAULT_TIMEOUT`.
 - Prefix **internal/private attributes** with a single underscore like `_internal_method()` or `_private_data`, and use double underscores `__name_mangled` when you need name mangling to prevent conflicts in inheritance.
-- 
-Avoid using double underscores at both the beginning and end (like `__special__`) unless you're implementing Python's special methods like `__init__`, `__str__`, or `__len__`, as these are reserved for Python's internal use. 
+
+>[!WARNING]
+>Avoid using double underscores at both the beginning and end (like `__special__`) unless you're implementing Python's special methods like `__init__`, `__str__`, or `__len__`, as these are reserved for Python's internal use. 
 ```
 class Plant:  # CapitalizedWords for class names
     MAX_HEIGHT = 300  # ALL_CAPS for constants (cm)

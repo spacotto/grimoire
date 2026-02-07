@@ -29,6 +29,9 @@ y = -17
 z = 0
 ```
 
+>[!NOTE]
+>[Here](https://github.com/spacotto/grimoire/blob/main/python/int().md) you can find out more about `int()` conversions.
+
 ### float
 Numbers with decimal points.
 ```python

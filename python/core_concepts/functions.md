@@ -97,11 +97,31 @@ Why use `-> None`?
 | **Side-Effect Only** | `def log(a: int) -> None:` | Performs an action; returns nothing useful. |
 
 ## Docstring
+A **docstring** (documentation string) is a string used to **document a specific segment of code**, such as a function, class, or module. Unlike regular comments (`#`), docstrings are **stored as an attribute of the object** and **can be accessed at runtime**.
+
+### Syntax
+Docstrings are placed immediately after the function header and are enclosed in triple quotes (`"""` or `'''`):
+```python
+def multiply(a: int, b: int) -> int:
+    """Multiplies two integers and returns the result."""
+    return a * b
+```
+
+### Key Features
+- **Accessibility:** You can view a function's documentation using the `help()` function or the `.__doc__` attribute. For example:
+```python
+print(multiply.__doc__)
+```
+- **Multi-line Documentation:** For complex logic, docstrings often include a summary, a list of arguments, and return value descriptions.
+- **Standardisation:** Most Python projects follow specific styles like `Google Style`, `NumPy Style`, or `reStructuredText`.
+
+### Docstrings vs. Comments
+| Feature | Docstring (`"""`) | Comment (`#`) |
+| :--- | :--- | :--- |
+| **Purpose** | Explains *what* the code does and *how* to use it. | Explains *why* a specific line exists or *how* logic works. |
+| **Audience** | Users of the function (API documentation). | Maintainers of the code. |
+| **Runtime** | Accessible via `.__doc__`. | Ignored by the Python interpreter. |
 
 ## Scope
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
-
-
-
-

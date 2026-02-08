@@ -10,13 +10,13 @@ def function_name(parameters):
     # function body
     return #optional
 ```
-# Anatomy of a Function
+### Anatomy of a Function
 A function consists of several elements, some mandatory (they must always be present), some optional.
 1. **The header.** The **header** is the first **line that defines the function’s interface**. It includes several elements, some mandatory (they must always be present), some optional.
 2. **The docstring**
 3. **The scope**
 
-The header itself is composed of several parts:
+The header itself is composed of several elements:
 
 | Element  | Syntax   | Function | Presence |
 | :------- | :------- | :------- | :------- | 
@@ -26,9 +26,34 @@ The header itself is composed of several parts:
 | Function Signature | `-> ...` | The exptected data to return | Optional |
 | Colon | `:` | Terminates the header and initiates the code block | Mandatory |
 
-## The Function name
->[!TIP]
->The function name should be descriptive and follow `snake_case` convention.
+## The Function Name
+A **function name** is a **unique identifier** used to reference and execute a specific block of code.
+
+### Naming Rules (Mandatory)
+Python enforces strict **rules** for identifiers. If these aren't followed, the code will throw a `SyntaxError`.
+The function name...
+...MUST **start** with a **letter** (`a-z`, `A-Z`) or an **underscore** (`_`).
+...can only contain **alphanumeric** characters and **underscores** (`a-z`, `0-9`, and `_`).
+...is **case sensitive**: `my_function()` and `My_Function()` are treated as two different functions.
+...CANNOT use **Python keywords** (like `def`, `if`, `while`, or `class`) as names.
+
+### Naming Conventions (Best Practices)
+While the rules prevent errors, conventions (specifically PEP 8) ensure your code is readable:
+- `snake_case`: Use lowercase words separated by underscores (e.g., `calculate_user_age`).
+- **Descriptive**: The name should be a verb or a phrase indicating what the function does (e.g., `get_data`).
+- **Avoid Shadows**: Do NOT name your function after built-ins like print or list, as this will "hide" the original Python functionality.
+
+### The Function Name as a Reference
+In Python, the name is actually a variable that points to a function object. You can even assign a function to a new name:
+```python
+def greet():
+    return "Hello!"
+
+# Assigning the function object to a new variable
+say_hi = greet 
+
+print(say_hi())  # Output: Hello!
+```
 
 ## The Parameters
 Parameters allow functions to be **reusable**. Instead of writing a function that only knows how to handle "Carrots," you use a parameter so it can handle any `seed_type` you provide.
@@ -68,3 +93,4 @@ Why use `-> None`?
 ## Scope
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
+

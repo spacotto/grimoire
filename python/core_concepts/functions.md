@@ -32,6 +32,7 @@ The header itself is composed of several elements:
 >def greet(name: str, age: int) -> str:
 >    return f"Hello {name}, you are {age} years old."
 >```
+>Type hinting **reduces bugs**, catching `TypeErrors` before you run the script, your IDE provides better suggestions (**autocomplete**) because it knows the object type, and helps writing **cleaner code** by replacing the need for comments describing variable types.
 
 ## The Function Name
 A **function name** is a **unique identifier** used to reference and execute a specific block of code.
@@ -100,6 +101,7 @@ Why use `-> None`?
 ## Scope
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
+
 
 
 

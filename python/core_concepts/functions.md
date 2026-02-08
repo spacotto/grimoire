@@ -26,6 +26,13 @@ The header itself is composed of several elements:
 | Function Signature | `-> ...` | The exptected data to return | Optional |
 | Colon | `:` | Terminates the header and initiates the code block | Mandatory |
 
+>[!IMPORTANT]
+>**Type hinting** is a **formal syntax** used to **specify the expected data types** of function **arguments** and **return values**. For example:
+>```python
+>def greet(name: str, age: int) -> str:
+>    return f"Hello {name}, you are {age} years old."
+>```
+
 ## The Function Name
 A **function name** is a **unique identifier** used to reference and execute a specific block of code.
 
@@ -93,5 +100,6 @@ Why use `-> None`?
 ## Scope
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
+
 
 

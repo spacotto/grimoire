@@ -109,6 +109,12 @@ print(circle.calculate_area())          # 78.53975
 print(circle.calculate_circumference()) # 31.4159
 ```
 
+## Magic Methods
+**Magic methods** (also called **dunder methods**) are special methods with **double underscores** (`__`) before and after their names. Python automatically calls these methods in response to certain operations. They allow you to **define how objects behave with built-in Python operations**.
+
+>[!IMPORTANT]
+>There are several **[magic methods](https://github.com/spacotto/grimoire/blob/main/python/_cheat_sheets/magic_methods.md)** ready to use, each one with a different purpose.
+
 ---
 
 **Key Takeaways:**

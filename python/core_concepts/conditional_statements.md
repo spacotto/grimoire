@@ -14,3 +14,10 @@ else:
 
 >[!IMPORTANT]
 >**Indentation** (4 spaces) is mandatory to define the scope of each block.
+
+| Operator | Description | Operator | Description|
+| :--- | :--- | :--- | :--- |
+| `==` | Equal to | `and` | Both must be True |
+| `!=` | Not equal to | `or` | One must be True |
+| `>` | Greater than | `not` | Reverse boolean |
+| `<` | Less than | `in` | Membership check |

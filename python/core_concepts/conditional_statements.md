@@ -21,3 +21,16 @@ else:
 | `!=` | Not equal to | `or` | One must be True |
 | `>` | Greater than | `not` | Reverse boolean |
 | `<` | Less than | `in` | Membership check |
+
+## Syntax Examples
+### Standard If-Elif-Else
+```
+age = 20
+
+if age < 18:
+    print("Minor")
+elif age >= 18 and age < 65:
+    print("Adult")
+else:
+    print("Senior")
+```

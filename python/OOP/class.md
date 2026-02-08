@@ -31,11 +31,14 @@ print(rose.age)   # Output: 3
 ```
 
 ## Multiple Instances
+Each instance is independent with its own data:
+```python
 rose = Dog("Rose", 3)
 iris = Dog("Iris", 8)
 
 print(rose.name)  # Output: Rose
 print(iris.name)  # Output: Iris
+```
 
 ## Sources
 - [Python Documentation: Classes](https://docs.python.org/3/tutorial/classes.html)

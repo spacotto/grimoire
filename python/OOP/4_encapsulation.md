@@ -30,6 +30,9 @@ class Database:
 | Protected    | `_name`   | Intended for internal use (convention only)          |
 | Private      | `__name`  | Name mangling applied, harder to access from outside |
 
+>[!TIP]
+>In Python, the difference between a single underscore `_` and a double underscore `__` is the difference between a **gentleman's agreement** and a **lock on the door**.
+
 Python transforms `__attribute` to `_ClassName__attribute` to avoid accidental access.
 ```python
 class Account:

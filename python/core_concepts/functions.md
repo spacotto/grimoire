@@ -11,6 +11,10 @@ def function_name(parameters):
     return #optional
 ```
 # Anatomy of a Function
+A function consists of several elements, some mandatory (they must always be present), some optional.
+1. The header
+2. The Scope
+
 ## The Header
 The **header** is the first **line that defines the function’s interface**. It includes several elements, some mandatory (they must always be present), some optional.
 
@@ -77,3 +81,4 @@ In Python, specifying a return type (e.g., `-> None`) is part of **Type Hinting*
 ## Scope
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
+

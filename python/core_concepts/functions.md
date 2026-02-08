@@ -1,36 +1,30 @@
-# About Function Definitions
+# About Functions
 A function is a **block of reusable code that performs a specific task**. It's a way to package code so you can run it multiple times without rewriting it.
 
 >[!TIP]
 >Think of a function as a recipe: you define it once with instructions, then you can use it whenever you need it by calling its name.
 
-## Structure
+Basic structure:
 ```python
 def function_name(parameters):
     # function body
+    return #optional
 ```
+# Anatomy of a Function
+## The Header
+The **header** is the first **line that defines the function’s interface**. It includes several elements, some mandatory (they must always be present), some optional.
 
-### Code Breakdown
-| Code            | Description                               |
-| :-------------- | :---------------------------------------- |
-| `def`           | Keyword that starts a function definition |
-| `function_name` | The name you give your function           |
-| `parameters`    | Inputs the function accepts (optional)    |
-| `:`             | Indicates the start of the function body  |
+| Element  | Syntax   | Function | Presence |
+| :------- | :------- | :------- | :------- | 
+| Defining keyword | `def` | Signals the start of the definition | Mandatory |
+| Function name | `snake_case` | A unique identifier | Mandatory |
+| Parameters | `(snake_case)` | Variables listed inside parentheses `()` that receive input values (arguments) | Optional |
+| Return type | `-> ...` | The exptected data to return | Optional |
+| Colon | `:` | Terminates the header and initiates the code block | Mandatory |
 
->[!IMPORTANT]
->The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
 
-### Example
-```python
-# Define the function
-def greet(name):
-    return f"Hello, {name}!"
-
-# Use the function
-message = greet("World")
-print(message)  # Output: Hello, World!
-```
+## `def`
+In Python, `def` is a **keyword** used to define a function. It **marks the start** of a function header and signals to the interpreter that a reusable block of code is being created.
 
 >[!TIP]
 >The function name should be descriptive and follow `snake_case` convention.
@@ -80,3 +74,6 @@ In Python, specifying a return type (e.g., `-> None`) is part of **Type Hinting*
 | **Value-Returning** | `def add(a: int) -> int:` | Returns data to be used in further logic. |
 | **Side-Effect Only** | `def log(a: int) -> None:` | Performs an action; returns nothing useful. |
 
+## Scope
+>[!IMPORTANT]
+>The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.

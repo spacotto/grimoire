@@ -123,5 +123,14 @@ print(multiply.__doc__)
 | **Runtime** | Accessible via `.__doc__`. | Ignored by the Python interpreter. |
 
 ## Scope
+In Python, scope refers to the **region of a program where a specific variable is accessible**. It determines the "visibility" of a variable name. If you try to access a variable outside its scope, Python will raise a `NameError`.
+
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
+
+| Scope | Location | Lifetime |
+| :--- | :--- | :--- |
+| Local | Inside a function | Created when the function is called; deleted when it returns. |
+| Enclosing | Outer function of a nested setup | Exists as long as the nested function is alive. |
+| Global | Top level of script | Exists until the script terminates. |
+| Built-in | Python's core | Always available while Python is running. |

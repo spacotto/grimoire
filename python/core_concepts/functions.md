@@ -32,10 +32,10 @@ A **function name** is a **unique identifier** used to reference and execute a s
 ### Naming Rules (Mandatory)
 Python enforces strict **rules** for identifiers. If these aren't followed, the code will throw a `SyntaxError`.
 The function name...
-...MUST **start** with a **letter** (`a-z`, `A-Z`) or an **underscore** (`_`).
-...can only contain **alphanumeric** characters and **underscores** (`a-z`, `0-9`, and `_`).
-...is **case sensitive**: `my_function()` and `My_Function()` are treated as two different functions.
-...CANNOT use **Python keywords** (like `def`, `if`, `while`, or `class`) as names.
+- MUST **start** with a **letter** (`a-z`, `A-Z`) or an **underscore** (`_`).
+- can only contain **alphanumeric** characters and **underscores** (`a-z`, `0-9`, and `_`).
+- is **case sensitive**: `my_function()` and `My_Function()` are treated as two different functions.
+- CANNOT use **Python keywords** (like `def`, `if`, `while`, or `class`) as names.
 
 ### Naming Conventions (Best Practices)
 While the rules prevent errors, conventions (specifically PEP 8) ensure your code is readable:
@@ -93,4 +93,5 @@ Why use `-> None`?
 ## Scope
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
+
 

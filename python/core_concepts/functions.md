@@ -12,29 +12,25 @@ def function_name(parameters):
 ```
 # Anatomy of a Function
 A function consists of several elements, some mandatory (they must always be present), some optional.
-1. The header
-2. The docstring
-3. The scope
+1. **The header.** The **header** is the first **line that defines the function’s interface**. It includes several elements, some mandatory (they must always be present), some optional.
+2. **The docstring**
+3. **The scope**
 
-## Header
-The **header** is the first **line that defines the function’s interface**. It includes several elements, some mandatory (they must always be present), some optional.
+The header itself is composed of several parts:
 
 | Element  | Syntax   | Function | Presence |
 | :------- | :------- | :------- | :------- | 
-| Defining keyword | `def` | Signals the start of the definition | Mandatory |
+| Defining keyword | `def` | Marks the start of the definition | Mandatory |
 | Function name | `snake_case` | A unique identifier | Mandatory |
 | Parameters | `(snake_case)` | Variables listed inside parentheses `()` that receive input values (arguments) | Optional |
 | Function Signature | `-> ...` | The exptected data to return | Optional |
 | Colon | `:` | Terminates the header and initiates the code block | Mandatory |
 
-### `def`
-In Python, `def` is a **keyword** used to define a function. It **marks the start** of a function header and signals to the interpreter that a reusable block of code is being created.
-
-### Function name
+## The Function name
 >[!TIP]
 >The function name should be descriptive and follow `snake_case` convention.
 
-### Parameters
+## The Parameters
 Parameters allow functions to be **reusable**. Instead of writing a function that only knows how to handle "Carrots," you use a parameter so it can handle any `seed_type` you provide.
 
 What's the difference between parameters and arguments?
@@ -54,7 +50,7 @@ How does data flow?
 3. Execution: The function uses that variable to perform its logic.
 4. Scope: Once the function finishes, the parameter variables are deleted from memory.
 
-### Function Signatures: Explicit Return Hints
+## The Function Signatures
 In Python, specifying a return type (e.g., `-> None`) is part of **Type Hinting**. While the Python interpreter doesn't require it to run the code, it is a standard practice for maintainable software.
 
 Why use `-> None`?
@@ -72,5 +68,3 @@ Why use `-> None`?
 ## Scope
 >[!IMPORTANT]
 >The **indentation** (4 spaces, NOT `TAB`!) defines the **function's scope**.
-
-

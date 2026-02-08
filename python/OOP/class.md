@@ -22,5 +22,20 @@ class Plant:
 >[!IMPORTANT]
 >`self` is a **reference to the instance being created**: it must be the first parameter in instance methods.
 
-# Sources
+## Instantiating Objects
+Create an object by calling the class name like a function:
+```python
+rose = Plant("Rose", 3)
+print(rose.name)  # Output: Rose
+print(rose.age)   # Output: 3
+```
+
+## Multiple Instances
+rose = Dog("Rose", 3)
+iris = Dog("Iris", 8)
+
+print(rose.name)  # Output: Rose
+print(iris.name)  # Output: Iris
+
+## Sources
 - [Python Documentation: Classes](https://docs.python.org/3/tutorial/classes.html)

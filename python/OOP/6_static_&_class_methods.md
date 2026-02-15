@@ -160,6 +160,9 @@ class MyClass:
     my_method = classmethod(my_method)
 ```
 
+>[!NOTE]
+>**Syntactic sugar**, a term coined by Peter J. Landin, refers to language syntax that makes code **more pleasant or readable without adding new functionality**. Like real sugar, it does not change the substance, only the experience.
+
 ### How It Works
 
 Decorators are applied after the function is defined:

@@ -140,3 +140,91 @@ class Pizza:
 ```
 
 **Key principle**: Use the least powerful method type that gets the job done. If you don't need `self`, use `@classmethod`. If you don't need `cls`, use `@staticmethod`.
+
+## Decorator Syntax vs Explicit Calls
+
+### Syntactic Sugar
+
+The `@decorator` syntax is **syntactic sugar**, a cleaner way to write the same operation.
+```python
+# Using decorator (syntactic sugar)
+class MyClass:
+    @classmethod
+    def my_method(cls):
+        return "class method"
+
+# Equivalent explicit call
+class MyClass:
+    def my_method(cls):
+        return "class method"
+    my_method = classmethod(my_method)
+```
+
+### How It Works
+
+Decorators are applied after the function is defined:
+```python
+# This decorator syntax...
+@classmethod
+def method(cls):
+    pass
+
+# ...is transformed into this
+def method(cls):
+    pass
+method = classmethod(method)
+```
+
+The decorator takes the function as an argument and returns a modified version.
+
+### Explicit Call Examples
+```python
+class Example:
+    # Static method - explicit
+    def util(x, y):
+        return x + y
+    util = staticmethod(util)
+    
+    # Class method - explicit
+    def factory(cls):
+        return cls()
+    factory = classmethod(factory)
+```
+
+### Why Use Decorator Syntax?
+
+**Readability**: The decorator syntax is clearer and more Pythonic.
+```python
+# Clear intent
+@staticmethod
+def calculate(x):
+    return x * 2
+
+# vs. less clear
+def calculate(x):
+    return x * 2
+calculate = staticmethod(calculate)
+```
+
+**Less repetition**: You don't repeat the function name.
+
+**Standard practice**: The `@decorator` syntax is the convention in Python code.
+
+### When Explicit Calls Are Useful
+
+- **Conditional decoration**: Apply decorators based on conditions
+- **Dynamic decoration**: Choose decorators at runtime
+- **Understanding**: Learning how decorators work under the hood
+```python
+class Config:
+    USE_CACHE = True
+    
+    def get_data(self):
+        return "data"
+    
+    # Conditionally make it a static method
+    if not USE_CACHE:
+        get_data = staticmethod(get_data)
+```
+
+**Bottom line**: Always use `@decorator` syntax in normal code. Use explicit calls only when you need dynamic behaviour.

@@ -11,15 +11,15 @@ You can raise:
 - An exception class: `raise ValueError`
 - An exception instance: `raise ValueError("message")`
 
----
-
 ## When to Raise Exceptions
+
 - Invalid input or arguments
 - Unsupported operations
 - Failed preconditions or postconditions
 - Enforcing contracts in APIs or libraries
 
 ## Raising Built-in Exceptions
+
 Use the most semantically appropriate built-in exception.
 ```python
 def divide(a, b):
@@ -34,8 +34,6 @@ def get_user(user_id):
 
 >[!TIP]
 >Common built-ins: `ValueError`, `TypeError`, `KeyError`, `IndexError`, `AttributeError`, `RuntimeError`, `NotImplementedError`.
-
----
 
 ## Raising Custom Exceptions
 Subclass `Exception` (or a built-in) to create domain-specific errors.
@@ -63,8 +61,6 @@ class NetworkError(AppError):
     pass
 ```
 
----
-
 ## Creating Helpful Error Messages
 
 A good error message answers: *what went wrong*, *what was expected*, *what was received*.
@@ -86,8 +82,6 @@ class ValidationError(Exception):
 raise ValidationError("Value is required.", field="email")
 ```
 
----
-
 ## Re-raising Exceptions
 
 Use a bare `raise` inside an `except` block to re-raise the current exception without losing the traceback.
@@ -100,6 +94,7 @@ except ValueError:
 ```
 
 ## Exception Chaining
+
 Use `raise ... from ...` to chain exceptions, preserving the original cause.
 ```python
 try:
@@ -116,6 +111,7 @@ raise RuntimeError("Something failed.") from None
 ```
 
 ## Input Validation with Exceptions
+
 A common pattern is a dedicated validation function that raises on bad input.
 ```python
 def validate_username(username):

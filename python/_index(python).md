@@ -1,5 +1,6 @@
 PART I: PYTHON FUNDAMENTALS
 ================================================================================
+This part introduces you to Python programming from scratch. You'll learn what Python is, how to write and run your first programs, and understand the basic building blocks of code. By the end, you'll be comfortable reading input, displaying output, and understanding how Python programs are structured. This foundation is essential for everything that follows.
 
 [Chapter 1: Introduction to Python](https://github.com/spacotto/grimoire/blob/main/python/01/chapter01.md)
 --------------------------------------------------------------------------------

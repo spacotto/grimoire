@@ -29,7 +29,7 @@ Chapter 3: Basic Input and Output
 PART II: VARIABLES AND DATA TYPES
 ================================================================================
 
-Chapter 4.: Variables and Assignment
+Chapter 4: Variables and Assignment
 --------------------------------------------------------------------------------
 1. Understanding Variables
 2. Variable Assignment and the = Operator
@@ -37,7 +37,7 @@ Chapter 4.: Variables and Assignment
 4. Valid Variable Names
 5. Reassigning Variables
 
-Chapter 5.: Primitive Data Types
+Chapter 5: Primitive Data Types
 --------------------------------------------------------------------------------
 1. Integers (int)
 2. Strings (str)
@@ -53,7 +53,7 @@ Chapter 6: String Operations
 3. Case Manipulation (capitalize(), upper(), lower())
 4. String Formatting
 5. F-strings (Formatted String Literals)
-6 Combining Different Data Types in Output
+6. Combining Different Data Types in Output
 
 
 PART III: OPERATORS AND EXPRESSIONS
@@ -74,8 +74,8 @@ Chapter 8: Comparison Operators
 3. Equal To (==)
 4. Not Equal To (!=)
 5. Greater Than or Equal (>=)
-6 Less Than or Equal (<=)
-7 Boolean Results
+6. Less Than or Equal (<=)
+7. Boolean Results
 
 
 PART IV: CONTROL FLOW
@@ -88,9 +88,9 @@ Chapter 9: Conditional Statements
 3. The else Clause
 4. The elif Statement
 5. Nested Conditionals
-6 Boolean Logic in Conditionals
+6. Boolean Logic in Conditionals
 
-Chapter 1.0: Loops and Iteration
+Chapter 10: Loops and Iteration
 --------------------------------------------------------------------------------
 1. Understanding Repetition
 2. The for Loop
@@ -98,134 +98,134 @@ Chapter 1.0: Loops and Iteration
 4. Loop Variables and Counters
 5. Iterating Through Collections
 
-Chapter 1.1.: Recursion
+Chapter 11: Recursion
 --------------------------------------------------------------------------------
 1. What is Recursion?
 2. Base Cases and Recursive Cases
 3. Helper Functions for Recursion
 4. Default Parameter Values in Recursion
 5. Iteration vs. Recursion
-6 When to Use Recursion
+6. When to Use Recursion
 
 
 PART V: FUNCTIONS
 ================================================================================
 
-Chapter 1.2.: Function Basics
+Chapter 12: Function Basics
 --------------------------------------------------------------------------------
 1. What are Functions?
 2. Defining Functions with def
 3. Function Naming Conventions (snake_case)
 4. Calling Functions
 5. Function Parameters
-6 Return Values
+6. Return Values
 
-Chapter 1.3.: Type Hints and Annotations
+Chapter 13: Type Hints and Annotations
 --------------------------------------------------------------------------------
 1. Introduction to Type Hints
 2. Annotating Function Parameters
 3. Return Type Annotations
 4. The None Type
 5. Benefits of Type Hints
-6 Type Hints for Collections
+6. Type Hints for Collections
 
-Chapter 1.4.: Documentation
+Chapter 14: Documentation
 --------------------------------------------------------------------------------
-1.1. Writing Docstrings
-1.2. Docstring Conventions
-1.3. Comments vs. Docstrings
-1.4. Documentation Best Practices
+1. Writing Docstrings
+2. Docstring Conventions
+3. Comments vs. Docstrings
+4. Documentation Best Practices
 
 
 PART VI: OBJECT-ORIENTED PROGRAMMING
 ================================================================================
 
-Chapter 1.5.: Introduction to OOP
+Chapter 15: Introduction to OOP
 --------------------------------------------------------------------------------
-1.1. What is Object-Oriented Programming?
-1.2. Objects in the Real World
-1.3. OOP vs. Procedural Programming
-1.4. Benefits of OOP
-1.5. When to Use OOP
+1. What is Object-Oriented Programming?
+2. Objects in the Real World
+3. OOP vs. Procedural Programming
+4. Benefits of OOP
+5. When to Use OOP
 
-Chapter 1.6: Classes and Objects
+Chapter 16: Classes and Objects
 --------------------------------------------------------------------------------
-1.1. Classes as Blueprints
-1.2. Objects as Instances
-1.3. The class Keyword
-1.4. Class Naming Conventions (PascalCase)
-1.5. Creating Your First Class
-1.6 Instantiating Objects
-1.7 Multiple Instances
+1. Classes as Blueprints
+2. Objects as Instances
+3. The class Keyword
+4. Class Naming Conventions (PascalCase)
+5. Creating Your First Class
+6. Instantiating Objects
+7. Multiple Instances
 
-Chapter 1.7: Attributes and Instance Variables
+Chapter 17: Attributes and Instance Variables
 --------------------------------------------------------------------------------
-1.1. Understanding Attributes
-1.2. Instance Variables
-1.3. The self Parameter
-1.4. Accessing Attributes (self.attribute)
-1.5. Modifying Attributes
-1.6 Class Variables vs. Instance Variables
+1. Understanding Attributes
+2. Instance Variables
+3. The self Parameter
+4. Accessing Attributes (self.attribute)
+5. Modifying Attributes
+6. Class Variables vs. Instance Variables
 
-Chapter 1.8: Methods
+Chapter 18: Methods
 --------------------------------------------------------------------------------
-1.1. What are Methods?
-1.2. Defining Instance Methods
-1.3. The self Parameter in Methods
-1.4. Calling Methods on Objects
-1.5. Methods vs. Functions
-1.6 Methods that Modify State
-1.7 Methods that Return Information
+1. What are Methods?
+2. Defining Instance Methods
+3. The self Parameter in Methods
+4. Calling Methods on Objects
+5. Methods vs. Functions
+6. Methods that Modify State
+7. Methods that Return Information
 
-Chapter 1.9: Constructors and Initialisation
+Chapter 19: Constructors and Initialisation
 --------------------------------------------------------------------------------
-1.1. The __init__() Method
-1.2. Constructor Parameters
-1.3. Initialising Instance Variables
-1.4. Default Parameter Values in Constructors
-1.5. Object Creation Process
-1.6 Factory Pattern Basics
+1. The `__init__()` Method
+2. Constructor Parameters
+3. Initialising Instance Variables
+4. Default Parameter Values in Constructors
+5. Object Creation Process
+6. Factory Pattern Basics
 
-Chapter 2.0: Encapsulation
+Chapter 20: Encapsulation
 --------------------------------------------------------------------------------
 1. Understanding Encapsulation
 2. Data Protection and Information Hiding
 3. Public vs. Private Attributes
 4. Name Mangling with Double Underscores
 5. Getter Methods
-6 Setter Methods
-7 Data Validation in Setters
-8 Why Encapsulation Matters
-9 Protecting Data Integrity
+6. Setter Methods
+7. Data Validation in Setters
+8. Why Encapsulation Matters
+9. Protecting Data Integrity
 
-Chapter 2.1.: Inheritance
+Chapter 21: Inheritance
 --------------------------------------------------------------------------------
 1. What is Inheritance?
 2. Parent Classes (Base Classes)
 3. Child Classes (Derived Classes)
 4. The super() Function
 5. Calling Parent Constructors
-6 Overriding Methods
-7 Extending Parent Functionality
-8 Adding New Methods in Child Classes
-9 Adding New Attributes in Child Classes
-1.0 Inheritance Hierarchies
-1.1. Multi-Level Inheritance
-1.2. Code Reusability Through Inheritance
-1.3. IS-A Relationships
+6. Overriding Methods
+7. Extending Parent Functionality
+8. Adding New Methods in Child Classes
+9. Adding New Attributes in Child Classes
+10. Inheritance Hierarchies
+11. Multi-Level Inheritance
+12. Code Reusability Through Inheritance
+13. IS-A Relationships
 
-Chapter 2.2.: Advanced Method Types
+Chapter 22: Advanced Method Types
 --------------------------------------------------------------------------------
 1. Instance Methods (Review)
 2. Class Methods
-3. The @classmethod Decorator
-4. The cls Parameter
-5. When to Use Class Methods
-6 Static Methods
-7 The @staticmethod Decorator
-8 Methods Without self or cls
-9 When to Use Static Methods
-1.0 Choosing the Right Method Type
+   2.1. The `@classmethod` Decorator
+   2.2. The `cls` Parameter
+   2.3. When to Use Class Methods
+3. Static Methods
+   3.1. The `@staticmethod` Decorator
+   3.2 Methods Without self or cls
+   3.3. When to Use Static Methods
+4. Choosing the Right Method Type
 
 Chapter 2.3.: Nested Classes and Composition
 --------------------------------------------------------------------------------
@@ -234,7 +234,7 @@ Chapter 2.3.: Nested Classes and Composition
 3. When to Use Nested Classes
 4. Accessing Nested Classes
 5. Helper Classes and Organisation
-6 Namespace Management
+6. Namespace Management
 7 Composition vs. Inheritance
 8 HAS-A Relationships
 
@@ -244,14 +244,14 @@ PART VI-B: ADVANCED OBJECT-ORIENTED PROGRAMMING
 
 Chapter 2.4.: Polymorphism Fundamentals
 --------------------------------------------------------------------------------
-2.1. What is Polymorphism?
-2.2. Types of Polymorphism
-2.3. Subtype Polymorphism (Inheritance-based)
-2.4. Duck Typing in Python
-2.5. Polymorphic Behaviour
-2.6 Interface Consistency
-2.7 Same Interface, Different Behaviour
-2.8 Benefits of Polymorphic Design
+1. What is Polymorphism?
+2. Types of Polymorphism
+3. Subtype Polymorphism (Inheritance-based)
+4. Duck Typing in Python
+5. Polymorphic Behaviour
+6. Interface Consistency
+7 Same Interface, Different Behaviour
+8 Benefits of Polymorphic Design
 
 Chapter 2.5.: Method Overriding
 --------------------------------------------------------------------------------
@@ -260,7 +260,7 @@ Chapter 2.5.: Method Overriding
 2.3. Method Signatures and Compatibility
 2.4. Overriding Parent Methods
 2.5. Calling Parent Methods with super()
-2.6 Behavioural Specialisation
+2.6. Behavioural Specialisation
 2.7 When to Override Methods
 2.8 Method Resolution Order (MRO)
 

@@ -4,7 +4,7 @@ This guide covers the essentials to get started with Python. It begins with what
 
 ## What is Python
 
-Python is a high-level, interpreted, general-purpose programming language created by **Guido van Rossum** and first released in 1991. It emphasizes code readability and simplicity, making it one of the most popular languages for beginners and professionals alike.
+Python is a high-level, interpreted, general-purpose programming language created by **Guido van Rossum** and first released in 1991. It emphasises code readability and simplicity, making it one of the most popular languages for beginners and professionals alike.
 
 **Key characteristics:**
 - **Interpreted** — code runs line by line without a separate compilation step
@@ -73,8 +73,6 @@ pip install <package-name>
 pip install -r requirements.txt   # install from a list
 pip freeze > requirements.txt     # save current dependencies
 ```
-
----
 
 ## Code Quality Standards and `PEP 8`
 
@@ -185,4 +183,5 @@ ignore = E203, W503         # ignore specific codes
 | `F4xx` | Import errors |
 | `W` prefix | Warnings |
 
-> **Tip:** Integrate `flake8` into your editor (VS Code, PyCharm) or CI pipeline to catch issues before they reach production.
+>[!TIP]
+>Integrate `flake8` into your editor (VS Code, PyCharm) or CI pipeline to catch issues before they reach production.

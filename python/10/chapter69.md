@@ -19,8 +19,6 @@ class AppError(Exception):
 
 That's enough for a usable custom exception. The name itself communicates intent.
 
----
-
 ## Inheriting from Exception
 Always inherit from `Exception`, not `BaseException`. `BaseException` is reserved for system-level events (`KeyboardInterrupt`, `SystemExit`, etc.) that should not be caught by most application code.
 

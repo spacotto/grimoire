@@ -1,6 +1,6 @@
 # PART I: PYTHON FUNDAMENTALS
 
-## Chapter 1: Introduction to Python
+Chapter 1: Introduction to Python
 ----------------------------------
 1.1 What is Python?
 1.2 Python Philosophy and Design Principles

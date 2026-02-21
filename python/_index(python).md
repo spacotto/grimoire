@@ -5,23 +5,23 @@ Chapter 1: Introduction to Python
 --------------------------------------------------------------------------------
 1. What is Python
 2. Python Philosophy and Design Principles
-3. Setting Up Your Python Environment (Python 3.10+)
-4. Code Quality Standards and PEP 8
-5. Using the flake8 Linter
+3. Setting Up Your Python Environment (`Python 3.10+`)
+4. Code Quality Standards and `PEP 8`
+5. Using the `flake8` Linter
 
-## Chapter 2: Program Structure and Execution
+Chapter 2: Program Structure and Execution
 --------------------------------------------------------------------------------
 1. How Python Programs Execute
-2. The if __name__ == "__main__": Pattern
-3. Understanding __name__ and Module Execution
+2. The if `__name__ == "__main__"`: Pattern
+3. Understanding `__name__` and Module Execution
 4. Shebang Lines and Script Permissions
 5. When to Use Main Blocks vs. Functions
 
-## Chapter 3: Basic Input and Output
+Chapter 3: Basic Input and Output
 --------------------------------------------------------------------------------
-1. The print() Function
+1. The `print()` Function
 2. Basic Output Formatting
-3. The input() Function
+3. The `input()` Function
 4. Reading User Input
 5. Input Prompts and User Interaction
 
@@ -30,7 +30,7 @@ PART II: VARIABLES AND DATA TYPES
 ================================================================================
 
 Chapter 4: Variables and Assignment
-------------------------------------
+--------------------------------------------------------------------------------
 4.1 Understanding Variables
 4.2 Variable Assignment and the = Operator
 4.3 Naming Conventions (snake_case)
@@ -38,7 +38,7 @@ Chapter 4: Variables and Assignment
 4.5 Reassigning Variables
 
 Chapter 5: Primitive Data Types
---------------------------------
+--------------------------------------------------------------------------------
 5.1 Integers (int)
 5.2 Strings (str)
 5.3 Understanding Type in Python
@@ -47,7 +47,7 @@ Chapter 5: Primitive Data Types
 5.6 Converting Numbers to Strings: str()
 
 Chapter 6: String Operations
------------------------------
+--------------------------------------------------------------------------------
 6.1 String Concatenation
 6.2 String Methods
 6.3 Case Manipulation (capitalize(), upper(), lower())
@@ -60,7 +60,7 @@ PART III: OPERATORS AND EXPRESSIONS
 ================================================================================
 
 Chapter 7: Arithmetic Operations
----------------------------------
+--------------------------------------------------------------------------------
 7.1 Basic Arithmetic Operators (+, -, *, /)
 7.2 Addition and Subtraction
 7.3 Multiplication and Division
@@ -68,7 +68,7 @@ Chapter 7: Arithmetic Operations
 7.5 Storing Calculation Results
 
 Chapter 8: Comparison Operators
---------------------------------
+--------------------------------------------------------------------------------
 8.1 Greater Than (>)
 8.2 Less Than (<)
 8.3 Equal To (==)
@@ -82,7 +82,7 @@ PART IV: CONTROL FLOW
 ================================================================================
 
 Chapter 9: Conditional Statements
-----------------------------------
+--------------------------------------------------------------------------------
 9.1 Making Decisions in Code
 9.2 The if Statement
 9.3 The else Clause
@@ -91,7 +91,7 @@ Chapter 9: Conditional Statements
 9.6 Boolean Logic in Conditionals
 
 Chapter 10: Loops and Iteration
---------------------------------
+--------------------------------------------------------------------------------
 10.1 Understanding Repetition
 10.2 The for Loop
 10.3 The range() Function
@@ -99,7 +99,7 @@ Chapter 10: Loops and Iteration
 10.5 Iterating Through Collections
 
 Chapter 11: Recursion
-----------------------
+--------------------------------------------------------------------------------
 11.1 What is Recursion?
 11.2 Base Cases and Recursive Cases
 11.3 Helper Functions for Recursion
@@ -112,7 +112,7 @@ PART V: FUNCTIONS
 ================================================================================
 
 Chapter 12: Function Basics
-----------------------------
+--------------------------------------------------------------------------------
 12.1 What are Functions?
 12.2 Defining Functions with def
 12.3 Function Naming Conventions (snake_case)
@@ -121,7 +121,7 @@ Chapter 12: Function Basics
 12.6 Return Values
 
 Chapter 13: Type Hints and Annotations
----------------------------------------
+--------------------------------------------------------------------------------
 13.1 Introduction to Type Hints
 13.2 Annotating Function Parameters
 13.3 Return Type Annotations
@@ -130,7 +130,7 @@ Chapter 13: Type Hints and Annotations
 13.6 Type Hints for Collections
 
 Chapter 14: Documentation
---------------------------
+--------------------------------------------------------------------------------
 14.1 Writing Docstrings
 14.2 Docstring Conventions
 14.3 Comments vs. Docstrings
@@ -141,7 +141,7 @@ PART VI: OBJECT-ORIENTED PROGRAMMING
 ================================================================================
 
 Chapter 15: Introduction to OOP
---------------------------------
+--------------------------------------------------------------------------------
 15.1 What is Object-Oriented Programming?
 15.2 Objects in the Real World
 15.3 OOP vs. Procedural Programming
@@ -149,7 +149,7 @@ Chapter 15: Introduction to OOP
 15.5 When to Use OOP
 
 Chapter 16: Classes and Objects
---------------------------------
+--------------------------------------------------------------------------------
 16.1 Classes as Blueprints
 16.2 Objects as Instances
 16.3 The class Keyword
@@ -159,7 +159,7 @@ Chapter 16: Classes and Objects
 16.7 Multiple Instances
 
 Chapter 17: Attributes and Instance Variables
-----------------------------------------------
+--------------------------------------------------------------------------------
 17.1 Understanding Attributes
 17.2 Instance Variables
 17.3 The self Parameter
@@ -168,7 +168,7 @@ Chapter 17: Attributes and Instance Variables
 17.6 Class Variables vs. Instance Variables
 
 Chapter 18: Methods
--------------------
+--------------------------------------------------------------------------------
 18.1 What are Methods?
 18.2 Defining Instance Methods
 18.3 The self Parameter in Methods
@@ -177,17 +177,17 @@ Chapter 18: Methods
 18.6 Methods that Modify State
 18.7 Methods that Return Information
 
-Chapter 19: Constructors and Initialization
---------------------------------------------
+Chapter 19: Constructors and Initialisation
+--------------------------------------------------------------------------------
 19.1 The __init__() Method
 19.2 Constructor Parameters
-19.3 Initializing Instance Variables
+19.3 Initialising Instance Variables
 19.4 Default Parameter Values in Constructors
 19.5 Object Creation Process
 19.6 Factory Pattern Basics
 
 Chapter 20: Encapsulation
---------------------------
+--------------------------------------------------------------------------------
 20.1 Understanding Encapsulation
 20.2 Data Protection and Information Hiding
 20.3 Public vs. Private Attributes
@@ -199,7 +199,7 @@ Chapter 20: Encapsulation
 20.9 Protecting Data Integrity
 
 Chapter 21: Inheritance
-------------------------
+--------------------------------------------------------------------------------
 21.1 What is Inheritance?
 21.2 Parent Classes (Base Classes)
 21.3 Child Classes (Derived Classes)
@@ -215,7 +215,7 @@ Chapter 21: Inheritance
 21.13 IS-A Relationships
 
 Chapter 22: Advanced Method Types
-----------------------------------
+--------------------------------------------------------------------------------
 22.1 Instance Methods (Review)
 22.2 Class Methods
 22.3 The @classmethod Decorator
@@ -228,12 +228,12 @@ Chapter 22: Advanced Method Types
 22.10 Choosing the Right Method Type
 
 Chapter 23: Nested Classes and Composition
--------------------------------------------
+--------------------------------------------------------------------------------
 23.1 What are Nested Classes?
 23.2 Defining Classes Within Classes
 23.3 When to Use Nested Classes
 23.4 Accessing Nested Classes
-23.5 Helper Classes and Organization
+23.5 Helper Classes and Organisation
 23.6 Namespace Management
 23.7 Composition vs. Inheritance
 23.8 HAS-A Relationships
@@ -243,29 +243,29 @@ PART VI-B: ADVANCED OBJECT-ORIENTED PROGRAMMING
 ================================================================================
 
 Chapter 24: Polymorphism Fundamentals
---------------------------------------
+--------------------------------------------------------------------------------
 24.1 What is Polymorphism?
 24.2 Types of Polymorphism
 24.3 Subtype Polymorphism (Inheritance-based)
 24.4 Duck Typing in Python
-24.5 Polymorphic Behavior
+24.5 Polymorphic Behaviour
 24.6 Interface Consistency
-24.7 Same Interface, Different Behavior
+24.7 Same Interface, Different Behaviour
 24.8 Benefits of Polymorphic Design
 
 Chapter 25: Method Overriding
-------------------------------
+--------------------------------------------------------------------------------
 25.1 What is Method Overriding?
 25.2 Overriding vs. Overloading
 25.3 Method Signatures and Compatibility
 25.4 Overriding Parent Methods
 25.5 Calling Parent Methods with super()
-25.6 Behavioral Specialization
+25.6 Behavioural Specialisation
 25.7 When to Override Methods
 25.8 Method Resolution Order (MRO)
 
 Chapter 26: Abstract Base Classes (ABC)
-----------------------------------------
+--------------------------------------------------------------------------------
 26.1 What are Abstract Base Classes?
 26.2 The abc Module
 26.3 The ABC Base Class
@@ -280,7 +280,7 @@ Chapter 26: Abstract Base Classes (ABC)
 26.12 Partial Implementation in Abstract Classes
 
 Chapter 27: Protocols and Duck Typing
---------------------------------------
+--------------------------------------------------------------------------------
 27.1 What are Protocols?
 27.2 Structural Subtyping
 27.3 The typing.Protocol Class
@@ -291,7 +291,7 @@ Chapter 27: Protocols and Duck Typing
 27.8 When to Use Protocols
 
 Chapter 28: Advanced Type Hints
---------------------------------
+--------------------------------------------------------------------------------
 28.1 The typing Module
 28.2 Generic Types (List, Dict, Set, Tuple)
 28.3 Union Types
@@ -302,7 +302,7 @@ Chapter 28: Advanced Type Hints
 28.8 Type Hints for Polymorphic Code
 
 Chapter 29: Polymorphic Design Patterns
-----------------------------------------
+--------------------------------------------------------------------------------
 29.1 Strategy Pattern
 29.2 Template Method Pattern
 29.3 Factory Pattern with Polymorphism
@@ -313,7 +313,7 @@ Chapter 29: Polymorphic Design Patterns
 29.8 Interface Segregation
 
 Chapter 30: Building Polymorphic Systems
------------------------------------------
+--------------------------------------------------------------------------------
 30.1 Designing for Extensibility
 30.2 Open/Closed Principle
 30.3 Liskov Substitution Principle
@@ -324,7 +324,7 @@ Chapter 30: Building Polymorphic Systems
 30.8 Performance Considerations
 
 Chapter 31: Advanced Inheritance Patterns
-------------------------------------------
+--------------------------------------------------------------------------------
 31.1 Multiple Inheritance
 31.2 Method Resolution Order (MRO) in Detail
 31.3 Mixin Classes
@@ -339,7 +339,7 @@ PART VI-C: ABSTRACT PROGRAMMING AND INTERFACE DESIGN
 ================================================================================
 
 Chapter 32: Interface Design Principles
-----------------------------------------
+--------------------------------------------------------------------------------
 32.1 What are Interfaces?
 32.2 Interfaces vs. Abstract Classes
 32.3 Interface Segregation Principle
@@ -350,9 +350,9 @@ Chapter 32: Interface Design Principles
 32.8 Interface Documentation
 
 Chapter 33: Multiple Interface Implementation
-----------------------------------------------
+--------------------------------------------------------------------------------
 33.1 Implementing Multiple Interfaces
-33.2 Combining Behaviors Through Interfaces
+33.2 Combining Behaviours Through Interfaces
 33.3 Interface Composition Patterns
 33.4 Managing Method Name Conflicts
 33.5 Interface Hierarchies
@@ -361,7 +361,7 @@ Chapter 33: Multiple Interface Implementation
 33.8 Common Pitfalls and Solutions
 
 Chapter 34: Abstract Factory Pattern
--------------------------------------
+--------------------------------------------------------------------------------
 34.1 What is the Abstract Factory Pattern?
 34.2 Factory Method vs. Abstract Factory
 34.3 Defining Abstract Factory Interfaces
@@ -373,7 +373,7 @@ Chapter 34: Abstract Factory Pattern
 34.9 Benefits and Trade-offs
 
 Chapter 35: Strategy Pattern
------------------------------
+--------------------------------------------------------------------------------
 35.1 What is the Strategy Pattern?
 35.2 Defining Strategy Interfaces
 35.3 Concrete Strategy Implementations
@@ -384,7 +384,7 @@ Chapter 35: Strategy Pattern
 35.8 Benefits and Trade-offs
 
 Chapter 36: Combining Design Patterns
---------------------------------------
+--------------------------------------------------------------------------------
 36.1 Factory + Strategy Combination
 36.2 Abstract Factory + Template Method
 36.3 Strategy + Decorator Patterns
@@ -395,7 +395,7 @@ Chapter 36: Combining Design Patterns
 36.8 Real-World Pattern Usage
 
 Chapter 37: Building Flexible Systems
---------------------------------------
+--------------------------------------------------------------------------------
 37.1 Plugin Architectures
 37.2 Extensible System Design
 37.3 Hot-Swappable Components
@@ -406,7 +406,7 @@ Chapter 37: Building Flexible Systems
 37.8 Backward Compatibility
 
 Chapter 38: Advanced Abstraction Techniques
---------------------------------------------
+--------------------------------------------------------------------------------
 38.1 Layered Abstractions
 38.2 Abstraction Levels
 38.3 Leaky Abstractions
@@ -421,7 +421,7 @@ PART VII: DATA STRUCTURES AND COLLECTIONS
 ================================================================================
 
 Chapter 39: Command-Line Arguments
------------------------------------
+--------------------------------------------------------------------------------
 39.1 The sys Module
 39.2 Understanding sys.argv
 39.3 Accessing Command-Line Arguments
@@ -430,7 +430,7 @@ Chapter 39: Command-Line Arguments
 39.6 Command-Line Data Processing
 
 Chapter 40: Lists
------------------
+--------------------------------------------------------------------------------
 40.1 What are Lists?
 40.2 Creating Lists
 40.3 List Indexing and Slicing
@@ -445,7 +445,7 @@ Chapter 40: Lists
 40.12 When to Use Lists
 
 Chapter 41: Tuples
-------------------
+--------------------------------------------------------------------------------
 41.1 What are Tuples?
 41.2 Creating Tuples
 41.3 Tuple Immutability
@@ -459,7 +459,7 @@ Chapter 41: Tuples
 41.11 Tuples vs. Lists
 
 Chapter 42: Sets
-----------------
+--------------------------------------------------------------------------------
 42.1 What are Sets?
 42.2 Creating Sets
 42.3 Set Uniqueness Property
@@ -476,7 +476,7 @@ Chapter 42: Sets
 42.10 Practical Set Applications
 
 Chapter 43: Dictionaries
-------------------------
+--------------------------------------------------------------------------------
 43.1 What are Dictionaries?
 43.2 Creating Dictionaries
 43.3 Key-Value Pairs
@@ -496,7 +496,7 @@ Chapter 43: Dictionaries
 43.12 When to Use Dictionaries
 
 Chapter 44: Generators and Iteration
--------------------------------------
+--------------------------------------------------------------------------------
 44.1 What are Generators?
 44.2 The yield Keyword
 44.3 Generator Functions
@@ -511,7 +511,7 @@ Chapter 44: Generators and Iteration
 44.12 The typing.Generator Type Hint
 
 Chapter 45: Comprehensions
----------------------------
+--------------------------------------------------------------------------------
 45.1 What are Comprehensions?
 45.2 List Comprehensions
    45.2.1 Basic Syntax
@@ -531,7 +531,7 @@ Chapter 45: Comprehensions
 45.8 Performance Considerations
 
 Chapter 46: Working with Collections
--------------------------------------
+--------------------------------------------------------------------------------
 46.1 Choosing the Right Data Structure
 46.2 Collection Performance Characteristics
 46.3 Common Collection Patterns
@@ -545,16 +545,16 @@ PART VII-B: MODULES AND PACKAGES
 ================================================================================
 
 Chapter 47: Introduction to Modules
-------------------------------------
+--------------------------------------------------------------------------------
 47.1 What are Modules?
 47.2 Why Use Modules?
 47.3 Module Files (.py)
 47.4 The Module Search Path
 47.5 How Python Finds Modules
-47.6 Code Organization Benefits
+47.6 Code Organisation Benefits
 
 Chapter 48: Basic Import Statements
-------------------------------------
+--------------------------------------------------------------------------------
 48.1 The import Statement
 48.2 Importing Entire Modules
 48.3 Using Module Functions (module.function())
@@ -563,7 +563,7 @@ Chapter 48: Basic Import Statements
 48.6 Module Namespaces
 
 Chapter 49: from...import Statements
--------------------------------------
+--------------------------------------------------------------------------------
 49.1 Importing Specific Functions
 49.2 from module import function
 49.3 Importing Multiple Items
@@ -572,7 +572,7 @@ Chapter 49: from...import Statements
 49.6 Namespace Considerations
 
 Chapter 50: Import Aliases
----------------------------
+--------------------------------------------------------------------------------
 50.1 The as Keyword
 50.2 import module as alias
 50.3 from module import function as alias
@@ -581,17 +581,17 @@ Chapter 50: Import Aliases
 50.6 Improving Code Readability
 
 Chapter 51: Packages
----------------------
+--------------------------------------------------------------------------------
 51.1 What are Packages?
 51.2 Package Directories
 51.3 The __init__.py File
-51.4 Package Initialization
+51.4 Package Initialisation
 51.5 Creating Your First Package
 51.6 Nested Packages (Subpackages)
 51.7 Package Structure Best Practices
 
 Chapter 52: The __init__.py Sacred Scroll
-------------------------------------------
+--------------------------------------------------------------------------------
 52.1 Purpose of __init__.py
 52.2 Empty vs. Populated __init__.py
 52.3 Controlling Package Interface
@@ -602,7 +602,7 @@ Chapter 52: The __init__.py Sacred Scroll
 52.8 Information Hiding with __init__.py
 
 Chapter 53: Absolute Imports
------------------------------
+--------------------------------------------------------------------------------
 53.1 What are Absolute Imports?
 53.2 Full Import Paths
 53.3 from package.module import function
@@ -611,7 +611,7 @@ Chapter 53: Absolute Imports
 53.6 Absolute Import Best Practices
 
 Chapter 54: Relative Imports
------------------------------
+--------------------------------------------------------------------------------
 54.1 What are Relative Imports?
 54.2 Dot Notation (. and ..)
 54.3 from . import module
@@ -622,7 +622,7 @@ Chapter 54: Relative Imports
 54.8 Relative Import Limitations
 
 Chapter 55: Absolute vs. Relative Imports
-------------------------------------------
+--------------------------------------------------------------------------------
 55.1 The Great Pathway Debate
 55.2 Advantages of Absolute Imports
 55.3 Advantages of Relative Imports
@@ -633,7 +633,7 @@ Chapter 55: Absolute vs. Relative Imports
 55.8 PEP 8 Recommendations
 
 Chapter 56: Circular Dependencies
-----------------------------------
+--------------------------------------------------------------------------------
 56.1 What are Circular Dependencies?
 56.2 The Circular Import Problem
 56.3 Why Circular Imports Fail
@@ -642,7 +642,7 @@ Chapter 56: Circular Dependencies
 56.6 The Danger of Circular Imports
 
 Chapter 57: Breaking Circular Dependencies
--------------------------------------------
+--------------------------------------------------------------------------------
 57.1 Late Imports (Import Inside Functions)
 57.2 Dependency Injection
 57.3 Shared/Common Modules
@@ -653,13 +653,13 @@ Chapter 57: Breaking Circular Dependencies
 57.8 Design Patterns to Avoid Circularity
 
 Chapter 58: Module and Package Best Practices
-----------------------------------------------
-58.1 Organizing Code into Modules
+--------------------------------------------------------------------------------
+58.1 Organising Code into Modules
 58.2 When to Create a Package
 58.3 Flat vs. Nested Package Structures
 58.4 Module Naming Conventions
 58.5 Package Naming Conventions
-58.6 Import Statement Organization
+58.6 Import Statement Organisation
 58.7 Avoiding Common Import Pitfalls
 58.8 Documentation for Modules and Packages
 
@@ -668,7 +668,7 @@ PART VIII: FILE I/O AND STREAMS
 ================================================================================
 
 Chapter 59: Introduction to File Operations
---------------------------------------------
+--------------------------------------------------------------------------------
 59.1 What is File I/O?
 59.2 Why File Operations Matter
 59.3 File Paths and Locations
@@ -677,7 +677,7 @@ Chapter 59: Introduction to File Operations
 59.6 Common File Operation Pitfalls
 
 Chapter 60: Reading Files
---------------------------
+--------------------------------------------------------------------------------
 60.1 The open() Function
 60.2 File Modes ('r', 'w', 'a', 'r+')
 60.3 Reading Entire Files (read())
@@ -688,7 +688,7 @@ Chapter 60: Reading Files
 60.8 File Encoding
 
 Chapter 61: Writing Files
---------------------------
+--------------------------------------------------------------------------------
 61.1 Opening Files for Writing
 61.2 Write Mode vs. Append Mode
 61.3 The write() Method
@@ -698,7 +698,7 @@ Chapter 61: Writing Files
 61.7 File Permissions
 
 Chapter 62: Context Managers and the with Statement
-----------------------------------------------------
+--------------------------------------------------------------------------------
 62.1 What are Context Managers?
 62.2 The with Statement
 62.3 Automatic Resource Management
@@ -710,7 +710,7 @@ Chapter 62: Context Managers and the with Statement
 62.9 Exception Safety with with
 
 Chapter 63: Standard Streams
------------------------------
+--------------------------------------------------------------------------------
 63.1 Understanding Standard I/O
 63.2 Standard Input (stdin)
 63.3 Standard Output (stdout)
@@ -723,7 +723,7 @@ Chapter 63: Standard Streams
 63.10 Separating Normal Output from Errors
 
 Chapter 64: File Operations Best Practices
--------------------------------------------
+--------------------------------------------------------------------------------
 64.1 Always Use Context Managers
 64.2 Handle File Not Found Errors
 64.3 Handle Permission Errors
@@ -738,7 +738,7 @@ PART IX: EXCEPTION HANDLING AND ERROR MANAGEMENT
 ================================================================================
 
 Chapter 65: Introduction to Exception Handling
------------------------------------------------
+--------------------------------------------------------------------------------
 65.1 What are Exceptions?
 65.2 Why Exception Handling Matters
 65.3 Errors vs. Exceptions
@@ -747,7 +747,7 @@ Chapter 65: Introduction to Exception Handling
 65.6 Building Robust Applications
 
 Chapter 66: Basic Exception Handling
--------------------------------------
+--------------------------------------------------------------------------------
 66.1 The try Block
 66.2 The except Block
 66.3 Catching Specific Exceptions
@@ -756,7 +756,7 @@ Chapter 66: Basic Exception Handling
 66.6 Exception Handling Flow
 
 Chapter 67: Built-in Exception Types
--------------------------------------
+--------------------------------------------------------------------------------
 67.1 ValueError - Invalid Data
 67.2 TypeError - Wrong Type of Data
 67.3 ZeroDivisionError - Division by Zero
@@ -770,7 +770,7 @@ Chapter 67: Built-in Exception Types
 67.11 Choosing the Right Exception Type
 
 Chapter 68: Multiple Exception Handling
-----------------------------------------
+--------------------------------------------------------------------------------
 68.1 Catching Multiple Exception Types
 68.2 Multiple except Blocks
 68.3 Catching Multiple Exceptions in One Block
@@ -779,19 +779,19 @@ Chapter 68: Multiple Exception Handling
 68.6 Best Practices for Multiple Handlers
 
 Chapter 69: Custom Exceptions
-------------------------------
+--------------------------------------------------------------------------------
 69.1 When to Create Custom Exceptions
 69.2 Defining Custom Exception Classes
 69.3 Inheriting from Exception
 69.4 Creating Exception Hierarchies
 69.5 Custom Error Messages
 69.6 Adding Custom Attributes to Exceptions
-69.7 Organizing Domain-Specific Exceptions
+69.7 Organising Domain-Specific Exceptions
 69.8 Benefits of Custom Exceptions
 
 Chapter 70: The finally Block
-------------------------------
-70.1 What is the finally Block?
+--------------------------------------------------------------------------------
+70.1 What is the `finally` Block?
 70.2 Guaranteed Cleanup with finally
 70.3 Resource Management
 70.4 finally vs. except
@@ -801,7 +801,7 @@ Chapter 70: The finally Block
 70.8 Combining with Context Managers
 
 Chapter 71: Raising Exceptions
--------------------------------
+--------------------------------------------------------------------------------
 71.1 The raise Keyword
 71.2 When to Raise Exceptions
 71.3 Raising Built-in Exceptions
@@ -812,7 +812,7 @@ Chapter 71: Raising Exceptions
 71.8 Input Validation with Exceptions
 
 Chapter 72: Exception Handling Best Practices
-----------------------------------------------
+--------------------------------------------------------------------------------
 72.1 Don't Catch Everything
 72.2 Be Specific with Exception Types
 72.3 Fail Fast vs. Defensive Programming
@@ -823,9 +823,9 @@ Chapter 72: Exception Handling Best Practices
 72.8 Performance Considerations
 
 Chapter 73: Data Validation and Integrity
-------------------------------------------
+--------------------------------------------------------------------------------
 73.1 Input Validation Techniques
-73.2 Data Sanitization
+73.2 Data Sanitisation
 73.3 Boundary Checking
 73.4 Type Validation
 73.5 Range Validation
@@ -833,7 +833,7 @@ Chapter 73: Data Validation and Integrity
 73.7 Maintaining Data Integrity
 
 Chapter 74: Combining Exception Handling with File I/O
--------------------------------------------------------
+--------------------------------------------------------------------------------
 74.1 File Operations and Error Handling
 74.2 Handling FileNotFoundError
 74.3 Handling PermissionError
@@ -846,19 +846,19 @@ Chapter 74: Combining Exception Handling with File I/O
 PART X: DESIGN PRINCIPLES AND BEST PRACTICES
 ================================================================================
 
-Chapter 75: Code Organization
-------------------------------
-75.1 File Organization and Naming
+Chapter 75: Code Organisation
+--------------------------------------------------------------------------------
+75.1 File Organisation and Naming
 75.2 One Class Per File Guidelines
 75.3 Module Structure
 75.4 Avoiding Global Variables
-75.5 Organizing Related Functionality
+75.5 Organising Related Functionality
 75.6 Import Statements and Dependencies
 75.7 Project Structure Best Practices
 75.8 Package Layout Patterns
 
 Chapter 76: Object-Oriented Design Principles
-----------------------------------------------
+--------------------------------------------------------------------------------
 76.1 Single Responsibility Principle
 76.2 Separation of Concerns
 76.3 DRY Principle (Don't Repeat Yourself)
@@ -871,7 +871,7 @@ Chapter 76: Object-Oriented Design Principles
 76.10 Dependency Inversion Principle
 
 Chapter 77: Building Complex Systems
--------------------------------------
+--------------------------------------------------------------------------------
 77.1 Managing Multiple Objects
 77.2 Object Collections
 77.3 Object Relationships
@@ -884,7 +884,7 @@ Chapter 77: Building Complex Systems
 77.10 Modular Architecture Patterns
 
 Chapter 78: Testing and Debugging
-----------------------------------
+--------------------------------------------------------------------------------
 78.1 Testing Functions
 78.2 Testing Classes and Objects
 78.3 Understanding Imports
@@ -901,7 +901,7 @@ PART XI: PYTHON DEVELOPMENT ENVIRONMENT AND TOOLS
 ================================================================================
 
 Chapter 79: Introduction to Python Environments
-------------------------------------------------
+--------------------------------------------------------------------------------
 79.1 What are Python Environments?
 79.2 Global vs. Local Environments
 79.3 Why Isolated Environments Matter
@@ -911,7 +911,7 @@ Chapter 79: Introduction to Python Environments
 79.7 Development vs. Production Environments
 
 Chapter 80: Virtual Environments (venv)
-----------------------------------------
+--------------------------------------------------------------------------------
 80.1 What is a Virtual Environment?
 80.2 The venv Module
 80.3 Creating Virtual Environments
@@ -924,7 +924,7 @@ Chapter 80: Virtual Environments (venv)
 80.10 Common Virtual Environment Issues
 
 Chapter 81: Package Management with pip
-----------------------------------------
+--------------------------------------------------------------------------------
 81.1 What is pip?
 81.2 Installing Packages
 81.3 Uninstalling Packages
@@ -939,7 +939,7 @@ Chapter 81: Package Management with pip
 81.12 pip Best Practices
 
 Chapter 82: Advanced Package Management with Poetry
-----------------------------------------------------
+--------------------------------------------------------------------------------
 82.1 What is Poetry?
 82.2 Poetry vs. pip
 82.3 Installing Poetry
@@ -954,7 +954,7 @@ Chapter 82: Advanced Package Management with Poetry
 82.12 Publishing Packages with Poetry
 
 Chapter 83: Dependency Management
-----------------------------------
+--------------------------------------------------------------------------------
 83.1 Understanding Dependencies
 83.2 Direct vs. Transitive Dependencies
 83.3 Dependency Resolution
@@ -967,7 +967,7 @@ Chapter 83: Dependency Management
 83.10 Security Considerations
 
 Chapter 84: Environment Variables
-----------------------------------
+--------------------------------------------------------------------------------
 84.1 What are Environment Variables?
 84.2 Reading Environment Variables (os.environ)
 84.3 Setting Environment Variables
@@ -978,7 +978,7 @@ Chapter 84: Environment Variables
 84.8 Environment Variable Precedence
 
 Chapter 85: Configuration Management
--------------------------------------
+--------------------------------------------------------------------------------
 85.1 Configuration vs. Code
 85.2 The .env File Format
 85.3 python-dotenv Library
@@ -991,7 +991,7 @@ Chapter 85: Configuration Management
 85.10 Secrets Management
 
 Chapter 86: Security and .gitignore
-------------------------------------
+--------------------------------------------------------------------------------
 86.1 Never Commit Secrets
 86.2 The .gitignore File
 86.3 .gitignore Patterns
@@ -1004,7 +1004,7 @@ Chapter 86: Security and .gitignore
 86.10 Auditing and Compliance
 
 Chapter 87: Python Project Structure
--------------------------------------
+--------------------------------------------------------------------------------
 87.1 Standard Project Layout
 87.2 src/ Layout vs. Flat Layout
 87.3 Directory Organization
@@ -1017,7 +1017,7 @@ Chapter 87: Python Project Structure
 87.10 Project Metadata
 
 Chapter 88: Development Workflow
----------------------------------
+--------------------------------------------------------------------------------
 88.1 Setting Up New Projects
 88.2 Environment Setup Checklist
 88.3 Dependency Installation Workflow
@@ -1034,7 +1034,7 @@ PART XII: DATA VALIDATION AND SERIALIZATION
 ================================================================================
 
 Chapter 89: Introduction to Data Validation
---------------------------------------------
+--------------------------------------------------------------------------------
 89.1 Why Data Validation Matters
 89.2 Validation vs. Type Checking
 89.3 Runtime Validation
@@ -1044,7 +1044,7 @@ Chapter 89: Introduction to Data Validation
 89.7 Manual Validation vs. Libraries
 
 Chapter 90: Introduction to Pydantic
--------------------------------------
+--------------------------------------------------------------------------------
 90.1 What is Pydantic?
 90.2 Why Use Pydantic?
 90.3 Installing Pydantic
@@ -1054,7 +1054,7 @@ Chapter 90: Introduction to Pydantic
 90.7 Pydantic in Real-World Applications
 
 Chapter 91: BaseModel Fundamentals
------------------------------------
+--------------------------------------------------------------------------------
 91.1 The BaseModel Class
 91.2 Creating Your First Model
 91.3 Model Instantiation
@@ -1067,7 +1067,7 @@ Chapter 91: BaseModel Fundamentals
 91.10 Model Immutability
 
 Chapter 92: Field Validation
------------------------------
+--------------------------------------------------------------------------------
 92.1 The Field Function
 92.2 Field Constraints
 92.3 String Constraints (min_length, max_length, pattern)
@@ -1080,7 +1080,7 @@ Chapter 92: Field Validation
 92.10 Computed Fields
 
 Chapter 93: Type Annotations and Validation
---------------------------------------------
+--------------------------------------------------------------------------------
 93.1 Basic Type Validation
 93.2 Standard Library Types
 93.3 Optional and Union Types
@@ -1093,7 +1093,7 @@ Chapter 93: Type Annotations and Validation
 93.10 Type Coercion
 
 Chapter 94: Enums and Literal Types
-------------------------------------
+--------------------------------------------------------------------------------
 94.1 Python Enum with Pydantic
 94.2 Defining Enums for Models
 94.3 String Enums
@@ -1101,10 +1101,10 @@ Chapter 94: Enums and Literal Types
 94.5 Literal Types
 94.6 Enum Validation
 94.7 When to Use Enums vs. Literals
-94.8 Enum Serialization
+94.8 Enum Serialisation
 
 Chapter 95: Custom Validation
-------------------------------
+--------------------------------------------------------------------------------
 95.1 Model Validators
 95.2 The @model_validator Decorator
 95.3 Before vs. After Mode
@@ -1117,7 +1117,7 @@ Chapter 95: Custom Validation
 95.10 Raising ValidationError
 
 Chapter 96: Nested Models
---------------------------
+--------------------------------------------------------------------------------
 96.1 Model Composition
 96.2 Nested Model Definition
 96.3 One-to-One Relationships
@@ -1130,7 +1130,7 @@ Chapter 96: Nested Models
 96.10 Model Reusability
 
 Chapter 97: Advanced Pydantic Features
----------------------------------------
+--------------------------------------------------------------------------------
 97.1 Model Configuration
 97.2 Extra Fields Handling
 97.3 Alias Generators
@@ -1138,12 +1138,12 @@ Chapter 97: Advanced Pydantic Features
 97.5 Model Validation Context
 97.6 Strict Mode
 97.7 Custom JSON Encoders
-97.8 Serialization Customization
+97.8 Serialisation Customisation
 97.9 Root Validators
 97.10 Generic Models
 
 Chapter 98: Error Handling and ValidationError
------------------------------------------------
+--------------------------------------------------------------------------------
 98.1 Understanding ValidationError
 98.2 Error Structure
 98.3 Error Messages
@@ -1156,7 +1156,7 @@ Chapter 98: Error Handling and ValidationError
 98.10 Error Recovery Strategies
 
 Chapter 99: Pydantic Best Practices
-------------------------------------
+--------------------------------------------------------------------------------
 99.1 Model Design Principles
 99.2 Validation Performance
 99.3 Model Organization
@@ -1173,7 +1173,7 @@ PART XIII: FUNCTIONAL PROGRAMMING
 ================================================================================
 
 Chapter 100: Introduction to Functional Programming
-----------------------------------------------------
+--------------------------------------------------------------------------------
 100.1 What is Functional Programming?
 100.2 Functional vs. Imperative Programming
 100.3 Functional vs. Object-Oriented Programming
@@ -1185,7 +1185,7 @@ Chapter 100: Introduction to Functional Programming
 100.9 When to Use Functional Programming
 
 Chapter 101: Lambda Expressions
---------------------------------
+--------------------------------------------------------------------------------
 101.1 What are Lambda Functions?
 101.2 Lambda Syntax
 101.3 Anonymous Functions
@@ -1196,7 +1196,7 @@ Chapter 101: Lambda Expressions
 101.8 Multi-line Lambdas (Avoiding)
 
 Chapter 102: Map, Filter, and Reduce
--------------------------------------
+--------------------------------------------------------------------------------
 102.1 The map() Function
 102.2 Mapping Transformations
 102.3 The filter() Function
@@ -1208,7 +1208,7 @@ Chapter 102: Map, Filter, and Reduce
 102.9 Performance Considerations
 
 Chapter 103: First-Class Functions
------------------------------------
+--------------------------------------------------------------------------------
 103.1 Functions as Objects
 103.2 Assigning Functions to Variables
 103.3 Passing Functions as Arguments
@@ -1219,7 +1219,7 @@ Chapter 103: First-Class Functions
 103.8 Function Identity
 
 Chapter 104: Higher-Order Functions
-------------------------------------
+--------------------------------------------------------------------------------
 104.1 What are Higher-Order Functions?
 104.2 Functions Taking Functions
 104.3 Functions Returning Functions
@@ -1230,7 +1230,7 @@ Chapter 104: Higher-Order Functions
 104.8 Custom Higher-Order Functions
 
 Chapter 105: Closures
----------------------
+--------------------------------------------------------------------------------
 105.1 What are Closures?
 105.2 Lexical Scoping
 105.3 Nested Functions
@@ -1242,7 +1242,7 @@ Chapter 105: Closures
 105.9 When to Use Closures
 
 Chapter 106: The nonlocal Keyword
-----------------------------------
+--------------------------------------------------------------------------------
 106.1 Understanding nonlocal
 106.2 Modifying Enclosing Scope
 106.3 nonlocal vs. global
@@ -1252,7 +1252,7 @@ Chapter 106: The nonlocal Keyword
 106.7 Best Practices with nonlocal
 
 Chapter 107: The functools Module
-----------------------------------
+--------------------------------------------------------------------------------
 107.1 Introduction to functools
 107.2 functools.reduce
 107.3 functools.partial
@@ -1265,7 +1265,7 @@ Chapter 107: The functools Module
 107.10 functools.cache (Python 3.9+)
 
 Chapter 108: Decorators Fundamentals
--------------------------------------
+--------------------------------------------------------------------------------
 108.1 What are Decorators?
 108.2 Decorator Syntax
 108.3 The @ Symbol
@@ -1276,18 +1276,18 @@ Chapter 108: Decorators Fundamentals
 108.8 Built-in Decorators
 
 Chapter 109: Creating Custom Decorators
-----------------------------------------
+--------------------------------------------------------------------------------
 109.1 Basic Decorator Pattern
 109.2 Wrapper Functions
 109.3 *args and **kwargs
 109.4 Returning Values from Decorated Functions
 109.5 Decorators with Arguments
 109.6 Decorator Factories
-109.7 Parameterized Decorators
+109.7 Parameterised Decorators
 109.8 Class-Based Decorators
 
 Chapter 110: Advanced Decorator Patterns
------------------------------------------
+--------------------------------------------------------------------------------
 110.1 Chaining Decorators
 110.2 Decorator Order
 110.3 Stateful Decorators
@@ -1300,7 +1300,7 @@ Chapter 110: Advanced Decorator Patterns
 110.10 Authentication Decorators
 
 Chapter 111: Method Decorators
--------------------------------
+--------------------------------------------------------------------------------
 111.1 @staticmethod
 111.2 @classmethod
 111.3 @property
@@ -1311,7 +1311,7 @@ Chapter 111: Method Decorators
 111.8 Abstract Method Decorators
 
 Chapter 112: The operator Module
----------------------------------
+--------------------------------------------------------------------------------
 112.1 Introduction to operator
 112.2 Arithmetic Operators
 112.3 Comparison Operators
@@ -1322,7 +1322,7 @@ Chapter 112: The operator Module
 112.8 Using operator with functools
 
 Chapter 113: Functional Programming Best Practices
----------------------------------------------------
+--------------------------------------------------------------------------------
 113.1 Pure Function Design
 113.2 Avoiding Side Effects
 113.3 Immutable Data Structures
@@ -1339,20 +1339,20 @@ APPENDICES
 ================================================================================
 
 Appendix A: Python Style Guide (PEP 8)
----------------------------------------
+--------------------------------------------------------------------------------
 A.1 Naming Conventions Summary
 A.2 Indentation and Whitespace
 A.3 Line Length
 A.4 Comments and Documentation
 
 Appendix B: Common Python Patterns
------------------------------------
+--------------------------------------------------------------------------------
 B.1 Input Validation Patterns
 B.2 Error Handling Basics
 B.3 Common Idioms
 
 Appendix C: Quick Reference
-----------------------------
+--------------------------------------------------------------------------------
 C.1 Built-in Functions
 C.2 Common String Methods
 C.3 Operator Precedence

@@ -1,7 +1,7 @@
 PART I: PYTHON FUNDAMENTALS
 ================================================================================
 
-Chapter 1: Introduction to Python
+[Chapter 1: Introduction to Python](https://github.com/spacotto/grimoire/blob/main/python/01/chapter01.md)
 --------------------------------------------------------------------------------
 1. What is Python
 2. Python Philosophy and Design Principles

@@ -388,14 +388,14 @@ Chapter 36: Combining Design Patterns
 
 Chapter 37: Building Flexible Systems
 --------------------------------------------------------------------------------
-3.1. Plugin Architectures
-3.2. Extensible System Design
-3.3. Hot-Swappable Components
-3.4. Configuration-Driven Behavior
-3.5. Dynamic Feature Registration
-3.6 Versioning and Compatibility
-3.7 Migration Strategies
-3.8 Backward Compatibility
+1. Plugin Architectures
+2. Extensible System Design
+3. Hot-Swappable Components
+4. Configuration-Driven Behaviour
+5. Dynamic Feature Registration
+6. Versioning and Compatibility
+7. Migration Strategies
+8. Backward Compatibility
 
 Chapter 38: Advanced Abstraction Techniques
 --------------------------------------------------------------------------------
@@ -404,9 +404,9 @@ Chapter 38: Advanced Abstraction Techniques
 3. Leaky Abstractions
 4. Abstraction Trade-offs
 5. When to Abstract
-6 Over-Abstraction Pitfalls
-7 Balancing Flexibility and Simplicity
-8 Refactoring Toward Abstractions
+6. Over-Abstraction Pitfalls
+7. Balancing Flexibility and Simplicity
+8. Refactoring Toward Abstractions
 
 
 PART VII: DATA STRUCTURES AND COLLECTIONS
@@ -552,7 +552,7 @@ Chapter 48: Basic Import Statements
 3. Using Module Functions (module.function())
 4. Importing Multiple Modules
 5. Import Statement Placement
-6 Module Namespaces
+6. Module Namespaces
 
 Chapter 49: from...import Statements
 --------------------------------------------------------------------------------
@@ -561,7 +561,7 @@ Chapter 49: from...import Statements
 3. Importing Multiple Items
 4. `from` module `import *`
 5. Why to Avoid `import *`
-6 Namespace Considerations
+6. Namespace Considerations
 
 Chapter 50: Import Aliases
 --------------------------------------------------------------------------------
@@ -579,8 +579,8 @@ Chapter 51: Packages
 3. The `__init__.py` File
 4. Package Initialisation
 5. Creating Your First Package
-6 Nested Packages (Subpackages)
-7 Package Structure Best Practices
+6. Nested Packages (Subpackages)
+7. Package Structure Best Practices
 
 Chapter 52: The `__init__.py` Sacred Scroll
 --------------------------------------------------------------------------------
@@ -589,9 +589,9 @@ Chapter 52: The `__init__.py` Sacred Scroll
 3. Controlling Package Interface
 4. Exposing Functions at Package Level
 5. Package Metadata (`__version__`, `__author__`)
-6 Selective Import Exposure
-7 Package-Level vs. Module-Level Access
-8 Information Hiding with `__init__.py`
+6. Selective Import Exposure
+7. Package-Level vs. Module-Level Access
+8. Information Hiding with `__init__.py`
 
 Chapter 53: Absolute Imports
 --------------------------------------------------------------------------------
@@ -661,23 +661,23 @@ PART IX: FILE I/O AND STREAMS
 
 Chapter 5.9: Introduction to File Operations
 --------------------------------------------------------------------------------
-5.1. What is File I/O?
-5.2. Why File Operations Matter
-5.3. File Paths and Locations
-5.4. Text Files vs. Binary Files
-5.5. File Operations Overview
-5.6 Common File Operation Pitfalls
+1. What is File I/O?
+2. Why File Operations Matter
+3. File Paths and Locations
+4. Text Files vs. Binary Files
+5. File Operations Overview
+6. Common File Operation Pitfalls
 
 Chapter 60: Reading Files
 --------------------------------------------------------------------------------
 1. The open() Function
-2. File Modes ('r', 'w', 'a', 'r+')
-3. Reading Entire Files (read())
-4. Reading Line by Line (readline())
-5. Reading All Lines (readlines())
-6 File Objects and Iteration
-7 Closing Files with close()
-8 File Encoding
+2. File Modes (`'r'`, `'w'`, `'a'`, `'r+'`)
+3. Reading Entire Files (`read()`)
+4. Reading Line by Line (`readline()`)
+5. Reading All Lines (`readlines()`)
+6. File Objects and Iteration
+7. Closing Files with `close()`
+8. File Encoding
 
 Chapter 61.: Writing Files
 --------------------------------------------------------------------------------
@@ -686,22 +686,22 @@ Chapter 61.: Writing Files
 3. The write() Method
 4. The writelines() Method
 5. Overwriting vs. Appending
-6 Flushing Buffers
-7 File Permissions
+6. Flushing Buffers
+7. File Permissions
 
-Chapter 62.: Context Managers and the with Statement
+Chapter 62: Context Managers and the with Statement
 --------------------------------------------------------------------------------
 1. What are Context Managers?
 2. The with Statement
 3. Automatic Resource Management
-4. RAII Principle (Resource Acquisition Is Initialization)
+4. RAII Principle (Resource Acquisition Is Initialisation)
 5. Why with is Essential
-6 Context Managers with Files
-7 Multiple Files in with Statements
-8 Creating Custom Context Managers
-9 Exception Safety with with
+6. Context Managers with Files
+7. Multiple Files in with Statements
+8. Creating Custom Context Managers
+9. Exception Safety with with
 
-Chapter 63.: Standard Streams
+Chapter 63: Standard Streams
 --------------------------------------------------------------------------------
 1. Understanding Standard I/O
 2. Standard Input (stdin)
@@ -714,7 +714,7 @@ Chapter 63.: Standard Streams
 9 When to Use Each Stream
 1.0 Separating Normal Output from Errors
 
-Chapter 64.: File Operations Best Practices
+Chapter 64: File Operations Best Practices
 --------------------------------------------------------------------------------
 61. Always Use Context Managers
 62. Handle File Not Found Errors
@@ -729,7 +729,7 @@ Chapter 64.: File Operations Best Practices
 PART X: EXCEPTION HANDLING AND ERROR MANAGEMENT
 ================================================================================
 
-Chapter 65.: Introduction to Exception Handling
+Chapter 65: Introduction to Exception Handling
 --------------------------------------------------------------------------------
 61. What are Exceptions?
 62. Why Exception Handling Matters

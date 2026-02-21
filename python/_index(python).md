@@ -2,7 +2,7 @@ PART I: PYTHON FUNDAMENTALS
 ================================================================================
 
 Chapter 1: Introduction to Python
-----------------------------------
+--------------------------------------------------------------------------------
 1. What is Python
 2. Python Philosophy and Design Principles
 3. Setting Up Your Python Environment (Python 3.10+)
@@ -10,20 +10,20 @@ Chapter 1: Introduction to Python
 5. Using the flake8 Linter
 
 ## Chapter 2: Program Structure and Execution
-----------------------------------
-2.1 How Python Programs Execute
-2.2 The if __name__ == "__main__": Pattern
-2.3 Understanding __name__ and Module Execution
-2.4 Shebang Lines and Script Permissions
-2.5 When to Use Main Blocks vs. Functions
+--------------------------------------------------------------------------------
+1. How Python Programs Execute
+2. The if __name__ == "__main__": Pattern
+3. Understanding __name__ and Module Execution
+4. Shebang Lines and Script Permissions
+5. When to Use Main Blocks vs. Functions
 
 ## Chapter 3: Basic Input and Output
-----------------------------------
-3.1 The print() Function
-3.2 Basic Output Formatting
-3.3 The input() Function
-3.4 Reading User Input
-3.5 Input Prompts and User Interaction
+--------------------------------------------------------------------------------
+1. The print() Function
+2. Basic Output Formatting
+3. The input() Function
+4. Reading User Input
+5. Input Prompts and User Interaction
 
 
 PART II: VARIABLES AND DATA TYPES

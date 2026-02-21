@@ -6,24 +6,24 @@ Chapter 1: Introduction to Python
 1. What is Python
 2. Python Philosophy and Design Principles
 3. Setting Up Your Python Environment (`Python 3.10+`)
- Code Quality Standards and `PEP 8`
- Using the `flake8` Linter
+4. Code Quality Standards and `PEP 8`
+5. Using the `flake8` Linter
 
 Chapter 2: Program Structure and Execution
 --------------------------------------------------------------------------------
 1. How Python Programs Execute
 2. The if `__name__ == "__main__"`: Pattern
 3. Understanding `__name__` and Module Execution
- Shebang Lines and Script Permissions
- When to Use Main Blocks vs. Functions
+4. Shebang Lines and Script Permissions
+5. When to Use Main Blocks vs. Functions
 
 Chapter 3: Basic Input and Output
 --------------------------------------------------------------------------------
 1. The `print()` Function
 2. Basic Output Formatting
 3. The `input()` Function
- Reading User Input
- Input Prompts and User Interaction
+4. Reading User Input
+5. Input Prompts and User Interaction
 
 
 PART II: VARIABLES AND DATA TYPES
@@ -460,40 +460,40 @@ Chapter 41: Tuples
 
 Chapter 42: Sets
 --------------------------------------------------------------------------------
-42.1 What are Sets?
-42.2 Creating Sets
-42.3 Set Uniqueness Property
-42.4 Adding and Removing Elements
-42.5 Set Operations
-   42.1 Union (|)
-   42.2 Intersection (&)
-   42.3 Difference (-)
-   42.4 Symmetric Difference (^)
-42.6 Set Methods (union, intersection, difference)
-42.7 Subset and Superset Operations
-42.8 Set Comprehensions (Preview)
-42.9 When to Use Sets
-42.10 Practical Set Applications
+1 What are Sets?
+2 Creating Sets
+3 Set Uniqueness Property
+4 Adding and Removing Elements
+5 Set Operations
+   1 Union (|)
+   2 Intersection (&)
+   3 Difference (-)
+   4 Symmetric Difference (^)
+6 Set Methods (union, intersection, difference)
+7 Subset and Superset Operations
+8 Set Comprehensions (Preview)
+9 When to Use Sets
+10 Practical Set Applications
 
 Chapter 43: Dictionaries
 --------------------------------------------------------------------------------
-43.1 What are Dictionaries?
-43.2 Creating Dictionaries
-43.3 Key-Value Pairs
-43.4 Accessing Values
-43.5 Adding and Updating Items
-43.6 Removing Items (del, pop, popitem, clear)
-43.7 Dictionary Methods
-   43.1 keys()
-   43.2 values()
-   43.3 items()
-   43.4 get()
-   43.5 update()
-43.8 Checking for Key Existence
-43.9 Iterating Over Dictionaries
-43.10 Nested Dictionaries
-43.11 Dictionary Comprehensions (Preview)
-43.12 When to Use Dictionaries
+1 What are Dictionaries?
+2 Creating Dictionaries
+3 Key-Value Pairs
+4 Accessing Values
+5 Adding and Updating Items
+6 Removing Items (del, pop, popitem, clear)
+7 Dictionary Methods
+   1 keys()
+   2 values()
+   3 items()
+   4 get()
+   5 update()
+8 Checking for Key Existence
+9 Iterating Over Dictionaries
+10 Nested Dictionaries
+11 Dictionary Comprehensions (Preview)
+12 When to Use Dictionaries
 
 Chapter 44: Generators and Iteration
 --------------------------------------------------------------------------------
@@ -514,14 +514,14 @@ Chapter 45: Comprehensions
 --------------------------------------------------------------------------------
 41 What are Comprehensions?
 42 List Comprehensions
-   42.1 Basic Syntax
-   42.2 Filtering with Conditions
-   42.3 Transforming Data
-   42.4 Nested List Comprehensions
+   1 Basic Syntax
+   2 Filtering with Conditions
+   3 Transforming Data
+   4 Nested List Comprehensions
 43 Dictionary Comprehensions
-   43.1 Creating Dictionaries from Sequences
-   43.2 Filtering Dictionaries
-   43.3 Transforming Keys and Values
+   1 Creating Dictionaries from Sequences
+   2 Filtering Dictionaries
+   3 Transforming Keys and Values
 44 Set Comprehensions
    41 Creating Sets from Sequences
    42 Deduplication with Comprehensions
@@ -573,42 +573,42 @@ Chapter 49: from...import Statements
 
 Chapter 50: Import Aliases
 --------------------------------------------------------------------------------
-50.1 The as Keyword
-50.2 import module as alias
-50.3 from module import function as alias
-50.4 When to Use Aliases
-50.5 Common Aliasing Conventions
-50.6 Improving Code Readability
+1 The as Keyword
+2 import module as alias
+3 from module import function as alias
+4 When to Use Aliases
+5 Common Aliasing Conventions
+6 Improving Code Readability
 
 Chapter 51: Packages
 --------------------------------------------------------------------------------
-51.1 What are Packages?
-51.2 Package Directories
-51.3 The __init__.py File
-51.4 Package Initialisation
-51.5 Creating Your First Package
-51.6 Nested Packages (Subpackages)
-51.7 Package Structure Best Practices
+1 What are Packages?
+2 Package Directories
+3 The __init__.py File
+4 Package Initialisation
+5 Creating Your First Package
+6 Nested Packages (Subpackages)
+7 Package Structure Best Practices
 
 Chapter 52: The __init__.py Sacred Scroll
 --------------------------------------------------------------------------------
-52.1 Purpose of __init__.py
-52.2 Empty vs. Populated __init__.py
-52.3 Controlling Package Interface
-52.4 Exposing Functions at Package Level
-52.5 Package Metadata (__version__, __author__)
-52.6 Selective Import Exposure
-52.7 Package-Level vs. Module-Level Access
-52.8 Information Hiding with __init__.py
+1 Purpose of __init__.py
+2 Empty vs. Populated __init__.py
+3 Controlling Package Interface
+4 Exposing Functions at Package Level
+5 Package Metadata (__version__, __author__)
+6 Selective Import Exposure
+7 Package-Level vs. Module-Level Access
+8 Information Hiding with __init__.py
 
 Chapter 53: Absolute Imports
 --------------------------------------------------------------------------------
-53.1 What are Absolute Imports?
-53.2 Full Import Paths
-53.3 from package.module import function
-53.4 Clarity and Explicitness
-53.5 When to Use Absolute Imports
-53.6 Absolute Import Best Practices
+1 What are Absolute Imports?
+2 Full Import Paths
+3 from package.module import function
+4 Clarity and Explicitness
+5 When to Use Absolute Imports
+6 Absolute Import Best Practices
 
 Chapter 54: Relative Imports
 --------------------------------------------------------------------------------
@@ -678,49 +678,49 @@ Chapter 59: Introduction to File Operations
 
 Chapter 60: Reading Files
 --------------------------------------------------------------------------------
-60.1 The open() Function
-60.2 File Modes ('r', 'w', 'a', 'r+')
-60.3 Reading Entire Files (read())
-60.4 Reading Line by Line (readline())
-60.5 Reading All Lines (readlines())
-60.6 File Objects and Iteration
-60.7 Closing Files with close()
-60.8 File Encoding
+1 The open() Function
+2 File Modes ('r', 'w', 'a', 'r+')
+3 Reading Entire Files (read())
+4 Reading Line by Line (readline())
+5 Reading All Lines (readlines())
+6 File Objects and Iteration
+7 Closing Files with close()
+8 File Encoding
 
 Chapter 61: Writing Files
 --------------------------------------------------------------------------------
-61.1 Opening Files for Writing
-61.2 Write Mode vs. Append Mode
-61.3 The write() Method
-61.4 The writelines() Method
-61.5 Overwriting vs. Appending
-61.6 Flushing Buffers
-61.7 File Permissions
+1 Opening Files for Writing
+2 Write Mode vs. Append Mode
+3 The write() Method
+4 The writelines() Method
+5 Overwriting vs. Appending
+6 Flushing Buffers
+7 File Permissions
 
 Chapter 62: Context Managers and the with Statement
 --------------------------------------------------------------------------------
-62.1 What are Context Managers?
-62.2 The with Statement
-62.3 Automatic Resource Management
-62.4 RAII Principle (Resource Acquisition Is Initialization)
-62.5 Why with is Essential
-62.6 Context Managers with Files
-62.7 Multiple Files in with Statements
-62.8 Creating Custom Context Managers
-62.9 Exception Safety with with
+1 What are Context Managers?
+2 The with Statement
+3 Automatic Resource Management
+4 RAII Principle (Resource Acquisition Is Initialization)
+5 Why with is Essential
+6 Context Managers with Files
+7 Multiple Files in with Statements
+8 Creating Custom Context Managers
+9 Exception Safety with with
 
 Chapter 63: Standard Streams
 --------------------------------------------------------------------------------
-63.1 Understanding Standard I/O
-63.2 Standard Input (stdin)
-63.3 Standard Output (stdout)
-63.4 Standard Error (stderr)
-63.5 Reading from sys.stdin
-63.6 Writing to sys.stdout
-63.7 Writing to sys.stderr
-63.8 Stream Redirection
-63.9 When to Use Each Stream
-63.10 Separating Normal Output from Errors
+1 Understanding Standard I/O
+2 Standard Input (stdin)
+3 Standard Output (stdout)
+4 Standard Error (stderr)
+5 Reading from sys.stdin
+6 Writing to sys.stdout
+7 Writing to sys.stderr
+8 Stream Redirection
+9 When to Use Each Stream
+10 Separating Normal Output from Errors
 
 Chapter 64: File Operations Best Practices
 --------------------------------------------------------------------------------
@@ -791,46 +791,46 @@ Chapter 69: Custom Exceptions
 
 Chapter 70: The finally Block
 --------------------------------------------------------------------------------
-70.1 What is the `finally` Block?
-70.2 Guaranteed Cleanup with finally
-70.3 Resource Management
-70.4 finally vs. except
-70.5 When finally Always Executes
-70.6 Cleanup Patterns
-70.7 File and Connection Cleanup
-70.8 Combining with Context Managers
+1 What is the `finally` Block?
+2 Guaranteed Cleanup with finally
+3 Resource Management
+4 finally vs. except
+5 When finally Always Executes
+6 Cleanup Patterns
+7 File and Connection Cleanup
+8 Combining with Context Managers
 
 Chapter 71: Raising Exceptions
 --------------------------------------------------------------------------------
-71.1 The raise Keyword
-71.2 When to Raise Exceptions
-71.3 Raising Built-in Exceptions
-71.4 Raising Custom Exceptions
-71.5 Creating Helpful Error Messages
-71.6 Re-raising Exceptions
-71.7 Exception Chaining
-71.8 Input Validation with Exceptions
+1 The raise Keyword
+2 When to Raise Exceptions
+3 Raising Built-in Exceptions
+4 Raising Custom Exceptions
+5 Creating Helpful Error Messages
+6 Re-raising Exceptions
+7 Exception Chaining
+8 Input Validation with Exceptions
 
 Chapter 72: Exception Handling Best Practices
 --------------------------------------------------------------------------------
-72.1 Don't Catch Everything
-72.2 Be Specific with Exception Types
-72.3 Fail Fast vs. Defensive Programming
-72.4 Logging Exceptions
-72.5 User-Friendly Error Messages
-72.6 Error Recovery Strategies
-72.7 When Not to Use Exceptions
-72.8 Performance Considerations
+1 Don't Catch Everything
+2 Be Specific with Exception Types
+3 Fail Fast vs. Defensive Programming
+4 Logging Exceptions
+5 User-Friendly Error Messages
+6 Error Recovery Strategies
+7 When Not to Use Exceptions
+8 Performance Considerations
 
 Chapter 73: Data Validation and Integrity
 --------------------------------------------------------------------------------
-73.1 Input Validation Techniques
-73.2 Data Sanitisation
-73.3 Boundary Checking
-73.4 Type Validation
-73.5 Range Validation
-73.6 Format Validation
-73.7 Maintaining Data Integrity
+1 Input Validation Techniques
+2 Data Sanitisation
+3 Boundary Checking
+4 Type Validation
+5 Range Validation
+6 Format Validation
+7 Maintaining Data Integrity
 
 Chapter 74: Combining Exception Handling with File I/O
 --------------------------------------------------------------------------------
@@ -912,59 +912,59 @@ Chapter 79: Introduction to Python Environments
 
 Chapter 80: Virtual Environments (venv)
 --------------------------------------------------------------------------------
-80.1 What is a Virtual Environment?
-80.2 The venv Module
-80.3 Creating Virtual Environments
-80.4 Activating Virtual Environments
-80.5 Deactivating Virtual Environments
-80.6 Virtual Environment Structure
-80.7 Detecting Virtual Environments Programmatically
-80.8 Virtual Environment Best Practices
-80.9 When to Use Virtual Environments
-80.10 Common Virtual Environment Issues
+1 What is a Virtual Environment?
+2 The venv Module
+3 Creating Virtual Environments
+4 Activating Virtual Environments
+5 Deactivating Virtual Environments
+6 Virtual Environment Structure
+7 Detecting Virtual Environments Programmatically
+8 Virtual Environment Best Practices
+9 When to Use Virtual Environments
+10 Common Virtual Environment Issues
 
 Chapter 81: Package Management with pip
 --------------------------------------------------------------------------------
-81.1 What is pip?
-81.2 Installing Packages
-81.3 Uninstalling Packages
-81.4 Listing Installed Packages
-81.5 Upgrading Packages
-81.6 pip freeze and Requirements Files
-81.7 requirements.txt Format
-81.8 Installing from Requirements Files
-81.9 pip show - Package Information
-81.10 pip search and Package Discovery
-81.11 Version Pinning and Constraints
-81.12 pip Best Practices
+1 What is pip?
+2 Installing Packages
+3 Uninstalling Packages
+4 Listing Installed Packages
+5 Upgrading Packages
+6 pip freeze and Requirements Files
+7 requirements.txt Format
+8 Installing from Requirements Files
+9 pip show - Package Information
+10 pip search and Package Discovery
+11 Version Pinning and Constraints
+12 pip Best Practices
 
 Chapter 82: Advanced Package Management with Poetry
 --------------------------------------------------------------------------------
-82.1 What is Poetry?
-82.2 Poetry vs. pip
-82.3 Installing Poetry
-82.4 pyproject.toml Format
-82.5 poetry.lock Files
-82.6 poetry install
-82.7 poetry add and remove
-82.8 poetry update
-82.9 Dependency Groups (dev, test, docs)
-82.10 Poetry Virtual Environment Management
-82.11 poetry run
-82.12 Publishing Packages with Poetry
+1 What is Poetry?
+2 Poetry vs. pip
+3 Installing Poetry
+4 pyproject.toml Format
+5 poetry.lock Files
+6 poetry install
+7 poetry add and remove
+8 poetry update
+9 Dependency Groups (dev, test, docs)
+10 Poetry Virtual Environment Management
+11 poetry run
+12 Publishing Packages with Poetry
 
 Chapter 83: Dependency Management
 --------------------------------------------------------------------------------
-83.1 Understanding Dependencies
-83.2 Direct vs. Transitive Dependencies
-83.3 Dependency Resolution
-83.4 Version Constraints and Semantic Versioning
-83.5 Dependency Conflicts
-83.6 Pinning Dependencies
-83.7 requirements.txt vs. pyproject.toml
-83.8 Lock Files
-83.9 Reproducible Builds
-83.10 Security Considerations
+1 Understanding Dependencies
+2 Direct vs. Transitive Dependencies
+3 Dependency Resolution
+4 Version Constraints and Semantic Versioning
+5 Dependency Conflicts
+6 Pinning Dependencies
+7 requirements.txt vs. pyproject.toml
+8 Lock Files
+9 Reproducible Builds
+10 Security Considerations
 
 Chapter 84: Environment Variables
 --------------------------------------------------------------------------------
@@ -1045,52 +1045,52 @@ Chapter 89: Introduction to Data Validation
 
 Chapter 90: Introduction to Pydantic
 --------------------------------------------------------------------------------
-90.1 What is Pydantic?
-90.2 Why Use Pydantic?
-90.3 Installing Pydantic
-90.4 Pydantic v1 vs. v2
-90.5 Key Pydantic Features
-90.6 When to Use Pydantic
-90.7 Pydantic in Real-World Applications
+1 What is Pydantic?
+2 Why Use Pydantic?
+3 Installing Pydantic
+4 Pydantic v1 vs. v2
+5 Key Pydantic Features
+6 When to Use Pydantic
+7 Pydantic in Real-World Applications
 
 Chapter 91: BaseModel Fundamentals
 --------------------------------------------------------------------------------
-91.1 The BaseModel Class
-91.2 Creating Your First Model
-91.3 Model Instantiation
-91.4 Automatic Type Conversion
-91.5 Accessing Model Fields
-91.6 Model Serialization
-91.7 model_dump() and model_dump_json()
-91.8 Model Comparison
-91.9 Model Copying
-91.10 Model Immutability
+1 The BaseModel Class
+2 Creating Your First Model
+3 Model Instantiation
+4 Automatic Type Conversion
+5 Accessing Model Fields
+6 Model Serialization
+7 model_dump() and model_dump_json()
+8 Model Comparison
+9 Model Copying
+10 Model Immutability
 
 Chapter 92: Field Validation
 --------------------------------------------------------------------------------
-92.1 The Field Function
-92.2 Field Constraints
-92.3 String Constraints (min_length, max_length, pattern)
-92.4 Numeric Constraints (ge, le, gt, lt)
-92.5 Default Values
-92.6 Required vs. Optional Fields
-92.7 Field Descriptions and Metadata
-92.8 Field Aliases
-92.9 Field Examples
-92.10 Computed Fields
+1 The Field Function
+2 Field Constraints
+3 String Constraints (min_length, max_length, pattern)
+4 Numeric Constraints (ge, le, gt, lt)
+5 Default Values
+6 Required vs. Optional Fields
+7 Field Descriptions and Metadata
+8 Field Aliases
+9 Field Examples
+10 Computed Fields
 
 Chapter 93: Type Annotations and Validation
 --------------------------------------------------------------------------------
-93.1 Basic Type Validation
-93.2 Standard Library Types
-93.3 Optional and Union Types
-93.4 List and Dict Validation
-93.5 Tuple Validation
-93.6 Datetime and Date Validation
-93.7 UUID Validation
-93.8 Email and URL Validation
-93.9 Custom Types
-93.10 Type Coercion
+1 Basic Type Validation
+2 Standard Library Types
+3 Optional and Union Types
+4 List and Dict Validation
+5 Tuple Validation
+6 Datetime and Date Validation
+7 UUID Validation
+8 Email and URL Validation
+9 Custom Types
+10 Type Coercion
 
 Chapter 94: Enums and Literal Types
 --------------------------------------------------------------------------------
@@ -1174,49 +1174,49 @@ PART XIII: FUNCTIONAL PROGRAMMING
 
 Chapter 100: Introduction to Functional Programming
 --------------------------------------------------------------------------------
-100.1 What is Functional Programming?
-100.2 Functional vs. Imperative Programming
-100.3 Functional vs. Object-Oriented Programming
-100.4 Pure Functions
-100.5 Immutability
-100.6 Side Effects
-100.7 Functional Programming in Python
-100.8 Benefits of Functional Programming
-100.9 When to Use Functional Programming
+1 What is Functional Programming?
+2 Functional vs. Imperative Programming
+3 Functional vs. Object-Oriented Programming
+4 Pure Functions
+5 Immutability
+6 Side Effects
+7 Functional Programming in Python
+8 Benefits of Functional Programming
+9 When to Use Functional Programming
 
 Chapter 101: Lambda Expressions
 --------------------------------------------------------------------------------
-101.1 What are Lambda Functions?
-101.2 Lambda Syntax
-101.3 Anonymous Functions
-101.4 Lambda vs. def
-101.5 When to Use Lambda
-101.6 Lambda Limitations
-101.7 Lambda with Built-in Functions
-101.8 Multi-line Lambdas (Avoiding)
+1 What are Lambda Functions?
+2 Lambda Syntax
+3 Anonymous Functions
+4 Lambda vs. def
+5 When to Use Lambda
+6 Lambda Limitations
+7 Lambda with Built-in Functions
+8 Multi-line Lambdas (Avoiding)
 
 Chapter 102: Map, Filter, and Reduce
 --------------------------------------------------------------------------------
-102.1 The map() Function
-102.2 Mapping Transformations
-102.3 The filter() Function
-102.4 Filtering Data
-102.5 The reduce() Function
-102.6 functools.reduce
-102.7 Combining map, filter, reduce
-102.8 List Comprehensions vs. map/filter
-102.9 Performance Considerations
+1 The map() Function
+2 Mapping Transformations
+3 The filter() Function
+4 Filtering Data
+5 The reduce() Function
+6 functools.reduce
+7 Combining map, filter, reduce
+8 List Comprehensions vs. map/filter
+9 Performance Considerations
 
 Chapter 103: First-Class Functions
 --------------------------------------------------------------------------------
-103.1 Functions as Objects
-103.2 Assigning Functions to Variables
-103.3 Passing Functions as Arguments
-103.4 Returning Functions from Functions
-103.5 Storing Functions in Data Structures
-103.6 Function Attributes
-103.7 callable() Function
-103.8 Function Identity
+1 Functions as Objects
+2 Assigning Functions to Variables
+3 Passing Functions as Arguments
+4 Returning Functions from Functions
+5 Storing Functions in Data Structures
+6 Function Attributes
+7 callable() Function
+8 Function Identity
 
 Chapter 104: Higher-Order Functions
 --------------------------------------------------------------------------------

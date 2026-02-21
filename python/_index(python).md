@@ -32,25 +32,25 @@ PART II: VARIABLES AND DATA TYPES
 Chapter 4: Variables and Assignment
 --------------------------------------------------------------------------------
 1. Understanding Variables
-2. Variable Assignment and the = Operator
-3. Naming Conventions (snake_case)
+2. Variable Assignment and the `=` Operator
+3. Naming Conventions (`snake_case`)
 4. Valid Variable Names
 5. Reassigning Variables
 
 Chapter 5: Primitive Data Types
 --------------------------------------------------------------------------------
-1. Integers (int)
-2. Strings (str)
+1. Integers (`int`)
+2. Strings (`str`)
 3. Understanding Type in Python
 4. Type Conversion
-5. Converting Strings to Integers: int()
-6 Converting Numbers to Strings: str()
+5. Converting Strings to Integers: `int()`
+6 Converting Numbers to Strings: `str()`
 
 Chapter 6: String Operations
 --------------------------------------------------------------------------------
 1. String Concatenation
 2. String Methods
-3. Case Manipulation (capitalize(), upper(), lower())
+3. Case Manipulation (`capitalize()`, `upper()`, `lower()`)
 4. String Formatting
 5. F-strings (Formatted String Literals)
 6. Combining Different Data Types in Output
@@ -61,7 +61,7 @@ PART III: OPERATORS AND EXPRESSIONS
 
 Chapter 7: Arithmetic Operations
 --------------------------------------------------------------------------------
-1. Basic Arithmetic Operators (+, -, *, /)
+1. Basic Arithmetic Operators (`+`, `-`, `*`, `/`)
 2. Addition and Subtraction
 3. Multiplication and Division
 4. Performing Calculations with Variables
@@ -69,12 +69,12 @@ Chapter 7: Arithmetic Operations
 
 Chapter 8: Comparison Operators
 --------------------------------------------------------------------------------
-1. Greater Than (>)
-2. Less Than (<)
-3. Equal To (==)
-4. Not Equal To (!=)
-5. Greater Than or Equal (>=)
-6. Less Than or Equal (<=)
+1. Greater Than (`>`)
+2. Less Than (`<`)
+3. Equal To (`==`)
+4. Not Equal To (`!=`)
+5. Greater Than or Equal (`>=`)
+6. Less Than or Equal (`<=`)
 7. Boolean Results
 
 
@@ -84,17 +84,17 @@ PART IV: CONTROL FLOW
 Chapter 9: Conditional Statements
 --------------------------------------------------------------------------------
 1. Making Decisions in Code
-2. The if Statement
-3. The else Clause
-4. The elif Statement
+2. The `if` Statement
+3. The `else` Clause
+4. The `elif` Statement
 5. Nested Conditionals
 6. Boolean Logic in Conditionals
 
 Chapter 10: Loops and Iteration
 --------------------------------------------------------------------------------
 1. Understanding Repetition
-2. The for Loop
-3. The range() Function
+2. The `for` Loop
+3. The `range()` Function
 4. Loop Variables and Counters
 5. Iterating Through Collections
 
@@ -153,7 +153,7 @@ Chapter 16: Classes and Objects
 1. Classes as Blueprints
 2. Objects as Instances
 3. The class Keyword
-4. Class Naming Conventions (PascalCase)
+4. Class Naming Conventions (`PascalCase`)
 5. Creating Your First Class
 6. Instantiating Objects
 7. Multiple Instances
@@ -163,7 +163,7 @@ Chapter 17: Attributes and Instance Variables
 1. Understanding Attributes
 2. Instance Variables
 3. The self Parameter
-4. Accessing Attributes (self.attribute)
+4. Accessing Attributes (`self.attribute`)
 5. Modifying Attributes
 6. Class Variables vs. Instance Variables
 
@@ -203,7 +203,7 @@ Chapter 21: Inheritance
 1. What is Inheritance?
 2. Parent Classes (Base Classes)
 3. Child Classes (Derived Classes)
-4. The super() Function
+4. The `super()` Function
 5. Calling Parent Constructors
 6. Overriding Methods
 7. Extending Parent Functionality
@@ -212,22 +212,22 @@ Chapter 21: Inheritance
 10. Inheritance Hierarchies
 11. Multi-Level Inheritance
 12. Code Reusability Through Inheritance
-13. IS-A Relationships
+13. `IS-A` Relationships
 
 Chapter 22: Advanced Method Types
 --------------------------------------------------------------------------------
 1. Instance Methods (Review)
 2. Class Methods
-   2.1. The `@classmethod` Decorator
-   2.2. The `cls` Parameter
-   2.3. When to Use Class Methods
+   1. The `@classmethod` Decorator
+   2. The `cls` Parameter
+   3. When to Use Class Methods
 3. Static Methods
-   3.1. The `@staticmethod` Decorator
-   3.2 Methods Without self or cls
-   3.3. When to Use Static Methods
+   1. The `@staticmethod` Decorator
+   2 Methods Without `self` or `cls`
+   3. When to Use Static Methods
 4. Choosing the Right Method Type
 
-Chapter 2.3.: Nested Classes and Composition
+Chapter 23: Nested Classes and Composition
 --------------------------------------------------------------------------------
 1. What are Nested Classes?
 2. Defining Classes Within Classes
@@ -235,8 +235,8 @@ Chapter 2.3.: Nested Classes and Composition
 4. Accessing Nested Classes
 5. Helper Classes and Organisation
 6. Namespace Management
-7 Composition vs. Inheritance
-8 HAS-A Relationships
+7. Composition vs. Inheritance
+8. `HAS-A` Relationships
 
 
 PART VI-B: ADVANCED OBJECT-ORIENTED PROGRAMMING

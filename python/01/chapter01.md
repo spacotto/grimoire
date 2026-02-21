@@ -80,7 +80,8 @@ pip freeze > requirements.txt     # save current dependencies
 
 ### Key Rules
 
-**Indentation:** Use 4 spaces per level — never tabs.
+#### Indentation
+Use 4 spaces per level — never tabs.
 
 ```python
 # ✅ Correct
@@ -92,9 +93,10 @@ def greet(name):
   print(f"Hello, {name}")
 ```
 
-**Line length:** Maximum 79 characters per line.
+#### Line length
+Maximum 79 characters per line.
 
-**Naming conventions:**
+#### Naming conventions
 
 ```python
 my_variable = 10          # variables & functions: snake_case
@@ -103,9 +105,11 @@ class MyClass:            # classes: PascalCase
     pass
 ```
 
-**Blank lines:** Two blank lines between top-level definitions; one between methods inside a class.
+#### Blank lines
+Two blank lines between top-level definitions; one between methods inside a class.
 
-**Imports:** One import per line, grouped in order: standard library → third-party → local.
+#### Imports
+One import per line, grouped in order: standard library → third-party → local.
 
 ```python
 import os
@@ -116,7 +120,8 @@ import requests
 from mymodule import helper
 ```
 
-**Spaces:** No extra spaces around operators inside brackets; spaces around binary operators.
+#### Spaces
+No extra spaces around operators inside brackets; spaces around binary operators.
 
 ```python
 x = 5 + 3       # ✅ binary operator

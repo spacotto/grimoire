@@ -1,5 +1,5 @@
 # Basic Exception Handling
-Exception handling lets a program respond to runtime errors gracefully instead of crashing. Python uses a try/except structure to isolate risky code, catch errors by type, recover with fallback logic, and resume normal execution — keeping programs stable and predictable.
+Exception handling lets a program respond to runtime errors gracefully instead of crashing. Python uses a `try/except` structure to isolate risky code, catch errors by type, recover with fallback logic, and resume normal execution — keeping programs stable and predictable.
 
 ## The `try` Block
 

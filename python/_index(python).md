@@ -5,7 +5,7 @@ Chapter 1: Introduction to Python
 --------------------------------------------------------------------------------
 1. What is Python
 2. Python Philosophy and Design Principles
-3. Setting Up Your Python Environment (`Python 3..1.0+`)
+3. Setting Up Your Python Environment (`Python 3.1.0+`)
 4. Code Quality Standards and `PEP 8`
 5. Using the `flake8` Linter
 

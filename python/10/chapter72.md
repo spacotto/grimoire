@@ -17,7 +17,8 @@ except ValueError as e:
     handle(e)
 ```
 
-Catching everything hides bugs. If something unexpected breaks, you want to know.
+>[!TIP]
+>Catching everything hides bugs. If something unexpected breaks, you want to know.
 
 ## Be Specific with Exception Types
 Catch the most specific exception possible. Python's exception hierarchy lets you target exactly what can go wrong.
@@ -28,7 +29,8 @@ except KeyError:
     result = default_value
 ```
 
-Use multiple `except` blocks when different errors need different handling. Avoid grouping unrelated exceptions together unless the response is identical.
+>[!TIP]
+>Use multiple `except` blocks when different errors need different handling. Avoid grouping unrelated exceptions together unless the response is identical.
 
 ## Fail Fast vs. Defensive Programming
 **Fail fast:** Raise errors immediately when something is invalid. Better to crash early with a clear message than to propagate bad state.
@@ -40,7 +42,8 @@ def set_age(age):
 
 **Defensive programming:** Anticipate failures and handle them gracefully — useful at system boundaries (APIs, user input, file I/O).
 
-Use fail fast internally; be defensive at external boundaries.
+>[!TIP]
+>Use fail fast internally; be defensive at external boundaries.
 
 ## Logging Exceptions
 Always log exceptions with enough context to reproduce the issue. Use `logging.exception()` inside an `except` block — it automatically captures the traceback.
@@ -54,7 +57,8 @@ except ConnectionError as e:
     raise
 ```
 
-Don't just log `str(e)` — you lose the stack trace. Avoid `print()` for error reporting in production.
+>[!TIP]
+>Don't just log `str(e)` — you lose the stack trace. Avoid `print()` for error reporting in production.
 
 ## User-Friendly Error Messages
 Internal exceptions and user-facing messages are different things. Translate technical errors at the boundary.
@@ -65,7 +69,8 @@ except FileNotFoundError:
     print(f"Config file not found: {path}. Please check the path and try again.")
 ```
 
-Never expose raw tracebacks to end users. Log the full error internally, show a clean message externally.
+>[!TIP]
+>Never expose raw tracebacks to end users. Log the full error internally, show a clean message externally.
 
 ## Error Recovery Strategies
 Common patterns:
@@ -98,7 +103,8 @@ except KeyError:
 value = my_dict.get(key)
 ```
 
-Avoid exceptions for: expected conditions, simple validation checks, branching logic. Use `if/else`, `.get()`, `hasattr()`, or `isinstance()` instead.
+>[!TIP]
+>Avoid exceptions for: expected conditions, simple validation checks, and branching logic. Use `if/else`, `.get()`, `hasattr()`, or `isinstance()` instead.
 
 ## Performance Considerations
 Exception handling has overhead — primarily when an exception is *raised*, not just when a `try` block is entered.

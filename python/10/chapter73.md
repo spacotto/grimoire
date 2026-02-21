@@ -54,8 +54,6 @@ def check_length(s: str, max_len: int) -> str:
 >[!TIP]
 >Always check list/dict sizes before iterating over untrusted input.
 
----
-
 ## Type Validation
 
 Python is dynamically typed — explicit type checks prevent silent failures.

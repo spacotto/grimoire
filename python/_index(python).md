@@ -1,4 +1,5 @@
-# PART I: PYTHON FUNDAMENTALS
+PART I: PYTHON FUNDAMENTALS
+================================================================================
 
 Chapter 1: Introduction to Python
 ----------------------------------

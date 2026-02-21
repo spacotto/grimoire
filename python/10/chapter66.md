@@ -22,7 +22,8 @@ except:
     print("Something went wrong.")
 ```
 
-> A bare `except` catches *everything*, including system-level exceptions. Avoid it in production code.
+>[!IMPORTANT]
+>A bare `except` catches **everything**, including system-level exceptions. Avoid it in production code.
 
 ## Catching Specific Exceptions
 
@@ -35,7 +36,7 @@ except ZeroDivisionError:
     print("Cannot divide by zero.")
 ```
 
-**Multiple exceptions — separate handlers:**
+### Multiple Exceptions (separate handlers)
 
 ```python
 try:
@@ -47,14 +48,14 @@ except ZeroDivisionError:
     print("Cannot divide by zero.")
 ```
 
-**Multiple exceptions — single handler:**
+### Multiple exceptions (single handler)
 
 ```python
 except (ValueError, ZeroDivisionError):
     print("Invalid input or division error.")
 ```
 
-**Accessing the exception object:**
+### Accessing the exception object
 
 ```python
 except ValueError as e:
@@ -75,7 +76,7 @@ except ValueError:
 
 ## Continuing Execution After Errors
 
-Code *after* the `try/except` block runs normally regardless of whether an exception occurred, as long as it was caught.
+Code **after** the `try/except` block runs normally regardless of whether an exception occurred, as long as it was caught.
 
 ```python
 try:

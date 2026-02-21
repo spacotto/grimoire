@@ -1,4 +1,4 @@
-# Python 3 — Custom Exceptions
+# Custom Exceptions
 Python's built-in exceptions cover common error scenarios, but real-world applications often need errors that carry domain-specific meaning. Custom exceptions make error handling more precise, readable, and maintainable by giving each failure mode a clear, intentional name.
 
 ## When to Create Custom Exceptions

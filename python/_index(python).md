@@ -44,7 +44,7 @@ Chapter 5: Primitive Data Types
 3. Understanding Type in Python
 4. Type Conversion
 5. Converting Strings to Integers: `int()`
-6 Converting Numbers to Strings: `str()`
+6. Converting Numbers to Strings: `str()`
 
 Chapter 6: String Operations
 --------------------------------------------------------------------------------
@@ -415,7 +415,7 @@ PART VII: DATA STRUCTURES AND COLLECTIONS
 Chapter 39: Command-Line Arguments
 --------------------------------------------------------------------------------
 1. The sys Module
-2. Understanding sys.argv
+2. Understanding `sys.argv`
 3. Accessing Command-Line Arguments
 4. Program Name vs. Arguments
 5. Processing Multiple Arguments
@@ -426,13 +426,13 @@ Chapter 40: Lists
 1. What are Lists?
 2. Creating Lists
 3. List Indexing and Slicing
-4. Adding Elements (append, insert, extend)
-5. Removing Elements (remove, pop, clear)
-6. List Operations (concatenation, repetition)
+4. Adding Elements (`append`, `insert`, `extend`)
+5. Removing Elements (`remove`, `pop`, `clear`)
+6. List Operations (`concatenation`, `repetition`)
 7. Common List Methods
 8. List Iteration
-9. Built-in Functions for Lists (len, sum, max, min)
-10. Sorting Lists (sort, sorted)
+9. Built-in Functions for Lists (`len`, `sum`, `max`, `min`)
+10. Sorting Lists (`sort`, `sorted`)
 11. List Comprehensions (Preview)
 12. When to Use Lists
 
@@ -490,17 +490,17 @@ Chapter 43: Dictionaries
 Chapter 44: Generators and Iteration
 --------------------------------------------------------------------------------
 1. What are Generators?
-2. The yield Keyword
+2. The `yield` Keyword
 3. Generator Functions
 4. Generator Expressions
-5. next() and iter()
+5. `next()` and `iter()`
 6. Lazy Evaluation
 7. Memory Efficiency with Generators
 8. Generator vs. List Performance
 9. Infinite Generators
 10. Generator Patterns
 11. When to Use Generators
-12. The typing.Generator Type Hint
+12. The `typing.Generator` Type Hint
 
 Chapter 45: Comprehensions
 --------------------------------------------------------------------------------
@@ -549,7 +549,7 @@ Chapter 48: Basic Import Statements
 --------------------------------------------------------------------------------
 1. The import Statement
 2. Importing Entire Modules
-3. Using Module Functions (module.function())
+3. Using Module Functions (`module.function()`)
 4. Importing Multiple Modules
 5. Import Statement Placement
 6. Module Namespaces
@@ -565,9 +565,9 @@ Chapter 49: from...import Statements
 
 Chapter 50: Import Aliases
 --------------------------------------------------------------------------------
-1. The as Keyword
-2. import module as alias
-3. from module import function as alias
+1. The `as` Keyword
+2. `import module as alias`
+3. `from module import function as alias`
 4. When to Use Aliases
 5. Common Aliasing Conventions
 6. Improving Code Readability
@@ -597,7 +597,7 @@ Chapter 53: Absolute Imports
 --------------------------------------------------------------------------------
 1. What are Absolute Imports?
 2. Full Import Paths
-3. from package.module import function
+3. `from package.module import function`
 4. Clarity and Explicitness
 5. When to Use Absolute Imports
 6. Absolute Import Best Practices
@@ -659,7 +659,7 @@ Chapter 58: Module and Package Best Practices
 PART IX: FILE I/O AND STREAMS
 ================================================================================
 
-Chapter 5.9: Introduction to File Operations
+Chapter 59: Introduction to File Operations
 --------------------------------------------------------------------------------
 1. What is File I/O?
 2. Why File Operations Matter
@@ -683,8 +683,8 @@ Chapter 61.: Writing Files
 --------------------------------------------------------------------------------
 1. Opening Files for Writing
 2. Write Mode vs. Append Mode
-3. The write() Method
-4. The writelines() Method
+3. The `write()` Method
+4. The `writelines()` Method
 5. Overwriting vs. Appending
 6. Flushing Buffers
 7. File Permissions
@@ -692,38 +692,38 @@ Chapter 61.: Writing Files
 Chapter 62: Context Managers and the with Statement
 --------------------------------------------------------------------------------
 1. What are Context Managers?
-2. The with Statement
+2. The `with` Statement
 3. Automatic Resource Management
 4. RAII Principle (Resource Acquisition Is Initialisation)
-5. Why with is Essential
-6. Context Managers with Files
-7. Multiple Files in with Statements
+5. Why `with` is Essential
+6. Context Managers `with` Files
+7. Multiple Files in `with` Statements
 8. Creating Custom Context Managers
-9. Exception Safety with with
+9. Exception Safety `with with`
 
 Chapter 63: Standard Streams
 --------------------------------------------------------------------------------
 1. Understanding Standard I/O
-2. Standard Input (stdin)
-3. Standard Output (stdout)
-4. Standard Error (stderr)
-5. Reading from sys.stdin
-6 Writing to sys.stdout
-7 Writing to sys.stderr
-8 Stream Redirection
-9 When to Use Each Stream
-1.0 Separating Normal Output from Errors
+2. Standard Input (`stdin`)
+3. Standard Output (`stdout`)
+4. Standard Error (`stderr`)
+5. Reading `from sys.stdin`
+6. Writing `to sys.stdout`
+7. Writing `to sys.stderr`
+8. Stream Redirection
+9. When to Use Each Stream
+10. Separating Normal Output from Errors
 
 Chapter 64: File Operations Best Practices
 --------------------------------------------------------------------------------
-61. Always Use Context Managers
-62. Handle File Not Found Errors
-63. Handle Permission Errors
-64. Verify File Existence
-65. Resource Cleanup Patterns
-66 File Operation Error Handling
-67 Performance Considerations
-68 Security Considerations
+1. Always Use Context Managers
+2. Handle File Not Found Errors
+3. Handle Permission Errors
+4. Verify File Existence
+5. Resource Cleanup Patterns
+6. File Operation Error Handling
+7. Performance Considerations
+8. Security Considerations
 
 
 PART X: EXCEPTION HANDLING AND ERROR MANAGEMENT
@@ -731,162 +731,162 @@ PART X: EXCEPTION HANDLING AND ERROR MANAGEMENT
 
 Chapter 65: Introduction to Exception Handling
 --------------------------------------------------------------------------------
-61. What are Exceptions?
-62. Why Exception Handling Matters
-63. Errors vs. Exceptions
-64. The Cost of Unhandled Exceptions
-65. Defensive Programming Principles
-66 Building Robust Applications
+1. What are Exceptions?
+2. Why Exception Handling Matters
+3. Errors vs. Exceptions
+4. The Cost of Unhandled Exceptions
+5. Defensive Programming Principles
+6. Building Robust Applications
 
 Chapter 66: Basic Exception Handling
 --------------------------------------------------------------------------------
-61. The try Block
-62. The except Block
-63. Catching Specific Exceptions
-64. Basic Error Recovery
-65. Continuing Execution After Errors
-66 Exception Handling Flow
+1. The `try` Block
+2. The `except` Block
+3. Catching Specific Exceptions
+4. Basic Error Recovery
+5. Continuing Execution After Errors
+6. Exception Handling Flow
 
 Chapter 67: Built-in Exception Types
 --------------------------------------------------------------------------------
-61. ValueError - Invalid Data
-62. TypeError - Wrong Type of Data
-63. ZeroDivisionError - Division by Zero
-64. FileNotFoundError - Missing Files
-65. PermissionError - Access Denied
-66 KeyError - Missing Dictionary Keys
-67 IndexError - List Index Out of Range
-68 AttributeError - Missing Attributes
-69 ImportError and ModuleNotFoundError
-61.0 The Exception Hierarchy
-61.1. Choosing the Right Exception Type
+1. `ValueError` - Invalid Data
+2. `TypeError` - Wrong Type of Data
+3. `ZeroDivisionError` - Division by Zero
+4. `FileNotFoundError` - Missing Files
+5. `PermissionError` - Access Denied
+6. `KeyError` - Missing Dictionary Keys
+7. `IndexError` - List Index Out of Range
+8. `AttributeError` - Missing Attributes
+9. `ImportError` and `ModuleNotFoundError`
+10. The Exception Hierarchy
+11. Choosing the Right Exception Type
 
 Chapter 68: Multiple Exception Handling
 --------------------------------------------------------------------------------
-61. Catching Multiple Exception Types
-62. Multiple except Blocks
-63. Catching Multiple Exceptions in One Block
-64. Exception Handler Order
-65. Specific vs. General Exception Handlers
-66 Best Practices for Multiple Handlers
+1. Catching Multiple Exception Types
+2. Multiple except Blocks
+3. Catching Multiple Exceptions in One Block
+4. Exception Handler Order
+5. Specific vs. General Exception Handlers
+6. Best Practices for Multiple Handlers
 
 Chapter 69: Custom Exceptions
 --------------------------------------------------------------------------------
-61. When to Create Custom Exceptions
-62. Defining Custom Exception Classes
-63. Inheriting from Exception
-64. Creating Exception Hierarchies
-65. Custom Error Messages
-66 Adding Custom Attributes to Exceptions
-67 Organising Domain-Specific Exceptions
-68 Benefits of Custom Exceptions
+1. When to Create Custom Exceptions
+2. Defining Custom Exception Classes
+3. Inheriting from Exception
+4. Creating Exception Hierarchies
+5. Custom Error Messages
+6. Adding Custom Attributes to Exceptions
+7. Organising Domain-Specific Exceptions
+8. Benefits of Custom Exceptions
 
 Chapter 70: The finally Block
 --------------------------------------------------------------------------------
 1. What is the `finally` Block?
-2. Guaranteed Cleanup with finally
+2. Guaranteed Cleanup with `finally`
 3. Resource Management
-4. finally vs. except
+4. `finally` vs. `except`
 5. When finally Always Executes
-6 Cleanup Patterns
-7 File and Connection Cleanup
-8 Combining with Context Managers
+6. Cleanup Patterns
+7. File and Connection Cleanup
+8. Combining with Context Managers
 
-Chapter 71.: Raising Exceptions
+Chapter 71: Raising Exceptions
 --------------------------------------------------------------------------------
-1. The raise Keyword
+1. The `raise` Keyword
 2. When to Raise Exceptions
 3. Raising Built-in Exceptions
 4. Raising Custom Exceptions
 5. Creating Helpful Error Messages
-6 Re-raising Exceptions
-7 Exception Chaining
-8 Input Validation with Exceptions
+6. Re-raising Exceptions
+7. Exception Chaining
+8. Input Validation with Exceptions
 
-Chapter 72.: Exception Handling Best Practices
+Chapter 72: Exception Handling Best Practices
 --------------------------------------------------------------------------------
 1. Don't Catch Everything
 2. Be Specific with Exception Types
 3. Fail Fast vs. Defensive Programming
 4. Logging Exceptions
 5. User-Friendly Error Messages
-6 Error Recovery Strategies
-7 When Not to Use Exceptions
-8 Performance Considerations
+6. Error Recovery Strategies
+7. When Not to Use Exceptions
+8. Performance Considerations
 
-Chapter 73.: Data Validation and Integrity
+Chapter 73: Data Validation and Integrity
 --------------------------------------------------------------------------------
 1. Input Validation Techniques
 2. Data Sanitisation
 3. Boundary Checking
 4. Type Validation
 5. Range Validation
-6 Format Validation
-7 Maintaining Data Integrity
+6. Format Validation
+7. Maintaining Data Integrity
 
-Chapter 74.: Combining Exception Handling with File I/O
+Chapter 74: Combining Exception Handling with File I/O
 --------------------------------------------------------------------------------
-71. File Operations and Error Handling
-72. Handling FileNotFoundError
-73. Handling PermissionError
-74. Handling IOError and OSError
-75. Safe File Operations Pattern
-76 Using with and try Together
-77 Crisis Response in File Systems
+1. File Operations and Error Handling
+2. Handling FileNotFoundError
+3. Handling PermissionError
+4. Handling IOError and OSError
+5. Safe File Operations Pattern
+6. Using with and try Together
+7. Crisis Response in File Systems
 
 
 PART XI: DESIGN PRINCIPLES AND BEST PRACTICES
 ================================================================================
 
-Chapter 75.: Code Organisation
+Chapter 75: Code Organisation
 --------------------------------------------------------------------------------
-71. File Organisation and Naming
-72. One Class Per File Guidelines
-73. Module Structure
-74. Avoiding Global Variables
-75. Organising Related Functionality
-76 Import Statements and Dependencies
-77 Project Structure Best Practices
-78 Package Layout Patterns
+1. File Organisation and Naming
+2. One Class Per File Guidelines
+3. Module Structure
+4. Avoiding Global Variables
+5. Organising Related Functionality
+6. Import Statements and Dependencies
+7. Project Structure Best Practices
+8. Package Layout Patterns
 
 Chapter 76: Object-Oriented Design Principles
 --------------------------------------------------------------------------------
-71. Single Responsibility Principle
-72. Separation of Concerns
-73. DRY Principle (Don't Repeat Yourself)
-74. Code Reusability
-75. Maintainability
-76 Designing for Change
-77 Open/Closed Principle
-78 Liskov Substitution Principle
-79 Interface Segregation Principle
-71.0 Dependency Inversion Principle
+1. Single Responsibility Principle
+2. Separation of Concerns
+3. DRY Principle (Don't Repeat Yourself)
+4. Code Reusability
+5. Maintainability
+6. Designing for Change
+7. Open/Closed Principle
+8. Liskov Substitution Principle
+9. Interface Segregation Principle
+10. Dependency Inversion Principle
 
 Chapter 77: Building Complex Systems
 --------------------------------------------------------------------------------
-71. Managing Multiple Objects
-72. Object Collections
-73. Object Relationships
-74. System Architecture Planning
-75. Scalable Code Design
-76 Interacting Components
-77 Pipeline Architectures
-78 Data Processing Systems
-79 Extensible Plugin Systems
-71.0 Modular Architecture Patterns
+1. Managing Multiple Objects
+2. Object Collections
+3. Object Relationships
+4. System Architecture Planning
+5. Scalable Code Design
+6. Interacting Components
+7. Pipeline Architectures
+8. Data Processing Systems
+9. Extensible Plugin Systems
+10. Modular Architecture Patterns
 
 Chapter 78: Testing and Debugging
 --------------------------------------------------------------------------------
-71. Testing Functions
-72. Testing Classes and Objects
-73. Understanding Imports
-74. Error Messages and Troubleshooting
-75. Test-Driven Development Basics
-76 Writing Test Cases
-77 Testing Polymorphic Systems
-78 Integration Testing
-79 Testing Abstract Interfaces
-71.0 Mocking and Test Doubles
+1. Testing Functions
+2. Testing Classes and Objects
+3. Understanding Imports
+4. Error Messages and Troubleshooting
+5. Test-Driven Development Basics
+6. Writing Test Cases
+7. Testing Polymorphic Systems
+8. Integration Testing
+9. Testing Abstract Interfaces
+10. Mocking and Test Doubles
 
 
 PART XII: PYTHON DEVELOPMENT ENVIRONMENT AND TOOLS
@@ -894,13 +894,13 @@ PART XII: PYTHON DEVELOPMENT ENVIRONMENT AND TOOLS
 
 Chapter 79: Introduction to Python Environments
 --------------------------------------------------------------------------------
-71. What are Python Environments?
-72. Global vs. Local Environments
-73. Why Isolated Environments Matter
-74. Environment Pollution Problems
-75. Dependency Conflicts
-76 Reproducible Environments
-77 Development vs. Production Environments
+1. What are Python Environments?
+2. Global vs. Local Environments
+3. Why Isolated Environments Matter
+4. Environment Pollution Problems
+5. Dependency Conflicts
+6. Reproducible Environments
+7. Development vs. Production Environments
 
 Chapter 80: Virtual Environments (venv)
 --------------------------------------------------------------------------------
@@ -909,117 +909,117 @@ Chapter 80: Virtual Environments (venv)
 3. Creating Virtual Environments
 4. Activating Virtual Environments
 5. Deactivating Virtual Environments
-6 Virtual Environment Structure
-7 Detecting Virtual Environments Programmatically
-8 Virtual Environment Best Practices
-9 When to Use Virtual Environments
-1.0 Common Virtual Environment Issues
+6. Virtual Environment Structure
+7. Detecting Virtual Environments Programmatically
+8. Virtual Environment Best Practices
+9. When to Use Virtual Environments
+10. Common Virtual Environment Issues
 
-Chapter 81.: Package Management with pip
+Chapter 81: Package Management with pip
 --------------------------------------------------------------------------------
-1. What is pip?
+1. What is `pip`?
 2. Installing Packages
 3. Uninstalling Packages
 4. Listing Installed Packages
 5. Upgrading Packages
-6 pip freeze and Requirements Files
-7 requirements.txt Format
-8 Installing from Requirements Files
-9 pip show - Package Information
-1.0 pip search and Package Discovery
-1.1. Version Pinning and Constraints
-1.2. pip Best Practices
+6. `pip freeze` and Requirements Files
+7. `requirements.txt` Format
+8. Installing from Requirements Files
+9. `pip show` - Package Information
+10. pip search and Package Discovery
+11. Version Pinning and Constraints
+12. pip Best Practices
 
 Chapter 82.: Advanced Package Management with Poetry
 --------------------------------------------------------------------------------
 1. What is Poetry?
 2. Poetry vs. pip
 3. Installing Poetry
-4. pyproject.toml Format
-5. poetry.lock Files
-6 poetry install
-7 poetry add and remove
-8 poetry update
-9 Dependency Groups (dev, test, docs)
-1.0 Poetry Virtual Environment Management
-1.1. poetry run
-1.2. Publishing Packages with Poetry
+4. `pyproject.toml` Format
+5. `poetry.lock` Files
+6. `poetry install`
+7. `poetry add` and `poetry remove`
+8. `poetry update`
+9. Dependency Groups (`dev`, `test`, `docs`)
+10. Poetry Virtual Environment Management
+11. `poetry run`
+12. Publishing Packages with Poetry
 
-Chapter 83.: Dependency Management
+Chapter 83: Dependency Management
 --------------------------------------------------------------------------------
 1. Understanding Dependencies
 2. Direct vs. Transitive Dependencies
 3. Dependency Resolution
 4. Version Constraints and Semantic Versioning
 5. Dependency Conflicts
-6 Pinning Dependencies
-7 requirements.txt vs. pyproject.toml
-8 Lock Files
-9 Reproducible Builds
-1.0 Security Considerations
+6. Pinning Dependencies
+7. `requirements.txt` vs. `pyproject.toml`
+8. Lock Files
+9. Reproducible Builds
+10. Security Considerations
 
-Chapter 84.: Environment Variables
+Chapter 84: Environment Variables
 --------------------------------------------------------------------------------
-81. What are Environment Variables?
-82. Reading Environment Variables (os.environ)
-83. Setting Environment Variables
-84. Environment Variables in Different OS
-85. Environment Variable Naming Conventions
-86 When to Use Environment Variables
-87 Security with Environment Variables
-88 Environment Variable Precedence
+1. What are Environment Variables?
+2. Reading Environment Variables (`os.environ`)
+3. Setting Environment Variables
+4. Environment Variables in Different OS
+5. Environment Variable Naming Conventions
+6. When to Use Environment Variables
+7. Security with Environment Variables
+8. Environment Variable Precedence
 
-Chapter 85.: Configuration Management
+Chapter 85: Configuration Management
 --------------------------------------------------------------------------------
-81. Configuration vs. Code
-82. The .env File Format
-83. python-dotenv Library
-84. Loading .env Files
-85. .env.example Templates
-86 Multiple Environment Configurations
-87 Development vs. Production Config
-88 Configuration Hierarchies
-89 Configuration Validation
-81.0 Secrets Management
+1. Configuration vs. Code
+2. The `.env` File Format
+3. `python-dotenv` Library
+4. Loading `.env` Files
+5. `.env.example` Templates
+6. Multiple Environment Configurations
+7. Development vs. Production Config
+8. Configuration Hierarchies
+9. Configuration Validation
+10. Secrets Management
 
-Chapter 86: Security and .gitignore
+Chapter 86: Security and `.gitignore`
 --------------------------------------------------------------------------------
-81. Never Commit Secrets
-82. The .gitignore File
-83. .gitignore Patterns
-84. Protecting .env Files
-85. Protecting Virtual Environments
-86 API Keys and Credentials
-87 Security Best Practices
-88 Environment-Specific Secrets
-89 Secret Rotation
-81.0 Auditing and Compliance
+1. Never Commit Secrets
+2. The `.gitignore` File
+3. `.gitignore` Patterns
+4. Protecting `.env` Files
+5. Protecting Virtual Environments
+6. API Keys and Credentials
+7. Security Best Practices
+8. Environment-Specific Secrets
+9. Secret Rotation
+10. Auditing and Compliance
 
 Chapter 87: Python Project Structure
 --------------------------------------------------------------------------------
-81. Standard Project Layout
-82. src/ Layout vs. Flat Layout
-83. Directory Organization
-84. tests/ Directory
-85. docs/ Directory
-86 Configuration Files Location
-87 README and Documentation
-88 LICENSE Files
-89 setup.py and pyproject.toml
-81.0 Project Metadata
+1. Standard Project Layout
+2. `src/` Layout vs. Flat Layout
+3. Directory Organisation
+4. `tests/` Directory
+5. `docs/` Directory
+6. Configuration Files Location
+7. `README` and Documentation
+8. LICENSE Files
+9. `setup.py` and `pyproject.toml`
+10. Project Metadata
 
 Chapter 88: Development Workflow
 --------------------------------------------------------------------------------
-81. Setting Up New Projects
-82. Environment Setup Checklist
-83. Dependency Installation Workflow
-84. Adding New Dependencies
-85. Updating Dependencies
-86 Testing in Clean Environments
-87 Sharing Projects with Others
-88 Onboarding New Developers
-89 CI/CD Environment Setup
-81.0 Production Deployment Considerations
+1. Setting Up New Projects
+2. Environment Setup Checklist
+3. Dependency Installation Workflow
+4. Adding New Dependencies
+5. Updating Dependencies
+6. Testing in Clean Environments
+7. Sharing Projects with Others
+8. Onboarding New Developers
+9. CI/CD Environment Setup
+10. Production Deployment Considerations
 
 
 PART XIII: DATA VALIDATION AND SERIALIZATION
@@ -1027,13 +1027,13 @@ PART XIII: DATA VALIDATION AND SERIALIZATION
 
 Chapter 89: Introduction to Data Validation
 --------------------------------------------------------------------------------
-81. Why Data Validation Matters
-82. Validation vs. Type Checking
-83. Runtime Validation
-84. Data Integrity and Quality
-85. Validation in APIs and Services
-86 Common Validation Challenges
-87 Manual Validation vs. Libraries
+1. Why Data Validation Matters
+2. Validation vs. Type Checking
+3. Runtime Validation
+4. Data Integrity and Quality
+5. Validation in APIs and Services
+6. Common Validation Challenges
+7. Manual Validation vs. Libraries
 
 Chapter 90: Introduction to Pydantic
 --------------------------------------------------------------------------------
@@ -1042,123 +1042,123 @@ Chapter 90: Introduction to Pydantic
 3. Installing Pydantic
 4. Pydantic v1. vs. v2.
 5. Key Pydantic Features
-6 When to Use Pydantic
-7 Pydantic in Real-World Applications
+6. When to Use Pydantic
+7. Pydantic in Real-World Applications
 
-Chapter 91.: BaseModel Fundamentals
+Chapter 91: BaseModel Fundamentals
 --------------------------------------------------------------------------------
 1. The BaseModel Class
 2. Creating Your First Model
 3. Model Instantiation
 4. Automatic Type Conversion
 5. Accessing Model Fields
-6 Model Serialization
-7 model_dump() and model_dump_json()
-8 Model Comparison
-9 Model Copying
-1.0 Model Immutability
+6. Model Serialisation
+7. `model_dump()` and `model_dump_json()`
+8. Model Comparison
+9. Model Copying
+10. Model Immutability
 
-Chapter 92.: Field Validation
+Chapter 92: Field Validation
 --------------------------------------------------------------------------------
 1. The Field Function
 2. Field Constraints
-3. String Constraints (min_length, max_length, pattern)
-4. Numeric Constraints (ge, le, gt, lt)
+3. String Constraints (`min_length`, `max_length`, `pattern`)
+4. Numeric Constraints (`ge`, `le`, `gt`, `lt`)
 5. Default Values
-6 Required vs. Optional Fields
-7 Field Descriptions and Metadata
-8 Field Aliases
-9 Field Examples
-1.0 Computed Fields
+6. Required vs. Optional Fields
+7. Field Descriptions and Metadata
+8. Field Aliases
+9. Field Examples
+10. Computed Fields
 
-Chapter 93.: Type Annotations and Validation
+Chapter 93: Type Annotations and Validation
 --------------------------------------------------------------------------------
 1. Basic Type Validation
 2. Standard Library Types
 3. Optional and Union Types
 4. List and Dict Validation
 5. Tuple Validation
-6 Datetime and Date Validation
-7 UUID Validation
-8 Email and URL Validation
-9 Custom Types
-1.0 Type Coercion
+6. Datetime and Date Validation
+7. UUID Validation
+8. Email and URL Validation
+9. Custom Types
+10. Type Coercion
 
-Chapter 94.: Enums and Literal Types
+Chapter 94: Enums and Literal Types
 --------------------------------------------------------------------------------
-91. Python Enum with Pydantic
-92. Defining Enums for Models
-93. String Enums
-94. Integer Enums
-95. Literal Types
-96 Enum Validation
-97 When to Use Enums vs. Literals
-98 Enum Serialisation
+1. Python Enum with Pydantic
+2. Defining Enums for Models
+3. String Enums
+4. Integer Enums
+5. Literal Types
+6. Enum Validation
+7. When to Use Enums vs. Literals
+8. Enum Serialisation
 
-Chapter 95.: Custom Validation
+Chapter 95: Custom Validation
 --------------------------------------------------------------------------------
-91. Model Validators
-92. The @model_validator Decorator
-93. Before vs. After Mode
-94. Field Validators (Deprecated in v2.)
-95. Multi-Field Validation
-96 Conditional Validation
-97 Cross-Field Dependencies
-98 Business Logic Validation
-99 Validation Error Messages
-91.0 Raising ValidationError
+1. Model Validators
+2. The `@model_validator` Decorator
+3. Before vs. After Mode
+4. Field Validators (Deprecated in v2.)
+5. Multi-Field Validation
+6. Conditional Validation
+7. Cross-Field Dependencies
+8. Business Logic Validation
+9. Validation Error Messages
+10. Raising `ValidationError`
 
 Chapter 96: Nested Models
 --------------------------------------------------------------------------------
-91. Model Composition
-92. Nested Model Definition
-93. One-to-One Relationships
-94. One-to-Many Relationships
-95. Lists of Models
-96 Nested Model Validation
-97 Deep Nesting Considerations
-98 Circular References
-99 Forward References
-91.0 Model Reusability
+1. Model Composition
+2. Nested Model Definition
+3. One-to-One Relationships
+4. One-to-Many Relationships
+5. Lists of Models
+6. Nested Model Validation
+7. Deep Nesting Considerations
+8. Circular References
+9. Forward References
+10. Model Reusability
 
 Chapter 97: Advanced Pydantic Features
 --------------------------------------------------------------------------------
-91. Model Configuration
-92. Extra Fields Handling
-93. Alias Generators
-94. JSON Schema Generation
-95. Model Validation Context
-96 Strict Mode
-97 Custom JSON Encoders
-98 Serialisation Customisation
-99 Root Validators
-91.0 Generic Models
+1. Model Configuration
+2. Extra Fields Handling
+3. Alias Generators
+4. JSON Schema Generation
+5. Model Validation Context
+6. Strict Mode
+7. Custom JSON Encoders
+8. Serialisation Customisation
+9. Root Validators
+10. Generic Models
 
 Chapter 98: Error Handling and ValidationError
 --------------------------------------------------------------------------------
-91. Understanding ValidationError
-92. Error Structure
-93. Error Messages
-94. Error Locations
-95. Multiple Validation Errors
-96 Handling ValidationError
-97 Custom Error Messages
-98 Error Formatting
-99 Debugging Validation Issues
-91.0 Error Recovery Strategies
+1. Understanding ValidationError
+2. Error Structure
+3. Error Messages
+4. Error Locations
+5. Multiple Validation Errors
+6. Handling ValidationError
+7. Custom Error Messages
+8. Error Formatting
+9. Debugging Validation Issues
+10. Error Recovery Strategies
 
 Chapter 99: Pydantic Best Practices
 --------------------------------------------------------------------------------
-91. Model Design Principles
-92. Validation Performance
-93. Model Organisation
-94. Documentation with Models
-95. Testing Pydantic Models
-96 Avoiding Common Pitfalls
-97 Migration from v1. to v2.
-98 Integration with FastAPI
-99 Database Integration
-91.0 Production Considerations
+1. Model Design Principles
+2. Validation Performance
+3. Model Organisation
+4. Documentation with Models
+5. Testing Pydantic Models
+6. Avoiding Common Pitfalls
+7. Migration from v1. to v2.
+8. Integration with FastAPI
+9. Database Integration
+10. Production Considerations
 
 
 PART XIV: FUNCTIONAL PROGRAMMING
@@ -1171,10 +1171,10 @@ Chapter 100: Introduction to Functional Programming
 3. Functional vs. Object-Oriented Programming
 4. Pure Functions
 5. Immutability
-6 Side Effects
-7 Functional Programming in Python
-8 Benefits of Functional Programming
-9 When to Use Functional Programming
+6. Side Effects
+7. Functional Programming in Python
+8. Benefits of Functional Programming
+9. When to Use Functional Programming
 
 Chapter 101: Lambda Expressions
 --------------------------------------------------------------------------------

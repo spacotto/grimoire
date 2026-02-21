@@ -3,11 +3,11 @@ PART I: PYTHON FUNDAMENTALS
 
 Chapter 1: Introduction to Python
 ----------------------------------
-1.1 What is Python?
-1.2 Python Philosophy and Design Principles
-1.3 Setting Up Your Python Environment (Python 3.10+)
-1.4 Code Quality Standards and PEP 8
-1.5 Using the flake8 Linter
+1. What is Python
+2. Python Philosophy and Design Principles
+3. Setting Up Your Python Environment (Python 3.10+)
+4. Code Quality Standards and PEP 8
+5. Using the flake8 Linter
 
 ## Chapter 2: Program Structure and Execution
 ----------------------------------

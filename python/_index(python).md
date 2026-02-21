@@ -1,11 +1,6 @@
-PYTHON 3 PROGRAMMING MANUAL - COMPREHENSIVE INDEX
-Based on Growing Code and CodeCultivation Curricula
-================================================================================
+# PART I: PYTHON FUNDAMENTALS
 
-PART I: PYTHON FUNDAMENTALS
-================================================================================
-
-Chapter 1: Introduction to Python
+## Chapter 1: Introduction to Python
 ----------------------------------
 1.1 What is Python?
 1.2 Python Philosophy and Design Principles
@@ -13,15 +8,15 @@ Chapter 1: Introduction to Python
 1.4 Code Quality Standards and PEP 8
 1.5 Using the flake8 Linter
 
-Chapter 2: Program Structure and Execution
--------------------------------------------
+## Chapter 2: Program Structure and Execution
+----------------------------------
 2.1 How Python Programs Execute
 2.2 The if __name__ == "__main__": Pattern
 2.3 Understanding __name__ and Module Execution
 2.4 Shebang Lines and Script Permissions
 2.5 When to Use Main Blocks vs. Functions
 
-Chapter 3: Basic Input and Output
+## Chapter 3: Basic Input and Output
 ----------------------------------
 3.1 The print() Function
 3.2 Basic Output Formatting

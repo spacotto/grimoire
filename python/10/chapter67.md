@@ -1,4 +1,4 @@
-# Python 3 Built-in Exception Types
+# Built-in Exception Types
 Python's exception system provides specific, named error types that identify exactly what went wrong at runtime. Knowing which exception to raise — or catch — leads to cleaner error handling, easier debugging, and more expressive code. This reference covers the most common built-in exceptions, their causes, and how to choose between them.
 
 ## ValueError — Invalid Data

@@ -1,4 +1,4 @@
-# Python3 — Multiple Exception Handling
+# Multiple Exception Handling
 Python allows a single `try` block to handle multiple exception types using several strategies: multiple `except` clauses, grouping exceptions in a tuple, or catching a base class. Choosing the right approach keeps error handling readable, maintainable, and precise.
 
 ## Catching Multiple Exception Types

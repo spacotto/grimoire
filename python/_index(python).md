@@ -1332,22 +1332,22 @@ APPENDICES
 
 Appendix A: Python Style Guide (PEP 8)
 --------------------------------------------------------------------------------
-A.1. Naming Conventions Summary
-A.2. Indentation and Whitespace
-A.3. Line Length
-A.4. Comments and Documentation
+1. Naming Conventions Summary
+2. Indentation and Whitespace
+3. Line Length
+4. Comments and Documentation
 
 Appendix B: Common Python Patterns
 --------------------------------------------------------------------------------
-B.1. Input Validation Patterns
-B.2. Error Handling Basics
-B.3. Common Idioms
+1. Input Validation Patterns
+2. Error Handling Basics
+3. Common Idioms
 
 Appendix C: Quick Reference
 --------------------------------------------------------------------------------
-C.1. Built-in Functions
-C.2. Common String Methods
-C.3. Operator Precedence
+1. Built-in Functions
+2. Common String Methods
+3. Operator Precedence
 
 
 END OF INDEX
@@ -1375,45 +1375,45 @@ Structure: 1.3. Parts | 1.1.3. Chapters | 3. Appendices
 - Functional Programming Paradigms
 
 Complete Coverage:
-✓ Python syntax and semantics
-✓ Variables, data types, operators
-✓ Control flow (conditionals, loops, recursion)
-✓ Functions and type hints
-✓ Object-oriented programming (classes, inheritance, encapsulation)
-✓ Advanced OOP (polymorphism, ABC, protocols, method overriding)
-✓ Abstract programming (interfaces, multiple inheritance, design patterns)
-✓ Abstract Factory and Strategy patterns
-✓ Interface composition and multiple interface implementation
-✓ Data structures (lists, tuples, sets, dictionaries)
-✓ Generators and comprehensions
-✓ Modules and packages (imports, __init__.py, absolute/relative imports)
-✓ Circular dependency resolution
-✓ File I/O and streams
-✓ Exception handling and error management
-✓ SOLID principles and design patterns
-✓ Testing and debugging strategies
-✓ Virtual environments (venv)
-✓ Package management (pip, Poetry)
-✓ Dependency management and requirements files
-✓ Environment variables and configuration
-✓ Security and secrets management
-✓ Professional Python project structure
-✓ Development workflow and best practices
-✓ Data validation with Pydantic
-✓ BaseModel and Field validation
-✓ Custom validation with @model_validator
-✓ Nested models and complex relationships
-✓ Enums and type validation
-✓ Serialisation and deserialization
-✓ ValidationError handling
-✓ Functional programming paradigms
-✓ Lambda expressions and anonymous functions
-✓ Higher-order functions
-✓ Map, filter, and reduce
-✓ Closures and lexical scoping
-✓ The functools module (reduce, partial, lru_cache, wraps)
-✓ Decorators (basic and advanced)
-✓ Parameterised decorators and decorator factories
-✓ Method decorators (@staticmethod, @classmethod, @property)
-✓ The operator module
-✓ Pure functions and immutability
+- Python syntax and semantics
+- Variables, data types, operators
+- Control flow (conditionals, loops, recursion)
+- Functions and type hints
+- Object-oriented programming (classes, inheritance, encapsulation)
+- Advanced OOP (polymorphism, ABC, protocols, method overriding)
+- Abstract programming (interfaces, multiple inheritance, design patterns)
+- Abstract Factory and Strategy patterns
+- Interface composition and multiple interface implementation
+- Data structures (lists, tuples, sets, dictionaries)
+- Generators and comprehensions
+- Modules and packages (imports, __init__.py, absolute/relative imports)
+- Circular dependency resolution
+- File I/O and streams
+- Exception handling and error management
+- SOLID principles and design patterns
+- Testing and debugging strategies
+- Virtual environments (venv)
+- Package management (pip, Poetry)
+- Dependency management and requirements files
+- Environment variables and configuration
+- Security and secrets management
+- Professional Python project structure
+- Development workflow and best practices
+- Data validation with Pydantic
+- BaseModel and Field validation
+- Custom validation with @model_validator
+- Nested models and complex relationships
+- Enums and type validation
+- Serialisation and deserialization
+- ValidationError handling
+- Functional programming paradigms
+- Lambda expressions and anonymous functions
+- Higher-order functions
+- Map, filter, and reduce
+- Closures and lexical scoping
+- The functools module (reduce, partial, lru_cache, wraps)
+- Decorators (basic and advanced)
+- Parameterised decorators and decorator factories
+- Method decorators (@staticmethod, @classmethod, @property)
+- The operator module
+- Pure functions and immutability

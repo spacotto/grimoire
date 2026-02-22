@@ -120,7 +120,7 @@ Functions are reusable blocks of code that perform specific tasks. This part sho
 --------------------------------------------------------------------------------
 1. What are Functions?
 2. Defining Functions with def
-3. Function Naming Conventions (snake_case)
+3. Function Naming
 4. Calling Functions
 5. Function Parameters
 6. Return Values

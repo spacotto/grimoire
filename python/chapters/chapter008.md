@@ -77,5 +77,5 @@ print(x < 0 or x == 7)    # True
 print(not x == 7)          # False
 ```
 
->[TIP]
+>[!TIP]
 >Comparisons can be chained in Python: `0 < x < 10` is valid and equivalent to `x > 0 and x < 10`.

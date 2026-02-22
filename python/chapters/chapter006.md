@@ -84,8 +84,6 @@ print(f"Pi ≈ {3.14159:.2f}")        # "Pi ≈ 3.14"  → format specifier
 print(f"{'hello':>10}")             # "     hello" → right-align in 10 chars
 ```
 
----
-
 ## Combining Different Data Types in Output
 Python does **not** auto-convert types in concatenation — use `str()`, `f-strings`, or `format()`.
 

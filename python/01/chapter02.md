@@ -81,8 +81,6 @@ chmod +x script.py
 
 Shebang lines are ignored by the Python interpreter itself — they only matter to the OS shell.
 
----
-
 ## When to Use Main Blocks vs. Functions
 
 | Situation | Recommendation |

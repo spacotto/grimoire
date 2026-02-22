@@ -1354,6 +1354,7 @@ APPENDICES
 - [Magic Methods Cheet Sheet](https://github.com/spacotto/grimoire/blob/main/python/appendices/magic_methods.md)
 - Naming Conventions
 - Operator Precedence
+- [Strings 101](https://github.com/spacotto/grimoire/blob/main/python/appendices/data_types/strings101.md)
 
 
 END OF INDEX

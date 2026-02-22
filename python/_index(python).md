@@ -116,7 +116,7 @@ PART V: FUNCTIONS
 ================================================================================
 Functions are reusable blocks of code that perform specific tasks. This part shows you how to create functions, pass data to them through parameters, return results, and add type hints for clarity. You'll learn to write modular, organised code that's easy to test and maintain. Functions are the building blocks of larger programs.
 
-Chapter 12: Function Basics
+[Chapter 12: Function Basics](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter012.md)
 --------------------------------------------------------------------------------
 1. What are Functions?
 2. Defining Functions with def
@@ -125,7 +125,7 @@ Chapter 12: Function Basics
 5. Function Parameters
 6. Return Values
 
-Chapter 13: Type Hints and Annotations
+[Chapter 13: Type Hints and Annotations](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter013.md)
 --------------------------------------------------------------------------------
 1. Introduction to Type Hints
 2. Annotating Function Parameters
@@ -134,7 +134,7 @@ Chapter 13: Type Hints and Annotations
 5. Benefits of Type Hints
 6. Type Hints for Collections
 
-Chapter 14: Documentation
+[Chapter 14: Documentation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter014.md)
 --------------------------------------------------------------------------------
 1. Writing Docstrings
 2. Docstring Conventions
@@ -146,7 +146,7 @@ PART VI: OBJECT-ORIENTED PROGRAMMING
 ================================================================================
 Object-oriented programming (OOP) organises code around objects that contain both data (attributes) and behaviour (methods). This part introduces classes as blueprints for objects, teaches encapsulation to protect data, and shows how inheritance lets you build on existing code. OOP is essential for building complex, maintainable applications. Then, you'll master polymorphism (objects responding differently to the same method), method overriding, abstract base classes (ABCs) that enforce contracts, and protocols for duck typing. These techniques are used in professional software development to create extensible, maintainable systems. At last, you will learn that abstract programming focuses on defining "what" objects should do, not "how" they do it. This part teaches interface design principles, multiple interface implementations, and powerful design patterns like Abstract Factory and Strategy. You'll learn to build flexible systems that can evolve and adapt without breaking existing code. These are enterprise-level skills used in large-scale software development.
 
-Chapter 15: Introduction to OOP
+[Chapter 15: Introduction to OOP](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter015.md)
 --------------------------------------------------------------------------------
 1. What is Object-Oriented Programming?
 2. Objects in the Real World
@@ -154,7 +154,7 @@ Chapter 15: Introduction to OOP
 4. Benefits of OOP
 5. When to Use OOP
 
-Chapter 16: Classes and Objects
+[Chapter 16: Classes and Objects](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter016.md)
 --------------------------------------------------------------------------------
 1. Classes as Blueprints
 2. Objects as Instances
@@ -164,7 +164,7 @@ Chapter 16: Classes and Objects
 6. Instantiating Objects
 7. Multiple Instances
 
-Chapter 17: Attributes and Instance Variables
+[Chapter 17: Attributes and Instance Variables](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter017.md)
 --------------------------------------------------------------------------------
 1. Understanding Attributes
 2. Instance Variables

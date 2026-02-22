@@ -20,6 +20,15 @@ class Person:
         self.__age = age        # private
 ```
 
+| Access Level | Syntax    | Description                                          |
+|--------------|-----------|------------------------------------------------------|
+| Public       | `name`    | Accessible anywhere                                  |
+| Protected    | `_name`   | Intended for internal use (convention only)          |
+| Private      | `__name`  | Name mangling applied, harder to access from outside |
+
+>[!TIP]
+>In Python, the difference between a single underscore `_` and a double underscore `__` is the difference between a **gentleman's agreement** and a **lock on the door**.
+
 ## Name Mangling with Double Underscores
 When you prefix an attribute with `__`, Python internally renames it to `_ClassName__attribute`. This prevents accidental overriding in subclasses, but does **not** make it truly inaccessible.
 

@@ -173,7 +173,7 @@ Object-oriented programming (OOP) organises code around objects that contain bot
 5. Modifying Attributes
 6. Class Variables vs. Instance Variables
 
-Chapter 18: Methods
+[Chapter 18: Methods](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter018.md)
 --------------------------------------------------------------------------------
 1. What are Methods?
 2. Defining Instance Methods

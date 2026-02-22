@@ -420,7 +420,7 @@ PART VII: DATA STRUCTURES AND COLLECTIONS
 ================================================================================
 Data structures are containers that hold and organise data in different ways. This part covers Python's built-in collections: lists (ordered, mutable), tuples (immutable), sets (unique items), and dictionaries (key-value pairs). You'll also learn generators for memory-efficient iteration and comprehensions for concise data transformation. Choosing the right data structure is crucial for writing efficient code.
 
-Chapter 39: Command-Line Arguments
+[Chapter 39: Command-Line Arguments](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter039.md)
 --------------------------------------------------------------------------------
 1. The sys Module
 2. Understanding `sys.argv`

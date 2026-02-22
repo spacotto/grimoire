@@ -17,8 +17,8 @@ This part introduces you to Python programming from scratch. You'll learn what P
 3. Understanding `__name__` and Module Execution
 4. Shebang Lines and Script Permissions
 5. When to Use Main Blocks vs. Functions
-[
-Chapter 3: Basic Input and Output](https://github.com/spacotto/grimoire/blob/main/python/01/chapter03.md)
+
+[Chapter 3: Basic Input and Output](https://github.com/spacotto/grimoire/blob/main/python/01/chapter03.md)
 --------------------------------------------------------------------------------
 1. The `print()` Function
 2. Basic Output Formatting

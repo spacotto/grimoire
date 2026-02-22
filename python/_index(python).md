@@ -39,7 +39,7 @@ Variables are containers that store data in your programs. This part teaches you
 4. Valid Variable Names
 5. Reassigning Variables
 
-Chapter 5: Primitive Data Types
+[Chapter 5: Primitive Data Types](https://github.com/spacotto/grimoire/blob/main/python/02/chapter05.md)
 --------------------------------------------------------------------------------
 1. Integers (`int`)
 2. Strings (`str`)
@@ -48,7 +48,7 @@ Chapter 5: Primitive Data Types
 5. Converting Strings to Integers: `int()`
 6. Converting Numbers to Strings: `str()`
 
-Chapter 6: String Operations
+[Chapter 6: String Operations](https://github.com/spacotto/grimoire/blob/main/python/02/chapter06.md)
 --------------------------------------------------------------------------------
 1. String Concatenation
 2. String Methods

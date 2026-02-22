@@ -62,7 +62,7 @@ PART III: OPERATORS AND EXPRESSIONS
 ================================================================================
 Operators are the symbols that perform operations on data (`+`, `-`, `*`, `==`, etc.). This part shows you how to do math, compare values, and build complex expressions. You'll learn the order in which Python evaluates operations and how to use comparison operators to make decisions. Mastering operators is essential for writing logic in your programs.
 
-Chapter 7: Arithmetic Operations
+[Chapter 7: Arithmetic Operations](https://github.com/spacotto/grimoire/blob/main/python/03/chapter07.md)
 --------------------------------------------------------------------------------
 1. Basic Arithmetic Operators (`+`, `-`, `*`, `/`)
 2. Addition and Subtraction
@@ -70,7 +70,7 @@ Chapter 7: Arithmetic Operations
 4. Performing Calculations with Variables
 5. Storing Calculation Results
 
-Chapter 8: Comparison Operators
+[Chapter 8: Comparison Operators](https://github.com/spacotto/grimoire/blob/main/python/03/chapter08.md)
 --------------------------------------------------------------------------------
 1. Greater Than (`>`)
 2. Less Than (`<`)
@@ -85,7 +85,7 @@ PART IV: CONTROL FLOW
 ================================================================================
 Control flow determines the order in which your program executes code. This part teaches you how to make decisions with if/elif/else statements, repeat actions with loops (while and for), and use recursion where functions call themselves. These tools let you write programs that adapt to different situations and process data efficiently. 
 
-Chapter 9: Conditional Statements
+[Chapter 9: Conditional Statements](https://github.com/spacotto/grimoire/blob/main/python/04/chapter09.md)
 --------------------------------------------------------------------------------
 1. Making Decisions in Code
 2. The `if` Statement
@@ -94,7 +94,7 @@ Chapter 9: Conditional Statements
 5. Nested Conditionals
 6. Boolean Logic in Conditionals
 
-Chapter 10: Loops and Iteration
+[Chapter 10: Loops and Iteration](https://github.com/spacotto/grimoire/blob/main/python/04/chapter10.md)
 --------------------------------------------------------------------------------
 1. Understanding Repetition
 2. The `for` Loop
@@ -102,7 +102,7 @@ Chapter 10: Loops and Iteration
 4. Loop Variables and Counters
 5. Iterating Through Collections
 
-Chapter 11: Recursion
+[Chapter 11: Recursion](https://github.com/spacotto/grimoire/blob/main/python/04/chapter11.md)
 --------------------------------------------------------------------------------
 1. What is Recursion?
 2. Base Cases and Recursive Cases

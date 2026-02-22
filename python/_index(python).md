@@ -31,7 +31,7 @@ PART II: VARIABLES AND DATA TYPES
 ================================================================================
 Variables are containers that store data in your programs. This part teaches you how to create variables, understand different types of data (numbers, text, etc.), and work with strings. You'll learn how Python handles different kinds of information and how to manipulate text effectively. These concepts are fundamental to every program you'll ever write.
 
-Chapter 4: Variables and Assignment
+[Chapter 4: Variables and Assignment](https://github.com/spacotto/grimoire/blob/main/python/02/chapter04.md)
 --------------------------------------------------------------------------------
 1. Understanding Variables
 2. Variable Assignment and the `=` Operator

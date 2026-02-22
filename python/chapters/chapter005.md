@@ -91,8 +91,6 @@ isinstance("hi", str)  # True
 isinstance(42, str)    # False
 ```
 
----
-
 ## Type Conversion
 
 Python does **not** implicitly convert between unrelated types. Mixing incompatible types raises a `TypeError`:
@@ -102,8 +100,6 @@ Python does **not** implicitly convert between unrelated types. Mixing incompati
 ```
 
 You must convert explicitly using built-in functions.
-
----
 
 ## Converting Strings to Integers: `int()`
 
@@ -129,8 +125,6 @@ int("3.14")   # ValueError (use float() first, then int())
 value = input("Enter a number: ")
 number = int(value)  # will raise ValueError if input is not a valid int
 ```
-
----
 
 ## Converting Numbers to Strings: `str()`
 

@@ -69,8 +69,6 @@ class Date:
 d = Date.from_string("2024-06-15")
 ```
 
----
-
 ## Static Methods
 
 ### The `@staticmethod` Decorator

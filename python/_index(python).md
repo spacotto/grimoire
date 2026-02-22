@@ -1344,12 +1344,14 @@ Chapter 113: Functional Programming Best Practices
 APPENDICES
 ================================================================================
 
-- Built-in Functions
+- [Built-in Functions](https://github.com/spacotto/grimoire/tree/main/python/appendices/built-in_functions)
 - Comments and Documentation Conventions
 - Common Idioms
 - Common String Methods
+- [Data Types](https://github.com/spacotto/grimoire/tree/main/python/appendices/data_types)
 - Error Handling Basics
 - Input Validation Patterns
+- [Magic Methods Cheet Sheet](https://github.com/spacotto/grimoire/blob/main/python/appendices/magic_methods.md)
 - Naming Conventions
 - Operator Precedence
 

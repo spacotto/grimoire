@@ -232,6 +232,7 @@ Object-oriented programming (OOP) organises code around objects that contain bot
    2 Methods Without `self` or `cls`
    3. When to Use Static Methods
 4. Choosing the Right Method Type
+5. Decorator Syntax vs Explicit Calls
 
 [Chapter 23: Nested Classes and Composition](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter023.md)
 --------------------------------------------------------------------------------

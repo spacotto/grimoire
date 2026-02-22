@@ -2,7 +2,7 @@
 In Python, **attributes** are variables associated with an object or class. **Instance variables** are the most common type — unique to each object, defined using `self` inside a class. Understanding how attributes work is fundamental to writing clear, object-oriented Python.
 
 ## Understanding Attributes
-An attribute is any variable bound to an object or class. Attributes store state and are accessed via dot notation (`object.attribute`).
+An attribute is any **variable bound to an object or class**. Attributes store state and are accessed via dot notation (`object.attribute`).
 ```python
 class Dog:
     species = "Canis lupus"  # class attribute
@@ -12,7 +12,7 @@ class Dog:
 ```
 
 ## Instance Variables
-Instance variables hold data specific to each object. They are created and assigned inside methods using `self`.
+Instance variables hold **data specific to each object**. They are created and assigned inside methods using `self`.
 ```python
 class Car:
     def __init__(self, make, model):
@@ -28,30 +28,46 @@ car2 = Car("Honda", "Civic")
 ```
 
 ## The `self` Parameter
-`self` refers to the current instance of the class. It is always the first parameter of instance methods and is passed automatically by Python.
+`self` represents the instance of the class. It's used to access attributes and methods within the class.
+
+- `self` is always the first parameter in instance methods
+- It refers to the current object
+- The name `self` is a convention (not a keyword), but should always be used
+
 ```python
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius  # binds radius to this instance
+class Person:
+    def __init__(self, name):
+        self.name = name  # self refers to the current instance
+    
+    def greet(self):
+        return f"Hello, I'm {self.name}"
+
+person = Person("Alice")
+print(person.greet())  # Output: Hello, I'm Alice
 ```
 
 >[!IMPORTANT]
 >`self` is a convention, not a keyword — but always use it.
 
 ## Accessing Attributes (`self.attribute`)
-Use dot notation to read an attribute from within the class or outside it.
+Access attributes using dot notation: `object.attribute` or `self.attribute` (within methods).
 
 ```python
-class Person:
-    def __init__(self, name):
-        self.name = name
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+    
+    def display(self):
+        # Accessing within the class
+        print(f"{self.title} by {self.author}")
 
-    def greet(self):
-        print(f"Hi, I'm {self.name}")  # internal access
+book = Book("1984", "George Orwell")
+book.display()  # Output: 1984 by George Orwell
 
-p = Person("Alice")
-print(p.name)   # external access → "Alice"
-p.greet()       # → "Hi, I'm Alice"
+# Accessing from outside the class
+print(book.title)   # Output: 1984
+print(book.author)  # Output: George Orwell
 ```
 
 ## Modifying Attributes

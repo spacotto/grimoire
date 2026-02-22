@@ -183,7 +183,7 @@ Object-oriented programming (OOP) organises code around objects that contain bot
 6. Methods that Modify State
 7. Methods that Return Information
 
-Chapter 19: Constructors and Initialisation
+[Chapter 19: Constructors and Initialisation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter019.md)
 --------------------------------------------------------------------------------
 1. The `__init__()` Method
 2. Constructor Parameters
@@ -192,7 +192,7 @@ Chapter 19: Constructors and Initialisation
 5. Object Creation Process
 6. Factory Pattern Basics
 
-Chapter 20: Encapsulation
+[Chapter 20: Encapsulation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter020.md)
 --------------------------------------------------------------------------------
 1. Understanding Encapsulation
 2. Data Protection and Information Hiding
@@ -204,7 +204,7 @@ Chapter 20: Encapsulation
 8. Why Encapsulation Matters
 9. Protecting Data Integrity
 
-Chapter 21: Inheritance
+[Chapter 21: Inheritance](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter021.md)
 --------------------------------------------------------------------------------
 1. What is Inheritance?
 2. Parent Classes (Base Classes)
@@ -220,7 +220,7 @@ Chapter 21: Inheritance
 12. Code Reusability Through Inheritance
 13. `IS-A` Relationships
 
-Chapter 22: Advanced Method Types
+[Chapter 22: Advanced Method Types](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter022.md)
 --------------------------------------------------------------------------------
 1. Instance Methods (Review)
 2. Class Methods
@@ -233,7 +233,7 @@ Chapter 22: Advanced Method Types
    3. When to Use Static Methods
 4. Choosing the Right Method Type
 
-Chapter 23: Nested Classes and Composition
+[Chapter 23: Nested Classes and Composition](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter023.md)
 --------------------------------------------------------------------------------
 1. What are Nested Classes?
 2. Defining Classes Within Classes

@@ -20,11 +20,11 @@ class Person:
         self.__age = age        # private
 ```
 
-| Access Level | Syntax    | Description                                          |
-|--------------|-----------|------------------------------------------------------|
-| Public       | `name`    | Accessible anywhere                                  |
-| Protected    | `_name`   | Intended for internal use (convention only)          |
-| Private      | `__name`  | Name mangling applied, harder to access from outside |
+| Access Level | Syntax        | Description                                          |
+|--------------|---------------|------------------------------------------------------|
+| Public       | `attribute`   | Accessible anywhere                                  |
+| Protected    | `_attribute`  | Intended for internal use (convention only)          |
+| Private      | `__attribute` | Name mangling applied, harder to access from outside |
 
 >[!TIP]
 >In Python, the difference between a single underscore `_` and a double underscore `__` is the difference between a **gentleman's agreement** and a **lock on the door**.

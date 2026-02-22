@@ -102,8 +102,6 @@ Validator.is_positive(-1)  # False
 - When the method **doesn't need** instance or class data.
 - To improve **code organisation** by grouping related functions within a class.
 
----
-
 ## Choosing the Right Method Type
 
 | Needs access to...         | Use               | First param |

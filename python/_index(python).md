@@ -2,7 +2,7 @@ PART I: PYTHON FUNDAMENTALS
 ================================================================================
 This part introduces you to Python programming from scratch. You'll learn what Python is, how to write and run your first programs, and understand the basic building blocks of code. By the end, you'll be comfortable reading input, displaying output, and understanding how Python programs are structured. This foundation is essential for everything that follows.
 
-[Chapter 1: Introduction to Python](https://github.com/spacotto/grimoire/blob/main/python/01/chapter01.md)
+[Chapter 1: Introduction to Python](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter001.md)
 --------------------------------------------------------------------------------
 1. What is Python
 2. Python Philosophy and Design Principles
@@ -10,7 +10,7 @@ This part introduces you to Python programming from scratch. You'll learn what P
 4. Code Quality Standards and `PEP 8`
 5. Using the `flake8` Linter
 
-[Chapter 2: Program Structure and Execution](https://github.com/spacotto/grimoire/blob/main/python/01/chapter02.md)
+[Chapter 2: Program Structure and Execution](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter002.md)
 --------------------------------------------------------------------------------
 1. How Python Programs Execute
 2. The if `__name__ == "__main__"`: Pattern
@@ -18,7 +18,7 @@ This part introduces you to Python programming from scratch. You'll learn what P
 4. Shebang Lines and Script Permissions
 5. When to Use Main Blocks vs. Functions
 
-[Chapter 3: Basic Input and Output](https://github.com/spacotto/grimoire/blob/main/python/01/chapter03.md)
+[Chapter 3: Basic Input and Output](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter003.md)
 --------------------------------------------------------------------------------
 1. The `print()` Function
 2. Basic Output Formatting
@@ -31,7 +31,7 @@ PART II: VARIABLES AND DATA TYPES
 ================================================================================
 Variables are containers that store data in your programs. This part teaches you how to create variables, understand different types of data (numbers, text, etc.), and work with strings. You'll learn how Python handles different kinds of information and how to manipulate text effectively. These concepts are fundamental to every program you'll ever write.
 
-[Chapter 4: Variables and Assignment](https://github.com/spacotto/grimoire/blob/main/python/02/chapter04.md)
+[Chapter 4: Variables and Assignment](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter004.md)
 --------------------------------------------------------------------------------
 1. Understanding Variables
 2. Variable Assignment and the `=` Operator
@@ -39,7 +39,7 @@ Variables are containers that store data in your programs. This part teaches you
 4. Valid Variable Names
 5. Reassigning Variables
 
-[Chapter 5: Primitive Data Types](https://github.com/spacotto/grimoire/blob/main/python/02/chapter05.md)
+[Chapter 5: Primitive Data Types](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter005.md)
 --------------------------------------------------------------------------------
 1. Integers (`int`)
 2. Strings (`str`)
@@ -48,7 +48,7 @@ Variables are containers that store data in your programs. This part teaches you
 5. Converting Strings to Integers: `int()`
 6. Converting Numbers to Strings: `str()`
 
-[Chapter 6: String Operations](https://github.com/spacotto/grimoire/blob/main/python/02/chapter06.md)
+[Chapter 6: String Operations](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter006.md)
 --------------------------------------------------------------------------------
 1. String Concatenation
 2. String Methods
@@ -62,7 +62,7 @@ PART III: OPERATORS AND EXPRESSIONS
 ================================================================================
 Operators are the symbols that perform operations on data (`+`, `-`, `*`, `==`, etc.). This part shows you how to do math, compare values, and build complex expressions. You'll learn the order in which Python evaluates operations and how to use comparison operators to make decisions. Mastering operators is essential for writing logic in your programs.
 
-[Chapter 7: Arithmetic Operations](https://github.com/spacotto/grimoire/blob/main/python/03/chapter07.md)
+[Chapter 7: Arithmetic Operations](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter007.md)
 --------------------------------------------------------------------------------
 1. Basic Arithmetic Operators (`+`, `-`, `*`, `/`)
 2. Addition and Subtraction
@@ -70,7 +70,7 @@ Operators are the symbols that perform operations on data (`+`, `-`, `*`, `==`, 
 4. Performing Calculations with Variables
 5. Storing Calculation Results
 
-[Chapter 8: Comparison Operators](https://github.com/spacotto/grimoire/blob/main/python/03/chapter08.md)
+[Chapter 8: Comparison Operators](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter008.md)
 --------------------------------------------------------------------------------
 1. Greater Than (`>`)
 2. Less Than (`<`)
@@ -85,7 +85,7 @@ PART IV: CONTROL FLOW
 ================================================================================
 Control flow determines the order in which your program executes code. This part teaches you how to make decisions with if/elif/else statements, repeat actions with loops (while and for), and use recursion where functions call themselves. These tools let you write programs that adapt to different situations and process data efficiently. 
 
-[Chapter 9: Conditional Statements](https://github.com/spacotto/grimoire/blob/main/python/04/chapter09.md)
+[Chapter 9: Conditional Statements](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter009.md)
 --------------------------------------------------------------------------------
 1. Making Decisions in Code
 2. The `if` Statement
@@ -94,7 +94,7 @@ Control flow determines the order in which your program executes code. This part
 5. Nested Conditionals
 6. Boolean Logic in Conditionals
 
-[Chapter 10: Loops and Iteration](https://github.com/spacotto/grimoire/blob/main/python/04/chapter10.md)
+[Chapter 10: Loops and Iteration](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter010.md)
 --------------------------------------------------------------------------------
 1. Understanding Repetition
 2. The `for` Loop
@@ -102,7 +102,7 @@ Control flow determines the order in which your program executes code. This part
 4. Loop Variables and Counters
 5. Iterating Through Collections
 
-[Chapter 11: Recursion](https://github.com/spacotto/grimoire/blob/main/python/04/chapter11.md)
+[Chapter 11: Recursion](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter011.md)
 --------------------------------------------------------------------------------
 1. What is Recursion?
 2. Base Cases and Recursive Cases

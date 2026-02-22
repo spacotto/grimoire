@@ -19,8 +19,6 @@ d.bark()  # "Rex says woof!"
 
 Use when the method needs to read or modify instance state.
 
----
-
 ## Class Methods
 
 ### The `@classmethod` Decorator

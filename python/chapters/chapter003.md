@@ -1,5 +1,5 @@
 # Basic Input and Output
-Python3 provides two built-in functions for basic I/O: `print()` for displaying output and `input()` for reading user input. These are the foundation of interactive programs and console-based communication.
+Python3 provides two built-in functions for basic I/O: `print()` for displaying output and `input()` for reading user input. These are the foundations of interactive programs and console-based communication.
 
 ## The `print()` Function
 

@@ -47,7 +47,7 @@ class bank_account:   # snake_case — used for functions/variables, not classes
 
 ## Creating Your First Class
 
-A minimal but meaningful class uses `__init__` — the **initialiser method** — to set up an object's attributes when it's created.
+Use the `class` keyword to define a class and use the initialiser magic method, `__init__`.
 
 ```python
 class Dog:
@@ -59,9 +59,11 @@ class Dog:
         print(f"{self.name} says: Woof!")
 ```
 
-- `__init__` runs automatically when a new object is created.
-- `self` refers to the specific instance being created or used.
-- Attributes set with `self.` belong to the instance.
+>[!IMPORTANT]
+>`__init__` is a special method called the **constructor**: it automatically runs when you create a new object.
+
+>[!IMPORTANT]
+>`self` is a **reference to the instance being created**: it must be the first parameter in instance methods. Attributes set with `self.` belong to the instance.
 
 ## Instantiating Objects
 

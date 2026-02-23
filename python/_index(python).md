@@ -740,7 +740,7 @@ PART X: EXCEPTION HANDLING AND ERROR MANAGEMENT
 ================================================================================
 Errors are inevitable in programming. This part teaches you how to anticipate, catch, and handle errors gracefully using try/except blocks. You'll learn about Python's built-in exceptions, how to create custom exceptions, and best practices for error handling. Good exception handling makes your programs robust and user-friendly instead of crashing unexpectedly.
 
-[Chapter 65: Introduction to Exception Handling](https://github.com/spacotto/grimoire/blob/main/python/10/chapter65.md)
+[Chapter 65: Introduction to Exception Handling](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter065.md)
 --------------------------------------------------------------------------------
 1. What are Exceptions?
 2. Why Exception Handling Matters
@@ -749,7 +749,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 5. Defensive Programming Principles
 6. Building Robust Applications
 
-[Chapter 66: Basic Exception Handling](https://github.com/spacotto/grimoire/blob/main/python/10/chapter66.md)
+[Chapter 66: Basic Exception Handling](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter066.md)
 --------------------------------------------------------------------------------
 1. The `try` Block
 2. The `except` Block
@@ -758,7 +758,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 5. Continuing Execution After Errors
 6. Exception Handling Flow
 
-[Chapter 67: Built-in Exception Types](https://github.com/spacotto/grimoire/blob/main/python/10/chapter67.md)
+[Chapter 67: Built-in Exception Types](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter067.md)
 --------------------------------------------------------------------------------
 1. `ValueError` - Invalid Data
 2. `TypeError` - Wrong Type of Data
@@ -772,7 +772,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 10. The Exception Hierarchy
 11. Choosing the Right Exception Type
 
-[Chapter 68: Multiple Exception Handling](https://github.com/spacotto/grimoire/blob/main/python/10/chapter68.md)
+[Chapter 68: Multiple Exception Handling](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter068.md)
 --------------------------------------------------------------------------------
 1. Catching Multiple Exception Types
 2. Multiple except Blocks
@@ -781,7 +781,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 5. Specific vs. General Exception Handlers
 6. Best Practices for Multiple Handlers
 
-[Chapter 69: Custom Exceptions](https://github.com/spacotto/grimoire/blob/main/python/10/chapter69.md)
+[Chapter 69: Custom Exceptions](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter069.md)
 --------------------------------------------------------------------------------
 1. When to Create Custom Exceptions
 2. Defining Custom Exception Classes
@@ -792,7 +792,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 7. Organising Domain-Specific Exceptions
 8. Benefits of Custom Exceptions
 
-[Chapter 70: The finally Block](https://github.com/spacotto/grimoire/blob/main/python/10/chapter70.md)
+[Chapter 70: The finally Block](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter070.md)
 --------------------------------------------------------------------------------
 1. What is the `finally` Block?
 2. Guaranteed Cleanup with `finally`
@@ -803,7 +803,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 7. File and Connection Cleanup
 8. Combining with Context Managers
 
-[Chapter 71: Raising Exceptions](https://github.com/spacotto/grimoire/blob/main/python/10/chapter71.md)
+[Chapter 71: Raising Exceptions](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter071.md)
 --------------------------------------------------------------------------------
 1. The `raise` Keyword
 2. When to Raise Exceptions
@@ -814,7 +814,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 7. Exception Chaining
 8. Input Validation with Exceptions
 
-[Chapter 72: Exception Handling Best Practices](https://github.com/spacotto/grimoire/blob/main/python/10/chapter72.md)
+[Chapter 72: Exception Handling Best Practices](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter072.md)
 --------------------------------------------------------------------------------
 1. Don't Catch Everything
 2. Be Specific with Exception Types
@@ -825,7 +825,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 7. When Not to Use Exceptions
 8. Performance Considerations
 
-[Chapter 73: Data Validation and Integrity](https://github.com/spacotto/grimoire/blob/main/python/10/chapter73.md)
+[Chapter 73: Data Validation and Integrity](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter073.md)
 --------------------------------------------------------------------------------
 1. Input Validation Techniques
 2. Data Sanitisation
@@ -835,7 +835,7 @@ Errors are inevitable in programming. This part teaches you how to anticipate, c
 6. Format Validation
 7. Maintaining Data Integrity
 
-[Chapter 74: Combining Exception Handling with File I/O](https://github.com/spacotto/grimoire/blob/main/python/10/chapter74.md)
+[Chapter 74: Combining Exception Handling with File I/O](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter074.md)
 --------------------------------------------------------------------------------
 1. File Operations and Error Handling
 2. Handling FileNotFoundError

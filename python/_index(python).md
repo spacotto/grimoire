@@ -429,7 +429,7 @@ Data structures are containers that hold and organise data in different ways. Th
 5. Processing Multiple Arguments
 6. Command-Line Data Processing
 
-Chapter 40: Lists
+[Chapter 40: Lists](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter040.md)
 --------------------------------------------------------------------------------
 1. What are Lists?
 2. Creating Lists
@@ -444,7 +444,7 @@ Chapter 40: Lists
 11. List Comprehensions (Preview)
 12. When to Use Lists
 
-Chapter 41: Tuples
+[Chapter 41: Tuples](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter041.md)
 --------------------------------------------------------------------------------
 1. What are Tuples?
 2. Creating Tuples
@@ -458,7 +458,7 @@ Chapter 41: Tuples
 10. When to Use Tuples
 11. Tuples vs. Lists
 
-Chapter 42: Sets
+[Chapter 42: Sets](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter042.md)
 --------------------------------------------------------------------------------
 1. What are Sets?
 2. Creating Sets
@@ -475,7 +475,7 @@ Chapter 42: Sets
 9. When to Use Sets
 10. Practical Set Applications
 
-Chapter 43: Dictionaries
+[Chapter 43: Dictionaries](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter043.md)
 --------------------------------------------------------------------------------
 1. What are Dictionaries?
 2. Creating Dictionaries
@@ -495,7 +495,7 @@ Chapter 43: Dictionaries
 11. Dictionary Comprehensions (Preview)
 12. When to Use Dictionaries
 
-Chapter 44: Generators and Iteration
+[Chapter 44: Generators and Iteration](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter044.md)
 --------------------------------------------------------------------------------
 1. What are Generators?
 2. The `yield` Keyword
@@ -510,7 +510,7 @@ Chapter 44: Generators and Iteration
 11. When to Use Generators
 12. The `typing.Generator` Type Hint
 
-Chapter 45: Comprehensions
+[Chapter 45: Comprehensions](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter045.md)
 --------------------------------------------------------------------------------
 1. What are Comprehensions?
 2. List Comprehensions
@@ -530,7 +530,7 @@ Chapter 45: Comprehensions
 7. Readability vs. Complexity
 8. Performance Considerations
 
-Chapter 46: Working with Collections
+[Chapter 46: Working with Collections](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter046.md)
 --------------------------------------------------------------------------------
 1. Choosing the Right Data Structure
 2. Collection Performance Characteristics

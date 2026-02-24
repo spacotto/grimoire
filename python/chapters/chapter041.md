@@ -65,6 +65,9 @@ name, _, age = ("Alice", "Smith", 30)  # name = "Alice", age = 30
 first, *middle, last = (1, 2, 3, 4, 5)  # first = 1, middle = [2, 3, 4], last = 5
 ```
 
+>[!IMPORTANT]
+>Tuple unpacking allows you to assign multiple values from a tuple (or any iterable) to multiple variables in a single statement, like `x, y, z = (1, 2, 3)` or `a, b = my_list`. The number of variables on the left must match the number of items on the right, though you can use `*variable` to capture multiple items (e.g., `first, *rest, last = [1, 2, 3, 4, 5]`). For exceptions, when you catch an exception with `except ExceptionType as e`, the exception's arguments (passed when raising it) are stored in `e.args` as a tuple and can be unpacked the same way: `raise ValueError("error", 42)` creates an exception where `e.args = ("error", 42)`, which you can unpack with `message, code = e.args`.
+
 ## Multiple Assignment with Tuples
 
 Assign multiple variables in one line:

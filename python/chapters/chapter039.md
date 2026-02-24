@@ -31,6 +31,9 @@ Running `python3 script.py hello 42` outputs:
 ['script.py', 'hello', '42']
 ```
 
+>[!IMPORTANT]
+>`sys.argv` is a list containing command-line arguments passed to your Python script, where `sys.argv[0]` is always the script name itself and `sys.argv[1:]` contains the actual arguments. For example, running `python script.py arg1 arg2` results in `sys.argv = ['script.py', 'arg1', 'arg2']`. The program name is simply the identifier of what's being executed, while the arguments are the data you pass to modify the script's behavior. All values in `sys.argv` are strings, and you can check `len(sys.argv)` to see how many total items exist (script name + arguments).
+
 ## Accessing Command-Line Arguments
 
 Use standard list indexing to access individual arguments.
@@ -125,3 +128,4 @@ Sum: 60.5
 
 >[!NOTE]
 >This pattern — validate input, convert types, process data — applies to most command-line scripts.
+

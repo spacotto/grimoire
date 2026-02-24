@@ -69,7 +69,7 @@ colors.clear()
 
 ## Set Operations
 
-### Union (|)
+### Union (`|`)
 
 Combines all elements from both sets:
 
@@ -80,7 +80,7 @@ set2 = {3, 4, 5}
 result = set1 | set2  # {1, 2, 3, 4, 5}
 ```
 
-### Intersection (&)
+### Intersection (`&`)
 
 Returns only common elements:
 
@@ -91,7 +91,7 @@ set2 = {2, 3, 4}
 result = set1 & set2  # {2, 3}
 ```
 
-### Difference (-)
+### Difference (`-`)
 
 Returns elements in first set but not in second:
 
@@ -102,7 +102,7 @@ set2 = {2, 3, 4}
 result = set1 - set2  # {1}
 ```
 
-### Symmetric Difference (^)
+### Symmetric Difference (`^`)
 
 Returns elements in either set, but not in both:
 

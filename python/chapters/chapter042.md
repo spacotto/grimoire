@@ -3,7 +3,7 @@ Sets are unordered collections of unique elements in Python. They provide fast m
 
 ## What are Sets?
 
-A set is a built-in Python data type that stores an unordered collection of unique items. Sets are mutable (you can add/remove elements), but the elements themselves must be immutable (hashable) types like strings, numbers, or tuples.
+A set is a built-in Python data type that **stores an unordered collection of unique items**. Sets are **mutable** (you can add/remove elements), but the **elements** themselves must be **immutable** (**hashable**) types like strings, numbers, or tuples.
 
 Key characteristics:
 - Unordered (no indexing)

@@ -1,4 +1,4 @@
-# Lists in Python
+# Lists
 Lists are Python's most versatile and commonly used data structure for storing ordered collections of items. They're mutable, meaning you can change their contents after creation, and can hold any mix of data types. This guide covers essential list operations and methods you'll use daily.
 
 ## What are Lists?

@@ -53,16 +53,16 @@ fruits[::-1]  # ["date", "cherry", "banana", "apple"] (reversed)
 numbers = [1, 2, 3]
 
 # append() - add single item to end
-numbers.append(4)  # [1, 2, 3, 4]
+numbers.append(4)        # [1, 2, 3, 4]
 
 # insert() - add item at specific position
-numbers.insert(1, 1.5)  # [1, 1.5, 2, 3, 4]
+numbers.insert(1, 1.5)   # [1, 1.5, 2, 3, 4]
 
 # extend() - add multiple items
-numbers.extend([5, 6])  # [1, 1.5, 2, 3, 4, 5, 6]
+numbers.extend([5, 6])   # [1, 1.5, 2, 3, 4, 5, 6]
 
 # += operator - shorthand for extend()
-numbers += [7, 8]  # [1, 1.5, 2, 3, 4, 5, 6, 7, 8]
+numbers += [7, 8]        # [1, 1.5, 2, 3, 4, 5, 6, 7, 8]
 ```
 
 ## Removing Elements
@@ -82,6 +82,7 @@ fruits.clear()  # []
 ```
 
 ## List Operations
+
 ```python
 # Concatenation
 [1, 2] + [3, 4]  # [1, 2, 3, 4]
@@ -94,6 +95,7 @@ fruits.clear()  # []
 ```
 
 ## Common List Methods
+
 ```python
 items = [3, 1, 4, 1, 5]
 
@@ -104,6 +106,7 @@ items.copy()         # creates shallow copy
 ```
 
 ## List Iteration
+
 ```python
 fruits = ["apple", "banana", "cherry"]
 
@@ -123,6 +126,7 @@ while i < len(fruits):
 ```
 
 ## Built-in Functions for Lists
+
 ```python
 numbers = [3, 1, 4, 1, 5]
 
@@ -135,6 +139,7 @@ all(numbers)    # True (if all elements are truthy)
 ```
 
 ## Sorting Lists
+
 ```python
 numbers = [3, 1, 4, 1, 5]
 

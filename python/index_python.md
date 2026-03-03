@@ -669,7 +669,7 @@ PART IX: FILE I/O AND STREAMS
 ================================================================================
 Programs often need to read data from files and write results back. This part teaches file operations: reading, writing, and using context managers (with statement) for safe file handling. You'll learn about stdin, stdout, and stderr streams, and best practices for resource management. File I/O is essential for data processing, logging, and persistent storage.
 
-Chapter 59: Introduction to File Operations
+[Chapter 59: Introduction to File Operations](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter059.md)
 --------------------------------------------------------------------------------
 1. What is File I/O?
 2. Why File Operations Matter

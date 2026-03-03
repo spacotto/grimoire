@@ -6,8 +6,8 @@ File operations are fundamental to programming. They let you save data, load con
 
 File I/O (Input/Output) refers to reading data from files and writing data to files. It's how your program interacts with persistent storage on disk.
 
-**Input**: Reading data from a file into your program
-**Output**: Writing data from your program to a file
+- **Input**: Reading data from a file into your program
+- **Output**: Writing data from your program to a file
 ```python
 # Reading (Input)
 with open('data.txt', 'r') as f:
@@ -235,3 +235,4 @@ with open('huge_log.txt', 'r') as f:
     for line in f:
         process(line)
 ```
+

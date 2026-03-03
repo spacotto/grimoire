@@ -678,7 +678,7 @@ Programs often need to read data from files and write results back. This part te
 5. File Operations Overview
 6. Common File Operation Pitfalls
 
-Chapter 60: Reading Files
+[Chapter 60: Reading Files](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter060.md)
 --------------------------------------------------------------------------------
 1. The open() Function
 2. File Modes (`'r'`, `'w'`, `'a'`, `'r+'`)
@@ -689,7 +689,7 @@ Chapter 60: Reading Files
 7. Closing Files with `close()`
 8. File Encoding
 
-Chapter 61.: Writing Files
+[Chapter 61.: Writing Files](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter061.md)
 --------------------------------------------------------------------------------
 1. Opening Files for Writing
 2. Write Mode vs. Append Mode
@@ -699,7 +699,7 @@ Chapter 61.: Writing Files
 6. Flushing Buffers
 7. File Permissions
 
-Chapter 62: Context Managers and the with Statement
+[Chapter 62: Context Managers and the with Statement](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter062.md)
 --------------------------------------------------------------------------------
 1. What are Context Managers?
 2. The `with` Statement
@@ -711,7 +711,7 @@ Chapter 62: Context Managers and the with Statement
 8. Creating Custom Context Managers
 9. Exception Safety `with with`
 
-Chapter 63: Standard Streams
+[Chapter 63: Standard Streams](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter063.md)
 --------------------------------------------------------------------------------
 1. Understanding Standard I/O
 2. Standard Input (`stdin`)
@@ -724,7 +724,7 @@ Chapter 63: Standard Streams
 9. When to Use Each Stream
 10. Separating Normal Output from Errors
 
-Chapter 64: File Operations Best Practices
+[Chapter 64: File Operations Best Practices](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter064.md)
 --------------------------------------------------------------------------------
 1. Always Use Context Managers
 2. Handle File Not Found Errors

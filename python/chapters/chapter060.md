@@ -39,10 +39,11 @@ print(content)
 file.close()
 ```
 
-You can specify the number of characters to read:
-```python
-first_100_chars = file.read(100)
-```
+>[!TIP]
+>You can specify the number of characters to read:
+>```python
+>first_100_chars = file.read(100)
+>```
 
 ## Reading Line by Line (readline())
 
@@ -54,7 +55,8 @@ line2 = file.readline()
 file.close()
 ```
 
-Returns an empty string when reaching the end of the file.
+>[!NOTE]
+>Returns an empty string when reaching the end of the file.
 
 ## Reading All Lines (readlines())
 
@@ -76,7 +78,8 @@ for line in file:
 file.close()
 ```
 
-This approach is memory-efficient for large files.
+>[!NOTE]
+>This approach is memory-efficient for large files.
 
 ## Closing Files with close()
 
@@ -110,4 +113,5 @@ with open('data.txt', 'r', encoding='utf-8') as file:
     content = file.read()
 ```
 
-Explicit encoding prevents issues with special characters and ensures consistent behavior across different systems.
+>[!NOTE]
+>Explicit encoding prevents issues with special characters and ensures consistent behavior across different systems.

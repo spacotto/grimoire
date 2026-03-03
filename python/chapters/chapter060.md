@@ -16,7 +16,7 @@ file = open('example.txt', 'r')
 
 Common file modes determine how you can interact with a file.
 
-| Syntax | | |
+| Syntax | Mode | Description |
 | :--- | :--- | :--- |
 | `'r'` | Read mode (default) | File must exist |
 | `'w'` | Write mode | Creates new file or overwrites existing|

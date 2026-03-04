@@ -1,7 +1,5 @@
 # File Operations Best Practices
 
-## Abstract
-
 This guide covers essential best practices for file operations in Python 3. Proper file handling prevents resource leaks, data corruption, and security vulnerabilities. Following these patterns ensures robust, maintainable code.
 
 ## Always Use Context Managers

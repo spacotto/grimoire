@@ -689,7 +689,7 @@ Programs often need to read data from files and write results back. This part te
 7. Closing Files with `close()`
 8. File Encoding
 
-[Chapter 61.: Writing Files](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter061.md)
+[Chapter 61: Writing Files](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter061.md)
 --------------------------------------------------------------------------------
 1. Opening Files for Writing
 2. Write Mode vs. Append Mode

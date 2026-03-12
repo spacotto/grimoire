@@ -245,7 +245,7 @@ Object-oriented programming (OOP) organises code around objects that contain bot
 7. Composition vs. Inheritance
 8. `HAS-A` Relationships
 
-Chapter 24: Polymorphism Fundamentals
+[Chapter 24: Polymorphism Fundamentals](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter024.md)
 --------------------------------------------------------------------------------
 1. What is Polymorphism?
 2. Types of Polymorphism

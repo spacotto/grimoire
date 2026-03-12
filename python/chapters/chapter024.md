@@ -67,7 +67,7 @@ make_it_quack(Person())  # I'm imitating a duck!
 
 ## Polymorphic Behaviour
 
-Polymorphic behavior emerges when different objects respond to the same message in type-appropriate ways. The caller doesn't need to know the specific type—only that the object supports the required interface.
+Polymorphic behaviour emerges when different objects respond to the same message in type-appropriate ways. The caller doesn't need to know the specific type—only that the object supports the required interface.
 ```python
 shapes = [Circle(5), Rectangle(4, 6), Triangle(3, 4)]
 
@@ -127,15 +127,13 @@ def apply_processing(processor: Processor, text: str):
 
 ## Benefits of Polymorphic Design
 
-**Flexibility:** Add new types without changing existing code.
-
-**Maintainability:** Changes to one type don't affect others.
-
-**Testability:** Easy to create mock objects for testing.
-
-**Readability:** Code expresses intent at a high level, hiding implementation details.
-
-**Extensibility:** New behaviors can be added by creating new classes, not modifying existing ones (Open/Closed Principle).
+| Benefit | Explanation |
+| :--- | :--- |
+| Flexibility | Add new types without changing existing code. |
+| Maintainability | Changes to one type don't affect others. |
+| Testability | Easy to create mock objects for testing. |
+| Readability | Code expresses intent at a high level, hiding implementation details. |
+| Extensibility | New behaviours can be added by creating new classes, not modifying existing ones (Open/Closed Principle).|
 
 **Example:**
 ```python

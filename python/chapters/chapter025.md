@@ -1,4 +1,4 @@
-# Method Overriding in Python
+# Method Overriding
 
 Method overriding lets a subclass redefine a method inherited from its parent class. It is the mechanism behind **subtype polymorphism**: the same method call behaves differently depending on the actual type of the object at runtime. Understanding method overriding — and when to use it — is essential for writing clean, extensible object-oriented code in Python.
 

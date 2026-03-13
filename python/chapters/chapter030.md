@@ -73,8 +73,6 @@ class JSONStream(DataStream):
 >[!WARNING]
 >`DataStream` is closed for modification. To support XML, you add `XMLStream` — you don't touch `CSVStream` or `JSONStream`.
 
----
-
 ## Liskov Substitution Principle
 
 >[!IMPORTANT]

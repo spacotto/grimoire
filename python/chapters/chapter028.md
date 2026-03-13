@@ -1,6 +1,6 @@
 # Advanced Type Hints
 
-Type hints make Python code easier to read, maintain, and debug. They don't affect runtime behavior — Python remains dynamically typed — but they unlock static analysis tools (like `mypy` or `pyright`) and serve as inline documentation. This guide covers the core tools for annotating complex, polymorphic, and generic code.
+Type hints make Python code easier to read, maintain, and debug. They don't affect runtime behaviour — Python remains dynamically typed — but they unlock static analysis tools (like `mypy` or `pyright`) and serve as inline documentation. This guide covers the core tools for annotating complex, polymorphic, and generic code.
 
 ## The `typing` Module
 
@@ -263,4 +263,3 @@ def dispatch(stream: StreamType) -> None:
 | `Generic[T]` | Generic class base | `class Box(Generic[T])` |
 | `Protocol` | Structural interface | `class Readable(Protocol)` |
 | `TypeAlias` | Named type alias | `Matrix: TypeAlias = list[list[float]]` |
-```

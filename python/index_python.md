@@ -267,7 +267,7 @@ Object-oriented programming (OOP) organises code around objects that contain bot
 7. When to Override Methods
 8. Method Resolution Order (MRO)
 
-Chapter 26: Abstract Base Classes (ABC)
+[Chapter 26: Abstract Base Classes (ABC)](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter026.md)
 --------------------------------------------------------------------------------
 1. What are Abstract Base Classes (ABC)?
 2. The `abc` Module
@@ -282,7 +282,7 @@ Chapter 26: Abstract Base Classes (ABC)
 11. Abstract Methods vs. Concrete Methods
 12. Partial Implementation in Abstract Classes
 
-Chapter 27: Protocols and Duck Typing
+[Chapter 27: Protocols and Duck Typing](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter027.md)
 --------------------------------------------------------------------------------
 1. What are Protocols?
 2. Structural Subtyping
@@ -293,7 +293,7 @@ Chapter 27: Protocols and Duck Typing
 7. Runtime Checkable Protocols
 8. When to Use Protocols
 
-Chapter 28: Advanced Type Hints
+[Chapter 28: Advanced Type Hints](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter028.md)
 --------------------------------------------------------------------------------
 1. The typing Module
 2. Generic Types (`List`, `Dict`, `Set`, `Tuple`)
@@ -304,7 +304,7 @@ Chapter 28: Advanced Type Hints
 7. Generic Classes and Functions
 8. Type Hints for Polymorphic Code
 
-Chapter 29: Polymorphic Design Patterns
+[Chapter 29: Polymorphic Design Patterns](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter029.md)
 --------------------------------------------------------------------------------
 1. Strategy Pattern
 2. Template Method Pattern
@@ -315,7 +315,7 @@ Chapter 29: Polymorphic Design Patterns
 7. Dependency Injection
 8. Interface Segregation
 
-Chapter 30: Building Polymorphic Systems
+[Chapter 30: Building Polymorphic Systems](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter030.md)
 --------------------------------------------------------------------------------
 1. Designing for Extensibility
 2. Open/Closed Principle
@@ -326,7 +326,7 @@ Chapter 30: Building Polymorphic Systems
 7. Error Handling in Polymorphic Systems
 8. Performance Considerations
 
-Chapter 31: Advanced Inheritance Patterns
+[Chapter 31: Advanced Inheritance Patterns](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter031.md)
 --------------------------------------------------------------------------------
 1. Multiple Inheritance
 2. Method Resolution Order (MRO) in Detail
@@ -337,7 +337,7 @@ Chapter 31: Advanced Inheritance Patterns
 7. Inheritance Hierarchies Design
 8. When to Use Composition Over Inheritance
 
-Chapter 32: Interface Design Principles
+[Chapter 32: Interface Design Principles](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter032.md)
 --------------------------------------------------------------------------------
 1. What are Interfaces?
 2. Interfaces vs. Abstract Classes
@@ -348,7 +348,7 @@ Chapter 32: Interface Design Principles
 7. Contract-Based Programming
 8. Interface Documentation
 
-Chapter 33: Multiple Interface Implementation
+[Chapter 33: Multiple Interface Implementation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter033.md)
 --------------------------------------------------------------------------------
 1. Implementing Multiple Interfaces
 2. Combining Behaviours Through Interfaces
@@ -359,7 +359,7 @@ Chapter 33: Multiple Interface Implementation
 7. Benefits of Multiple Interface Design
 8. Common Pitfalls and Solutions
 
-Chapter 34: Abstract Factory Pattern
+[Chapter 34: Abstract Factory Pattern](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter034.md)
 --------------------------------------------------------------------------------
 1. What is the Abstract Factory Pattern?
 2. Factory Method vs. Abstract Factory
@@ -371,7 +371,7 @@ Chapter 34: Abstract Factory Pattern
 8. When to Use Abstract Factory
 9. Benefits and Trade-offs
 
-Chapter 35: Strategy Pattern
+[Chapter 35: Strategy Pattern](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter035.md)
 --------------------------------------------------------------------------------
 1. What is the Strategy Pattern?
 2. Defining Strategy Interfaces
@@ -382,7 +382,7 @@ Chapter 35: Strategy Pattern
 7. When to Use Strategy Pattern
 8. Benefits and Trade-offs
 
-Chapter 36: Combining Design Patterns
+[Chapter 36: Combining Design Patterns](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter036.md)
 --------------------------------------------------------------------------------
 1. Factory + Strategy Combination
 2. Abstract Factory + Template Method
@@ -393,7 +393,7 @@ Chapter 36: Combining Design Patterns
 7. Practical Pattern Combinations
 8. Real-World Pattern Usage
 
-Chapter 37: Building Flexible Systems
+[Chapter 37: Building Flexible Systems](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter037.md)
 --------------------------------------------------------------------------------
 1. Plugin Architectures
 2. Extensible System Design
@@ -404,7 +404,7 @@ Chapter 37: Building Flexible Systems
 7. Migration Strategies
 8. Backward Compatibility
 
-Chapter 38: Advanced Abstraction Techniques
+[Chapter 38: Advanced Abstraction Techniques](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter038.md)
 --------------------------------------------------------------------------------
 1. Layered Abstractions
 2. Abstraction Levels
@@ -545,7 +545,7 @@ PART VIII: MODULES AND PACKAGES
 ================================================================================
 As programs grow, organising code becomes essential. This part teaches you how to split code into modules (files) and packages (directories), import code from other files, and manage dependencies between modules. You'll understand absolute vs. relative imports, avoid circular dependencies, and use __init__.py to control package interfaces. This is fundamental to writing maintainable, professional Python projects.
 
-Chapter 47: Introduction to Modules
+[Chapter 47: Introduction to Modules](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter047.md)
 --------------------------------------------------------------------------------
 1. What are Modules?
 2. Why Use Modules?
@@ -554,7 +554,7 @@ Chapter 47: Introduction to Modules
 5. How Python Finds Modules
 6 Code Organisation Benefits
 
-Chapter 48: Basic Import Statements
+[Chapter 48: Basic Import Statements](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter048.md)
 --------------------------------------------------------------------------------
 1. The import Statement
 2. Importing Entire Modules
@@ -563,7 +563,7 @@ Chapter 48: Basic Import Statements
 5. Import Statement Placement
 6. Module Namespaces
 
-Chapter 49: from...import Statements
+[Chapter 49: from...import Statements](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter049.md)
 --------------------------------------------------------------------------------
 1. Importing Specific Functions
 2. `from` module `import` function
@@ -572,7 +572,7 @@ Chapter 49: from...import Statements
 5. Why to Avoid `import *`
 6. Namespace Considerations
 
-Chapter 50: Import Aliases
+[Chapter 50: Import Aliases](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter050.md)
 --------------------------------------------------------------------------------
 1. The `as` Keyword
 2. `import module as alias`
@@ -581,7 +581,7 @@ Chapter 50: Import Aliases
 5. Common Aliasing Conventions
 6. Improving Code Readability
 
-Chapter 51: Packages
+[Chapter 51: Packages](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter051.md)
 --------------------------------------------------------------------------------
 1. What are Packages?
 2. Package Directories
@@ -591,7 +591,7 @@ Chapter 51: Packages
 6. Nested Packages (Subpackages)
 7. Package Structure Best Practices
 
-Chapter 52: The `__init__.py` Sacred Scroll
+[Chapter 52: The `__init__.py` Sacred Scroll](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter052.md)
 --------------------------------------------------------------------------------
 1. Purpose of `__init__.py`
 2. Empty vs. Populated `__init__.py`
@@ -602,7 +602,7 @@ Chapter 52: The `__init__.py` Sacred Scroll
 7. Package-Level vs. Module-Level Access
 8. Information Hiding with `__init__.py`
 
-Chapter 53: Absolute Imports
+[Chapter 53: Absolute Imports](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter053.md)
 --------------------------------------------------------------------------------
 1. What are Absolute Imports?
 2. Full Import Paths
@@ -611,7 +611,7 @@ Chapter 53: Absolute Imports
 5. When to Use Absolute Imports
 6. Absolute Import Best Practices
 
-Chapter 54: Relative Imports
+[Chapter 54: Relative Imports](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter054.md)
 --------------------------------------------------------------------------------
 1. What are Relative Imports?
 2. Dot Notation (`.` and `..`)
@@ -622,7 +622,7 @@ Chapter 54: Relative Imports
 7. When to Use Relative Imports
 8. Relative Import Limitations
 
-Chapter 55: Absolute vs. Relative Imports
+[Chapter 55: Absolute vs. Relative Imports](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter055.md)
 --------------------------------------------------------------------------------
 1. The Great Pathway Debate
 2. Advantages of Absolute Imports
@@ -633,7 +633,7 @@ Chapter 55: Absolute vs. Relative Imports
 7. Team Preferences
 8. PEP 8 Recommendations
 
-Chapter 56: Circular Dependencies
+[Chapter 56: Circular Dependencies](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter058.md)
 --------------------------------------------------------------------------------
 1. What are Circular Dependencies?
 2. The Circular Import Problem
@@ -642,7 +642,7 @@ Chapter 56: Circular Dependencies
 5. Circular Dependency Patterns
 6. The Danger of Circular Imports
 
-Chapter 57: Breaking Circular Dependencies
+[Chapter 57: Breaking Circular Dependencies](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter057.md)
 --------------------------------------------------------------------------------
 1. Late Imports (Import Inside Functions)
 2. Dependency Injection
@@ -653,7 +653,7 @@ Chapter 57: Breaking Circular Dependencies
 7. Prevention Strategies
 8. Design Patterns to Avoid Circularity
 
-Chapter 58: Module and Package Best Practices
+[Chapter 58: Module and Package Best Practices](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter058.md)
 --------------------------------------------------------------------------------
 1. Organising Code into Modules
 2. When to Create a Package

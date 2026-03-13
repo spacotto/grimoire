@@ -256,7 +256,7 @@ Object-oriented programming (OOP) organises code around objects that contain bot
 7. Same Interface, Different Behaviour
 8. Benefits of Polymorphic Design
 
-Chapter 25: Method Overriding
+[Chapter 25: Method Overriding](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter025.md)
 --------------------------------------------------------------------------------
 1. What is Method Overriding?
 2. Overriding vs. Overloading

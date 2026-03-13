@@ -1,4 +1,4 @@
-# Abstract Base Classes (ABC) in Python
+# Abstract Base Classes (ABC)
 
 Abstract Base Classes (ABC) define a shared interface for a group of related classes. They specify *what* methods a subclass must implement, without dictating *how*. ABCs are Python's primary tool for enforcing interface contracts in object-oriented design.
 

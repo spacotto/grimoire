@@ -1,12 +1,6 @@
 # Abstract Factory Pattern
 
----
-
-## Abstract
-
 The Abstract Factory pattern is a **creational design pattern** that provides an interface for creating *families of related objects* without specifying their concrete classes. It builds on the Factory Method pattern by grouping multiple factories under a common interface, ensuring that products from the same family are always used together.
-
----
 
 ## What is the Abstract Factory Pattern?
 
@@ -42,8 +36,6 @@ class UIFactory(ABC):
     def create_checkbox(self) -> Checkbox: ...
 ```
 
----
-
 ## Factory Method vs. Abstract Factory
 
 Both patterns delegate object creation — but they differ in **scope** and **intent**.
@@ -55,9 +47,8 @@ Both patterns delegate object creation — but they differ in **scope** and **in
 | **Variation axis** | One product varies | Whole product family varies |
 | **Coupling** | Subclasses choose product | Factory object chooses family |
 
-**Factory Method** is a single method (often in a base class) that subclasses override to produce one kind of object.
-
-**Abstract Factory** is an object with *multiple* creation methods, where you swap the entire factory to switch product families.
+- **Factory Method** is a single method (often in a base class) that subclasses override to produce one kind of object.
+- **Abstract Factory** is an object with *multiple* creation methods, where you swap the entire factory to switch product families.
 
 ```python
 # Factory Method — one product, one method to override
@@ -73,9 +64,8 @@ class UIFactory(ABC):
     def create_checkbox(self) -> Checkbox: ...
 ```
 
-Use Factory Method when variation involves a single product type. Use Abstract Factory when variation involves a whole family.
-
----
+>[!TIP]
+>Use Factory Method when variation involves a single product type. Use Abstract Factory when variation involves a whole family.
 
 ## Defining Abstract Factory Interfaces
 
@@ -102,8 +92,6 @@ class UIFactory(ABC):
 - Return abstract product types, not concrete ones
 - Avoid adding logic to the abstract factory; keep it declarative
 - Name methods consistently: `create_<product>()` is idiomatic
-
----
 
 ## Concrete Factory Implementations
 
@@ -144,9 +132,8 @@ class MacUIFactory(UIFactory):
         return MacCheckbox()
 ```
 
-Each factory is a self-contained unit. Adding a new platform means adding a new factory class and new product classes — existing code is untouched.
-
----
+>[!NOTE]
+>Each factory is a self-contained unit. Adding a new platform means adding a new factory class and new product classes — existing code is untouched.
 
 ## Product Families
 
@@ -169,9 +156,8 @@ class DarkThemeFactory(UIFactory):
         return DarkCheckbox()      # dark-styled
 ```
 
-**Key benefit:** the client can never accidentally mix a `DarkButton` with a `LightCheckbox` — the factory guarantees consistency across the family.
-
----
+>[!NOTE]
+>**Key benefit:** the client can never accidentally mix a `DarkButton` with a `LightCheckbox` — the factory guarantees consistency across the family.
 
 ## Creating Related Objects
 
@@ -200,9 +186,8 @@ app.render()
 # (Mac Checkbox)
 ```
 
-The `Application` class is completely decoupled from concrete products. Switching families requires only changing which factory is injected.
-
----
+>[!NOTE]
+>The `Application` class is completely decoupled from concrete products. Switching families requires only changing which factory is injected.
 
 ## Factory Registration and Discovery
 
@@ -247,8 +232,6 @@ class WindowsUIFactory(UIFactory):
     ...
 ```
 
----
-
 ## When to Use Abstract Factory
 
 Use Abstract Factory when:
@@ -265,34 +248,22 @@ Avoid Abstract Factory when:
 - Your product families are unlikely to **grow or change** — the abstraction may be overkill
 - You need **fine-grained control** over individual product variants — the pattern locks in whole families
 
----
-
 ## Benefits and Trade-offs
 
 ### Benefits
 
-**Consistency** — the factory guarantees all created products belong to the same family; no accidental mismatches.
-
-**Open/Closed Principle** — new product families are added by creating new factory and product classes, not by modifying existing ones.
-
-**Single Responsibility** — product creation logic is centralized in factory classes, keeping client code clean.
-
-**Dependency Inversion** — clients depend on abstract interfaces, not concrete implementations; makes testing and swapping easier.
-
-**Encapsulation** — clients never need to know which concrete classes are in use.
+- **Consistency** — the factory guarantees all created products belong to the same family; no accidental mismatches.
+- **Open/Closed Principle** — new product families are added by creating new factory and product classes, not by modifying existing ones.
+- **Single Responsibility** — product creation logic is centralized in factory classes, keeping client code clean.
+- **Dependency Inversion** — clients depend on abstract interfaces, not concrete implementations; makes testing and swapping easier.
+- **Encapsulation** — clients never need to know which concrete classes are in use.
 
 ### Trade-offs
 
-**Complexity** — introduces many new classes and interfaces. For simple use cases, this overhead may not be justified.
+- **Complexity** — introduces many new classes and interfaces. For simple use cases, this overhead may not be justified.
+- **Rigidity around products** — adding a *new product type* to the family requires updating *every* concrete factory. This can be painful if factories are spread across a large codebase.
+- **Harder to extend per-product** — since the factory controls all creation, it's less flexible when you want to customize one product independently from the family.
+- **Indirection** — following the code path from factory call to concrete product requires more navigation than direct instantiation.
 
-**Rigidity around products** — adding a *new product type* to the family requires updating *every* concrete factory. This can be painful if factories are spread across a large codebase.
-
-**Harder to extend per-product** — since the factory controls all creation, it's less flexible when you want to customize one product independently from the family.
-
-**Indirection** — following the code path from factory call to concrete product requires more navigation than direct instantiation.
-
-```
-Rule of thumb:
-If you find yourself writing `if platform == "windows": ... elif platform == "mac": ...`
-in multiple places across your codebase, Abstract Factory is likely the right cure.
-```
+>[!TIP]
+>**Rule of thumb:** If you find yourself writing `if platform == "windows": ... elif platform == "mac": ...` in multiple places across your codebase, Abstract Factory is likely the right cure.

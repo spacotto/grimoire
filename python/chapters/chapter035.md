@@ -19,8 +19,6 @@ Client → Context → Strategy (interface)
                       └── ConcreteStrategyC
 ```
 
----
-
 ## Defining Strategy Interfaces
 
 Use Python's `abc` module to define the interface. Every concrete strategy must implement the abstract method(s).
@@ -102,8 +100,6 @@ print(sorter.sort(data))  # [1, 2, 3, 5, 8, 9]
 
 >[!NOTE]
 >The Context exposes a clean interface; the algorithm lives entirely in the strategy.
-
----
 
 ## Runtime Strategy Selection
 
@@ -216,28 +212,22 @@ Avoid Strategy when:
 - The algorithm variations are trivial enough to fit cleanly in a single function with a flag parameter
 - The overhead of extra classes outweighs the flexibility gain
 
----
 
 ## Benefits and Trade-offs
 
 ### Benefits
 
-| | |
-|---|---|
-| **Flexibility** | Swap algorithms at runtime without touching the Context |
-| **Separation of concerns** | Each strategy encapsulates one behaviour — single responsibility |
-| **Testability** | Strategies are independent classes; easy to unit test in isolation |
-| **Extensibility** | Add new strategies without modifying existing code (Open/Closed) |
-| **Eliminates conditionals** | Replaces branching logic with polymorphism |
+- **Flexibility.** Swap algorithms at runtime without touching the Context.
+- **Separation of concerns.** Each strategy encapsulates one behaviour — single responsibility.
+- **Testability.** Strategies are independent classes; easy to unit test in isolation.
+- **Extensibility.** Add new strategies without modifying existing code (Open/Closed).
+- **Eliminates conditionals.** Replaces branching logic with polymorphism.
 
 ### Trade-offs
 
-| | |
-|---|---|
-| **More classes** | Each algorithm becomes its own class; small projects may not justify this |
-| **Client awareness** | The client must know which strategies exist to make an informed choice |
-| **Overhead** | Passing data between Context and Strategy can add indirection |
+- **More classes.** Each algorithm becomes its own class; small projects may not justify this.
+- **Client awareness.** The client must know which strategies exist to make an informed choice.
+- **Overhead.** Passing data between Context and Strategy can add indirection.
 
-### Quick rule of thumb
-
-> If you find yourself writing `if algorithm == "x": ... elif algorithm == "y": ...` in multiple places — Strategy Pattern is likely the right fix.
+>[!TIP]
+>**Rule of thumb:** If you find yourself writing `if algorithm == "x": ... elif algorithm == "y": ...` in multiple places — Strategy Pattern is likely the right fix.

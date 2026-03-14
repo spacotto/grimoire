@@ -111,7 +111,7 @@ Prefer **absolute imports** for cross-package references and in any file intende
 
 ## Relative Import Limitations
 
-**1. Scripts cannot use relative imports.**
+### Scripts cannot use relative imports
 
 Running a file directly (`python myfile.py`) sets `__name__` to `"__main__"`, which has no package context. Relative imports will raise:
 
@@ -125,17 +125,17 @@ Fix: run the package with `-m` instead.
 python -m mypackage.subpackage.processor
 ```
 
-**2. Requires a proper package structure.**
+### Requires a proper package structure
 
 Every directory in the chain must have an `__init__.py` (or be a namespace package). A missing `__init__.py` breaks the hierarchy.
 
-**3. Cannot go above the top-level package.**
+### Cannot go above the top-level package
 
 You cannot use `...` to escape the root package. Doing so raises:
 ```
 ImportError: attempted relative import beyond top-level package
 ```
 
-**4. Harder to trace in large codebases.**
+### Harder to trace in large codebases
 
 Dots give no hint of the actual package name. In deep hierarchies, absolute imports are often clearer to readers unfamiliar with the layout.

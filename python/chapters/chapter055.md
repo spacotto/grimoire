@@ -1,4 +1,4 @@
-# Absolute vs. Relative Imports in Python 3
+# Absolute vs. Relative Imports
 
 Python offers two ways to import modules: **absolute** and **relative**. Choosing between them affects readability, portability, and maintainability. This note covers when and why to prefer one over the other.
 

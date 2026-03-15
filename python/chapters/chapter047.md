@@ -112,9 +112,9 @@ my_app/
 │   ├── login.py
 │   └── tokens.py
 └── data/
-├── init.py
-├── models.py
-└── validators.py
+    ├── init.py
+    ├── models.py
+    └── validators.py
 ```
 
 ```python

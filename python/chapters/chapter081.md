@@ -22,20 +22,48 @@ python3 -m pip --version
 
 Install one or more packages by name. pip resolves and installs dependencies automatically.
 
+Install a package:
+
 ```bash
-copied
-# install a package
 pip install requests
+```
 
-# install a specific version
+Install a specific version:
+
+```bash
 pip install requests==2.31.0
+```
 
-# install multiple packages at once
+Install multiple packages at once:
+```bash
 pip install flask sqlalchemy celery
+```
 
-# install from a local directory (editable/dev mode)
+Install from a local directory (editable/dev mode):
+
+```bash
 pip install -e .
 ```
 
 >[TIP]
 >Always install inside a virtual environment (`venv` or `virtualenv`) to keep project dependencies isolated.
+
+## Uninstalling packages
+
+Remove a package and its metadata. Dependencies are not removed automatically.
+
+Uninstall a package (prompts for confirmation):
+
+```bash
+pip uninstall requests
+```
+
+Skip the confirmation prompt:
+```bash
+pip uninstall requests -y
+```
+
+Uninstall multiple packages:
+```bash
+pip uninstall flask sqlalchemy -y
+```

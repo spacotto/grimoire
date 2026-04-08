@@ -17,3 +17,25 @@ python3 -m pip --version
 
 >[!TIP]
 >Use `python3 -m pip` instead of bare `pip` to ensure you're using the pip tied to the active Python interpreter.
+
+## Installing packages
+
+Install one or more packages by name. pip resolves and installs dependencies automatically.
+
+```bash
+copied
+# install a package
+pip install requests
+
+# install a specific version
+pip install requests==2.31.0
+
+# install multiple packages at once
+pip install flask sqlalchemy celery
+
+# install from a local directory (editable/dev mode)
+pip install -e .
+```
+
+>[TIP]
+>Always install inside a virtual environment (`venv` or `virtualenv`) to keep project dependencies isolated.

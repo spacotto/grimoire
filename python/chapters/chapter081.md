@@ -112,3 +112,24 @@ pip install --upgrade flask jinja2
 
 >[!WARNING]
 >Upgrading without version constraints can introduce breaking changes. Pin versions in production environments.
+
+## pip freeze and requirements files
+
+`pip freeze` outputs all installed packages with exact versions (the canonical way to snapshot an environment).
+
+Print all installed packages in requirements format:
+
+```bash
+pip freeze
+certifi==2024.2.2
+charset-normalizer==3.3.2
+idna==3.6
+requests==2.31.0
+urllib3==2.2.1
+```
+
+Save snapshot to a file:
+
+```bash
+pip freeze > requirements.txt
+```

@@ -45,7 +45,7 @@ Install from a local directory (editable/dev mode):
 pip install -e .
 ```
 
->[TIP]
+>[!TIP]
 >Always install inside a virtual environment (`venv` or `virtualenv`) to keep project dependencies isolated.
 
 ## Uninstalling packages
@@ -89,3 +89,26 @@ Output as JSON:
 ```bash
 pip list --format=json
 ```
+
+## Upgrading packages
+
+Upgrade a package to the latest compatible version:
+
+```bash
+pip install --upgrade requests
+```
+
+Upgrade pip itself:
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+Upgrade multiple packages:
+
+```bash
+pip install --upgrade flask jinja2
+```
+
+>[!WARNING]
+>Upgrading without version constraints can introduce breaking changes. Pin versions in production environments.

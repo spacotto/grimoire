@@ -88,7 +88,8 @@ Project A  →  requires  django==3.2
 Project B  →  requires  django==4.2
 ```
 
-Without isolated environments, installing one breaks the other. With virtual environments, each project carries its own dependency tree. Thus, no conflicts.
+>[!IMPORTANT]
+>Without isolated environments, installing one breaks the other. With virtual environments, each project carries its own dependency tree. Thus, no conflicts.
 
 ## Reproducible Environments
 
@@ -104,13 +105,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-For stricter reproducibility (locked transitive dependencies), consider
-`pip-tools`, `poetry`, or `uv`.
+For stricter reproducibility (locked transitive dependencies), consider `pip-tools`, `poetry`, or `uv`.
 
 ## Development vs. Production Environments
 
-Dev and prod environments serve different purposes and should have different
-dependencies.
+Dev and prod environments serve different purposes and should have different dependencies.
 
 | Concern              | Development       | Production          |
 |----------------------|-------------------|---------------------|
@@ -142,5 +141,5 @@ pip install -r requirements-dev.txt
 pip install -r requirements.txt
 ```
 
-Keeping these separate reduces attack surface, image size, and build time in
-production.
+>[!TIP]
+>Keeping these separate reduces attack surface, image size, and build time in production.

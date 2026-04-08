@@ -1,10 +1,6 @@
 # Python Virtual Environments (`venv`)
 
-## Abstract
-
 Python virtual environments solve a fundamental problem: different projects often need different — sometimes conflicting — package versions. A virtual environment is an isolated Python runtime with its own packages, separate from the system installation. This document covers the built-in `venv` module: how to create, activate, and manage virtual environments, understand their structure, detect them programmatically, and avoid common pitfalls.
-
----
 
 ## What is a Virtual Environment?
 
@@ -22,8 +18,6 @@ Project B needs requests==2.20
 → Both can't coexist globally — virtual environments solve this.
 ```
 
----
-
 ## The `venv` Module
 
 `venv` has been part of Python's standard library since **Python 3.3**. No installation needed.
@@ -34,8 +28,6 @@ python3 -m venv --help
 ```
 
 For Python 2 or older workflows, `virtualenv` (a third-party tool) was the standard. Prefer `venv` for all Python 3 projects.
-
----
 
 ## Creating Virtual Environments
 
@@ -56,9 +48,8 @@ python3 -m venv .venv --without-pip
 python3 -m venv .venv --system-site-packages
 ```
 
-> **Convention:** Name your environment `.venv` so editors (VS Code, PyCharm) detect it automatically.
-
----
+>[!TIP]
+>**Convention:** Name your environment `.venv` so editors (VS Code, PyCharm) detect it automatically.
 
 ## Activating Virtual Environments
 
@@ -92,17 +83,13 @@ which python        # → /your/project/.venv/bin/python
 python --version    # → environment's Python version
 ```
 
----
-
 ## Deactivating Virtual Environments
 
 ```bash
 deactivate
 ```
 
-This restores your original shell `PATH`. The environment itself is untouched — just no longer active.
-
----
+This restores your original shell `PATH`. The environment itself is untouched, just no longer active.
 
 ## Virtual Environment Structure
 
@@ -128,8 +115,6 @@ home = /usr/bin
 include-system-site-packages = false
 version = 3.11.4
 ```
-
----
 
 ## Detecting Virtual Environments Programmatically
 
@@ -157,7 +142,7 @@ def is_venv() -> bool:
 print(is_venv())  # True if running inside a virtual environment
 ```
 
-Practical use — guard a script that must run in a venv:
+For practical use, guard a script that must run in a venv:
 
 ```python
 import sys
@@ -168,8 +153,6 @@ if sys.base_prefix == sys.prefix:
         "Run: python3 -m venv .venv && source .venv/bin/activate"
     )
 ```
-
----
 
 ## Virtual Environment Best Practices
 
@@ -206,8 +189,6 @@ pip freeze > requirements.txt
 deactivate
 ```
 
----
-
 ## When to Use Virtual Environments
 
 | Situation | Use venv? |
@@ -219,17 +200,13 @@ deactivate
 | Deploying to production (Docker, etc.) | ✅ Yes (or containers) |
 | System-level Python tools (e.g., `pip`, `ansible`) | ❌ Use pipx instead |
 
-For global CLI tools written in Python, use [`pipx`](https://pipx.pypa.io/) — it manages isolated environments per tool automatically.
-
----
+For global CLI tools written in Python, use [`pipx`](https://pipx.pypa.io/): it manages isolated environments per tool automatically.
 
 ## Common Virtual Environment Issues
 
 ### `pip` installs packages globally instead of locally
 **Cause:** Environment isn't active.  
 **Fix:** Run `source .venv/bin/activate` first. Check with `which pip`.
-
----
 
 ### PowerShell: "execution of scripts is disabled"
 **Cause:** Windows execution policy blocks `.ps1` scripts.  
@@ -238,13 +215,9 @@ For global CLI tools written in Python, use [`pipx`](https://pipx.pypa.io/) — 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
----
-
 ### `python` command not found after activation
 **Cause:** Python not in `PATH`, or environment created with a missing interpreter.  
 **Fix:** Use `python3` explicitly, or recreate the environment with a valid interpreter path.
-
----
 
 ### Moving the project folder breaks the environment
 **Cause:** `venv` stores absolute paths internally.  
@@ -257,16 +230,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
 ### `ModuleNotFoundError` for an installed package
 **Cause:** Package was installed in a different environment or globally.  
 **Fix:** Confirm the environment is active (`which python`) and reinstall:
 ```bash
 pip install <package>
 ```
-
----
 
 ### Environment uses wrong Python version
 **Cause:** `python3` resolved to an unexpected version.  

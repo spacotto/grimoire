@@ -1,9 +1,6 @@
 # Introduction to Python Environments
 
-Python environments define the context in which your code runs — which interpreter
-version is used and which packages are available. Understanding environments is
-essential for writing reliable, reproducible Python code, whether you're building
-a small script or a production service.
+Python environments define the context in which your code runs — which interpreter version is used and which packages are available. Understanding environments is essential for writing reliable, reproducible Python code, whether you're building a small script or a production service.
 
 ## What are Python Environments?
 
@@ -13,8 +10,7 @@ A Python environment is a self-contained directory that holds:
 - A set of **installed packages** (e.g. `numpy`, `requests`)
 - Scripts and binaries associated with those packages
 
-When you run `python script.py`, Python uses the active environment to resolve
-imports and locate dependencies.
+When you run `python script.py`, Python uses the active environment to resolve imports and locate dependencies.
 
 ```bash
 # Check which Python is currently active
@@ -29,18 +25,16 @@ pip list
 
 ### Global environment
 
-The system-wide Python installation. Packages installed here are available to
-all users and all projects on the machine.
+The system-wide Python installation. Packages installed here are available to all users and all projects on the machine.
 
 ```bash
 # Installs into the global environment (avoid this for projects)
 pip install requests
 ```
 
-### Local (virtual) environment
+### Local (virtual) environment (venv)
 
-An isolated environment scoped to a single project. Created with `venv` or tools
-like `virtualenv`, `conda`, or `uv`.
+An isolated environment scoped to a single project. Created with `venv` or tools like `virtualenv`, `conda`, or `uv`.
 
 ```bash
 # Create a virtual environment in the current directory
@@ -56,12 +50,12 @@ source .venv/bin/activate
 deactivate
 ```
 
-Once activated, `python` and `pip` point to the local environment — not the global one.
+>[!IMPORTANT]
+>Once activated, `python` and `pip` point to the local environment, not the global one.
 
 ## Why Isolated Environments Matter
 
-Using isolated environments per project prevents a class of subtle, hard-to-debug
-problems. The core issues they solve are:
+Using isolated environments per project prevents a class of subtle, hard-to-debug problems. The core issues they solve are:
 
 1. **Environment pollution** — global installs affecting unrelated projects
 2. **Dependency conflicts** — incompatible package versions across projects
@@ -69,8 +63,7 @@ problems. The core issues they solve are:
 
 ## Environment Pollution Problems
 
-Installing packages globally accumulates state over time. A package installed
-for Project A may silently affect the behavior of Project B.
+Installing packages globally accumulates state over time. A package installed for Project A may silently affect Project B's behavior.
 
 Common symptoms:
 - Unexpected `ImportError` after a global `pip install`
@@ -88,22 +81,18 @@ pip install flask==2.3.0
 
 ## Dependency Conflicts
 
-Different projects often require different versions of the same package.
-Python can only have one version of a package installed per environment.
+Different projects often require different versions of the same package. Python can only have one version of a package installed per environment.
 
 ```
 Project A  →  requires  django==3.2
 Project B  →  requires  django==4.2
 ```
 
-Without isolated environments, installing one breaks the other. With virtual
-environments, each project carries its own dependency tree — no conflicts.
+Without isolated environments, installing one breaks the other. With virtual environments, each project carries its own dependency tree. Thus, no conflicts.
 
 ## Reproducible Environments
 
-A reproducible environment guarantees that code behaves identically across
-machines, teammates, and deployment targets. The standard approach is a
-`requirements.txt` file.
+A reproducible environment guarantees that code behaves identically across machines, teammates, and deployment targets. The standard approach is a `requirements.txt` file.
 
 ```bash
 # Capture the current environment's dependencies

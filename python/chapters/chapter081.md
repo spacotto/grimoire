@@ -67,3 +67,25 @@ Uninstall multiple packages:
 ```bash
 pip uninstall flask sqlalchemy -y
 ```
+
+## Listing installed packages
+
+See everything installed in the current environment.
+
+List all installed packages with versions:
+
+```bash
+pip list
+```
+
+Show only outdated packages:
+
+```bash
+pip list --outdated
+```
+
+Output as JSON:
+
+```bash
+pip list --format=json
+```

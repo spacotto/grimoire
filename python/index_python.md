@@ -905,7 +905,7 @@ PART XII: PYTHON DEVELOPMENT ENVIRONMENT AND TOOLS
 ================================================================================
 Professional Python development requires mastering the ecosystem tools. This part teaches virtual environments (isolating project dependencies), package management with pip and Poetry, environment variables for configuration, and security practices. You'll learn to set up projects professionally, manage dependencies reproducibly, and keep secrets secure. These are essential skills for real-world development and team collaboration.
 
-Chapter 79: Introduction to Python Environments
+[Chapter 79: Introduction to Python Environments](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter079.md)
 --------------------------------------------------------------------------------
 1. What are Python Environments?
 2. Global vs. Local Environments
@@ -915,7 +915,7 @@ Chapter 79: Introduction to Python Environments
 6. Reproducible Environments
 7. Development vs. Production Environments
 
-Chapter 80: Virtual Environments (venv)
+[Chapter 80: Virtual Environments (venv)](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter080.md)
 --------------------------------------------------------------------------------
 1. What is a Virtual Environment?
 2. The venv Module
@@ -928,7 +928,7 @@ Chapter 80: Virtual Environments (venv)
 9. When to Use Virtual Environments
 10. Common Virtual Environment Issues
 
-Chapter 81: Package Management with pip
+[Chapter 81: Package Management with pip](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter081.md)
 --------------------------------------------------------------------------------
 1. What is `pip`?
 2. Installing Packages
@@ -943,7 +943,7 @@ Chapter 81: Package Management with pip
 11. Version Pinning and Constraints
 12. pip Best Practices
 
-Chapter 82.: Advanced Package Management with Poetry
+[Chapter 82: Advanced Package Management with Poetry](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter82.md)
 --------------------------------------------------------------------------------
 1. What is Poetry?
 2. Poetry vs. pip
@@ -958,7 +958,7 @@ Chapter 82.: Advanced Package Management with Poetry
 11. `poetry run`
 12. Publishing Packages with Poetry
 
-Chapter 83: Dependency Management
+[Chapter 83: Dependency Management](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter083.md)
 --------------------------------------------------------------------------------
 1. Understanding Dependencies
 2. Direct vs. Transitive Dependencies
@@ -971,7 +971,7 @@ Chapter 83: Dependency Management
 9. Reproducible Builds
 10. Security Considerations
 
-Chapter 84: Environment Variables
+[Chapter 84: Environment Variables](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter084.md)
 --------------------------------------------------------------------------------
 1. What are Environment Variables?
 2. Reading Environment Variables (`os.environ`)
@@ -982,7 +982,7 @@ Chapter 84: Environment Variables
 7. Security with Environment Variables
 8. Environment Variable Precedence
 
-Chapter 85: Configuration Management
+[Chapter 85: Configuration Management](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter085.md)
 --------------------------------------------------------------------------------
 1. Configuration vs. Code
 2. The `.env` File Format
@@ -995,7 +995,7 @@ Chapter 85: Configuration Management
 9. Configuration Validation
 10. Secrets Management
 
-Chapter 86: Security and `.gitignore`
+[Chapter 86: Security and `.gitignore`](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter086.md)
 --------------------------------------------------------------------------------
 1. Never Commit Secrets
 2. The `.gitignore` File
@@ -1008,7 +1008,7 @@ Chapter 86: Security and `.gitignore`
 9. Secret Rotation
 10. Auditing and Compliance
 
-Chapter 87: Python Project Structure
+[Chapter 87: Python Project Structure](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter087.md)
 --------------------------------------------------------------------------------
 1. Standard Project Layout
 2. `src/` Layout vs. Flat Layout
@@ -1021,7 +1021,7 @@ Chapter 87: Python Project Structure
 9. `setup.py` and `pyproject.toml`
 10. Project Metadata
 
-Chapter 88: Development Workflow
+[Chapter 88: Development Workflow](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter088.md)
 --------------------------------------------------------------------------------
 1. Setting Up New Projects
 2. Environment Setup Checklist

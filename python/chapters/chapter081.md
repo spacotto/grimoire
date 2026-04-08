@@ -133,3 +133,44 @@ Save snapshot to a file:
 ```bash
 pip freeze > requirements.txt
 ```
+
+## `requirements.txt` format
+
+A plain text file, one dependency per line. Supports comments and a range of version specifiers.
+
+```ini
+# requirements.txt
+
+# exact pin
+requests==2.31.0
+
+# minimum version
+flask>=3.0
+
+# compatible release (allows patch upgrades)
+sqlalchemy~=2.0.0
+
+# range
+celery>=5.3,<6.0
+
+# no constraint (latest)
+click
+```
+
+### Operators
+- `==`: Exact version
+- `>=`: Minimum version
+- `<=`: Maximum version
+- `~=`: Compatible release
+- `!=`: Exclude version
+
+## Installing from requirements files
+
+Install everything listed in requirements.txt:
+
+```bash
+pip install -r requirements.txt
+```
+
+# common workflow: separate dev and production requirements
+pip install -r requirements.txt -r requirements-dev.txt

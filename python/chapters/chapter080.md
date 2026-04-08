@@ -156,14 +156,14 @@ if sys.base_prefix == sys.prefix:
 
 ## Virtual Environment Best Practices
 
-**Do:**
+**✔️ Do:**
 - Name environments `.venv` for universal editor support
 - Add `.venv/` to `.gitignore` — never commit the environment
 - Pin dependencies with `pip freeze > requirements.txt`
 - Create one environment per project
 - Store `requirements.txt` at the project root
 
-**Don't:**
+**✖️ Don't:**
 - Move or rename the environment directory (paths break)
 - Commit environment files to version control
 - Rely on the environment being in a specific absolute path

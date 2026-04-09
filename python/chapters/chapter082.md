@@ -13,9 +13,10 @@ dependencies → lockfile → virtualenv → package build → PyPI publis
 
 ## Poetry vs. pip
 
-| pip | Poetry |
-| :--- | :--- |
-| pip install requests| | 
-| pip freeze > requirements.txt|  |
-| Manual venv setup | |
-| No build/publish tooling|  |
+| | pip | Poetry |
+| :--- | :--- | :--- |
+| **Add requests** | `pip install requests` | `poetry add requests` | 
+| **Dependencies update** | `pip freeze > requirements.txt` | auto-updates pyproject.toml |
+| **venv Management** | Manual venv setup | auto-manages venv |
+| **Build & Publish tooling** | No build/publish tooling | build + publish built-in |
+| **Dependencies resolution** | pip resolves dependencies greedily and doesn't lock sub-dependencies | Poetry uses a SAT solver to guarantee reproducible installs across machines |

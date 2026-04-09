@@ -21,7 +21,7 @@ dependencies → lockfile → virtualenv → package build → PyPI publis
 | **Build & Publish tooling** | No build/publish tooling | build + publish built-in |
 | **Dependencies resolution** | pip resolves dependencies greedily and doesn't lock sub-dependencies | Poetry uses a SAT solver to guarantee reproducible installs across machines |
 
-# Installing Poetry (Setup)
+## Installing Poetry (Setup)
 
 Official installer (recommended):
 
@@ -43,3 +43,31 @@ poetry completions bash >> ~/.bash_completion
 
 >[!WARNING]
 >Do not install Poetry with pip into your project's virtualenv; it should live in its own isolated environment.
+
+## `pyproject.toml` Format (Config)
+
+The single source of truth for your project. Replaces `setup.py`, `setup.cfg`, and `requirements.txt`.
+
+```ini
+[tool.poetry]
+name = "my-package"
+version = "0.1.0"
+description = "A short description"
+authors = ["Alice "]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31"
+httpx = { version = "^0.27", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+ruff = "^0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+```
+
+>[!NOTE]
+>Version constraints: `^1.2` allows `>=1.2, <2.0`. `~1.2` allows `>=1.2`, `<1.3. *` allows any version.

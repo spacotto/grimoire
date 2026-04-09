@@ -943,7 +943,7 @@ Professional Python development requires mastering the ecosystem tools. This par
 11. Version Pinning and Constraints
 12. pip Best Practices
 
-[Chapter 82: Advanced Package Management with Poetry](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter82.md)
+[Chapter 82: Advanced Package Management with Poetry](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter082.md)
 --------------------------------------------------------------------------------
 1. What is Poetry?
 2. Poetry vs. pip

@@ -71,3 +71,26 @@ build-backend = "poetry.core.masonry.api"
 
 >[!NOTE]
 >Version constraints: `^1.2` allows `>=1.2, <2.0`. `~1.2` allows `>=1.2`, `<1.3. *` allows any version.
+
+## `poetry.lock` Files (Reproducibility)
+
+The lockfile pins every dependency (including transitive ones) to an exact version and hash. Never edit it manually.
+
+>[!TIP]
+>Commit `poetry.lock` for reproducible installs for all contributors.
+
+>[!CAUTION]
+>Do NOT commit `poetry.lock` for libraries (let users resolve).
+>Do commit `poetry.lock` for applications and services.
+
+Regenerate lockfile without installing:
+
+```bash
+poetry lock
+```
+
+Check if lockfile is consistent with `pyproject.toml`:
+
+```bash
+poetry check
+```

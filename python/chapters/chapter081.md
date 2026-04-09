@@ -193,3 +193,50 @@ pytest==8.1.1
 black==24.3.0
 ruff==0.3.5
 ```
+
+## Package information
+
+Inspect a package: 
+
+```bash
+pip show requests
+```
+
+Obtain version, location, dependencies, and metadata:
+
+```bash
+Name: requests
+Version: 2.31.0
+Summary: Python HTTP for Humans.
+Home-page: https://requests.readthedocs.io
+Author: Kenneth Reitz
+License: Apache 2.0
+Location: /usr/lib/python3/dist-packages
+Requires: certifi, charset-normalizer, idna, urllib3
+Required-by: httpx
+```
+
+## Package discovery
+
+`pip search` was disabled on PyPI in 2021. Use the web or one of the following alternatives instead.
+
+Browse PyPI directly:
+
+```bash
+open https://pypi.org/search/?q=http+client
+```
+
+Or use the pypi-simple API:
+
+```bash
+pip index versions requests
+```
+
+Check available versions of a package:
+
+```bash
+pip install requests==   # intentional bad version — lists all options
+```
+
+>[!NOTE]
+>PyPI has over 500,000 packages. The `pip index versions <package>` subcommand shows all available releases for a package.

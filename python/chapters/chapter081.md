@@ -172,5 +172,24 @@ Install everything listed in requirements.txt:
 pip install -r requirements.txt
 ```
 
-# common workflow: separate dev and production requirements
+Separate dev and production requirements:
+
+```bash
 pip install -r requirements.txt -r requirements-dev.txt
+```
+
+requirements.txt
+
+```bash
+flask==3.0.3
+sqlalchemy==2.0.29
+celery==5.3.6
+```
+
+requirements-dev.txt
+
+```bash
+pytest==8.1.1
+black==24.3.0
+ruff==0.3.5
+```

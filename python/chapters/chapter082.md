@@ -20,3 +20,26 @@ dependencies → lockfile → virtualenv → package build → PyPI publis
 | **venv Management** | Manual venv setup | auto-manages venv |
 | **Build & Publish tooling** | No build/publish tooling | build + publish built-in |
 | **Dependencies resolution** | pip resolves dependencies greedily and doesn't lock sub-dependencies | Poetry uses a SAT solver to guarantee reproducible installs across machines |
+
+# Installing Poetry (Setup)
+
+Official installer (recommended):
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Verify:
+
+```bash
+poetry --version
+```
+
+Enable tab completion (bash):
+
+```bash
+poetry completions bash >> ~/.bash_completion
+```
+
+>[!WARNING]
+>Do not install Poetry with pip into your project's virtualenv; it should live in its own isolated environment.

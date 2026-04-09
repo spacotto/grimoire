@@ -94,3 +94,219 @@ Check if lockfile is consistent with `pyproject.toml`:
 ```bash
 poetry check
 ```
+
+## Installation
+
+Install all dependencies from lockfile:
+
+```bash
+poetry install
+```
+
+Install without dev dependencies (e.g. production):
+
+```bash
+poetry install --without dev
+```
+
+Install only specific groups:
+
+```bash
+poetry install --with docs
+```
+
+Sync (remove packages not in lockfile):
+
+```bash
+poetry install --sync
+```
+
+>[!NOTE]
+>On first run, Poetry creates a virtualenv automatically if one doesn't exist.
+
+## Add & Remove
+
+Add a runtime dependency:
+
+```bash
+poetry add requests
+```
+
+Add with version constraint:
+
+```bash
+poetry add "httpx>=0.27"
+```
+
+Add to a dependency group:
+
+```bash
+poetry add pytest --group dev
+```
+
+Add an optional dependency:
+
+```bash
+poetry add boto3 --optional
+```
+
+Remove a dependency:
+
+```bash
+poetry remove requests
+```
+
+>[!NOTE]
+>Both commands update `pyproject.toml` and `poetry.lock` automatically, then sync the virtualenv.
+
+## Update
+
+Update all dependencies within constraints:
+
+```bash
+poetry update
+```
+
+Update specific packages only:
+
+```bash
+poetry update requests httpx
+```
+
+Preview what would change without applying:
+
+```bash
+poetry update --dry-run
+```
+
+>[!NOTE]
+>`poetry update` re-resolves dependencies within the version ranges in `pyproject.toml` and rewrites the lockfile. It does not change the constraints themselves.
+
+## Dependency groups (Organisation)
+
+1. `dev`: linters, formatters, type checkers (ruff, mypy)
+2. `test`: test runners and fixtures (pytest, factory-boy)
+3. `docs`: doc generators (mkdocs, sphinx)
+
+```ini
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0"
+pytest-cov = "^5.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6"
+mkdocs-material = "^9.5"
+```
+
+Install everything, including all groups:
+
+```bash
+poetry install --with test,docs
+```
+
+Make a group optional (not installed by default):
+
+```ini
+[tool.poetry.group.docs]
+optional = true
+```
+
+## Poetry virtual environment management
+
+Show active virtualenv info:
+
+```bash
+poetry env info
+```
+
+List all envs for this project:
+
+```bash
+poetry env list
+```
+
+Create env with a specific python version:
+
+```bash
+poetry env use python3.12
+```
+
+Remove a virtualenv:
+
+```bash
+poetry env remove python3.11
+```
+
+By default, Poetry creates virtualenvs in a central cache directory. To keep the env inside the project folder:
+
+```bash
+poetry config virtualenvs.in-project true
+# creates: .venv/ in your project root
+```
+
+## `poetry run`
+
+Execute a command inside the project's virtualenv without activating it manually.
+
+Run a script:
+
+```bash
+poetry run python src/main.py
+```
+
+Run tests:
+
+```bash
+poetry run pytest
+```
+
+Run a tool installed as a dependency:
+
+```bash
+poetry run ruff check .
+```
+
+Open a shell inside the venv:
+
+```bash
+poetry shell
+# exit with: exit or deactivate
+```
+
+## Publishing packages with Poetry
+
+build source distribution + wheel:
+
+```bash
+poetry build
+# outputs: dist/my-package-0.1.0.tar.gz
+#          dist/my-package-0.1.0-py3-none-any.whl
+```
+
+Configure PyPI token (one-time):
+
+```bash
+poetry config pypi-token.pypi YOUR_API_TOKEN
+```
+
+Publish to PyPI:
+
+```bash
+poetry publish
+```
+
+Build and publish in one step:
+
+```bash
+poetry publish --build
+```
+
+Publish to a private/test registry:
+
+```bash
+poetry config repositories.testpypi https://test.pypi.org/legacy/
+poetry publish --repository testpypi
+```
+
+>[!IMPORTANT]
+>Always bump the `version` field in `pyproject.toml` before publishing. Use `poetry version patch|minor|major` to bump it automatically.

@@ -113,7 +113,7 @@ pip install --upgrade flask jinja2
 >[!WARNING]
 >Upgrading without version constraints can introduce breaking changes. Pin versions in production environments.
 
-## pip freeze and requirements files
+## Requirements files
 
 `pip freeze` outputs all installed packages with exact versions (the canonical way to snapshot an environment).
 
@@ -240,3 +240,61 @@ pip install requests==   # intentional bad version — lists all options
 
 >[!NOTE]
 >PyPI has over 500,000 packages. The `pip index versions <package>` subcommand shows all available releases for a package.
+
+## Version pinning and constraints
+
+Use a `constraints.txt` file to enforce version bounds across multiple requirement files without adding them as direct dependencies.
+
+```bash
+# constraints.txt — limits versions without installing extras
+urllib3<2.0
+certifi>=2024.1.1
+
+# apply constraints during install
+pip install -r requirements.txt -c constraints.txt
+```
+
+- `requirements.txt`: Direct dependencies only, loosely specified. Let constraints.txt enforce bounds.
+- `constraints.txt`: Upper/lower bounds on transitive deps. Does not install new packages on its own.
+
+## Best practices
+
+1. Always use a virtual environment
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+```
+
+2. Keep pip up to date
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+3. separate dev and production deps
+
+```bash
+pip install -r requirements.txt        # production
+pip install -r requirements-dev.txt   # development
+```
+
+4. snapshot your environment after changes
+
+```bash
+pip freeze > requirements.txt
+```
+
+5. use --no-deps for controlled installs
+
+```bash
+pip install requests --no-deps
+```
+
+6. audit for vulnerabilities (Python 3.11+)
+
+```bash
+pip audit
+```
+
+>[!TIP]
+>For larger projects, consider `pip-tools` (compile `requirements.in` → locked `requirements.txt`) or `poetry`/`uv` for full dependency resolution and lockfiles.

@@ -35,6 +35,32 @@ if "API_KEY" in os.environ:
 
 ## Setting Environment Variables
 
+You can set variables at runtime within Python. They affect the current process and any subprocesses spawned after.
+
+```python
+import os
+
+os.environ["LOG_LEVEL"] = "debug"   # set
+del os.environ["LOG_LEVEL"]         # unset
+os.putenv("TEMP_DIR", "/tmp")       # low-level — prefer os.environ
+```
+
+>[!WARNING]
+>Changes to os.environ are not persisted; they disappear when the process ends. To set variables permanently, do it in your shell profile or a .env file.
+
+For local dev, use a `.env` file with `python-dotenv`:
+
+```ini
+# .env
+DATABASE_URL=postgres://localhost/mydb
+DEBUG=true
+```
+
+```python
+from dotenv import load_dotenv
+load_dotenv()   # loads .env into os.environ
+```
+
 ## Environment Variables in Different OS
 
 ## Environment Variable Naming Conventions

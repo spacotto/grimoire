@@ -1039,7 +1039,7 @@ PART XIII: DATA VALIDATION AND SERIALIZATION
 ================================================================================
 Validating data at runtime prevents bugs and security issues. This part introduces Pydantic, Python's leading data validation library. You'll learn to create models with automatic validation, define custom validation rules, work with nested data structures, and handle validation errors gracefully. Pydantic is widely used in modern Python applications, especially with FastAPI for building APIs.
 
-Chapter 89: Introduction to Data Validation
+[Chapter 89: Introduction to Data Validation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter089.md)
 --------------------------------------------------------------------------------
 1. Why Data Validation Matters
 2. Validation vs. Type Checking
@@ -1049,7 +1049,7 @@ Chapter 89: Introduction to Data Validation
 6. Common Validation Challenges
 7. Manual Validation vs. Libraries
 
-Chapter 90: Introduction to Pydantic
+[Chapter 90: Introduction to Pydantic](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter090.md)
 --------------------------------------------------------------------------------
 1. What is Pydantic?
 2. Why Use Pydantic?
@@ -1059,7 +1059,7 @@ Chapter 90: Introduction to Pydantic
 6. When to Use Pydantic
 7. Pydantic in Real-World Applications
 
-Chapter 91: BaseModel Fundamentals
+[Chapter 91: BaseModel Fundamentals](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter091.md)
 --------------------------------------------------------------------------------
 1. The BaseModel Class
 2. Creating Your First Model
@@ -1072,7 +1072,7 @@ Chapter 91: BaseModel Fundamentals
 9. Model Copying
 10. Model Immutability
 
-Chapter 92: Field Validation
+[Chapter 92: Field Validation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter092.md)
 --------------------------------------------------------------------------------
 1. The Field Function
 2. Field Constraints
@@ -1085,7 +1085,7 @@ Chapter 92: Field Validation
 9. Field Examples
 10. Computed Fields
 
-Chapter 93: Type Annotations and Validation
+[Chapter 93: Type Annotations and Validation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter093.md)
 --------------------------------------------------------------------------------
 1. Basic Type Validation
 2. Standard Library Types
@@ -1098,7 +1098,7 @@ Chapter 93: Type Annotations and Validation
 9. Custom Types
 10. Type Coercion
 
-Chapter 94: Enums and Literal Types
+[Chapter 94: Enums and Literal Types](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter094.md)
 --------------------------------------------------------------------------------
 1. Python Enum with Pydantic
 2. Defining Enums for Models
@@ -1109,7 +1109,7 @@ Chapter 94: Enums and Literal Types
 7. When to Use Enums vs. Literals
 8. Enum Serialisation
 
-Chapter 95: Custom Validation
+[Chapter 95: Custom Validation](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter095.md)
 --------------------------------------------------------------------------------
 1. Model Validators
 2. The `@model_validator` Decorator
@@ -1122,7 +1122,7 @@ Chapter 95: Custom Validation
 9. Validation Error Messages
 10. Raising `ValidationError`
 
-Chapter 96: Nested Models
+[Chapter 96: Nested Models](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter096.md)
 --------------------------------------------------------------------------------
 1. Model Composition
 2. Nested Model Definition
@@ -1135,7 +1135,7 @@ Chapter 96: Nested Models
 9. Forward References
 10. Model Reusability
 
-Chapter 97: Advanced Pydantic Features
+[Chapter 97: Advanced Pydantic Features](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter097.md)
 --------------------------------------------------------------------------------
 1. Model Configuration
 2. Extra Fields Handling
@@ -1148,7 +1148,7 @@ Chapter 97: Advanced Pydantic Features
 9. Root Validators
 10. Generic Models
 
-Chapter 98: Error Handling and ValidationError
+[Chapter 98: Error Handling and ValidationError](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter098.md)
 --------------------------------------------------------------------------------
 1. Understanding ValidationError
 2. Error Structure
@@ -1161,7 +1161,7 @@ Chapter 98: Error Handling and ValidationError
 9. Debugging Validation Issues
 10. Error Recovery Strategies
 
-Chapter 99: Pydantic Best Practices
+[Chapter 99: Pydantic Best Practices](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter099.md)
 --------------------------------------------------------------------------------
 1. Model Design Principles
 2. Validation Performance

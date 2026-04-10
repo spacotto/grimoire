@@ -1,15 +1,14 @@
 # Configuration Management
 
-Configuration management is how your application handles settings that change between environments, machines, or deployments — things like API keys, database URLs, and feature flags. The goal: keep config out of your code, make it easy to change, and never ship secrets to version control.
-
----
+Configuration management is how your application handles settings that change between environments, machines, or deployments: things like API keys, database URLs, and feature flags. The goal: keep config out of your code, make it easy to change, and never ship secrets to version control.
 
 ## Configuration vs. Code
 
-**Code** is logic — it doesn't change between environments.  
-**Configuration** is anything that does: hostnames, ports, credentials, timeouts, feature toggles.
+- **Code** is logic, it doesn't change between environments.  -
+- **Configuration** is anything that deals with hostnames, ports, credentials, timeouts, feature toggles.
 
-A simple rule: if you'd need to change a value to run the app somewhere else, it's config — not code.
+>[!TIP]
+>If you'd need to change a value to run the app somewhere else, it's config — not code.
 
 ```python
 # ❌ Config baked into code
@@ -19,8 +18,6 @@ DB_URL = "postgresql://admin:secret@localhost/mydb"
 import os
 DB_URL = os.environ["DATABASE_URL"]
 ```
-
----
 
 ## The `.env` File Format
 
@@ -41,8 +38,6 @@ PORT=8080
 - Comments start with `#`
 - String values don't need quotes (but can have them)
 - Never commit `.env` to version control — add it to `.gitignore`
-
----
 
 ## `python-dotenv` Library
 
@@ -65,8 +60,6 @@ load_dotenv()
 db_url = os.getenv("DATABASE_URL")
 debug = os.getenv("DEBUG", "false").lower() == "true"
 ```
-
----
 
 ## Loading `.env` Files
 
@@ -92,8 +85,6 @@ print(config["DATABASE_URL"])
 
 **Load order tip:** Call `load_dotenv()` as early as possible — ideally at the top of your entry point (`main.py`, `app.py`, etc.).
 
----
-
 ## `.env.example` Templates
 
 A `.env.example` (or `.env.template`) is a committed, safe version of your `.env` with placeholder values. It documents required variables without exposing secrets.
@@ -116,9 +107,8 @@ cp .env.example .env
 # Then fill in real values in .env
 ```
 
-Keep `.env.example` up to date whenever you add a new variable.
-
----
+>[!TIP]
+>Keep `.env.example` up to date whenever you add a new variable.
 
 ## Multiple Environment Configurations
 
@@ -147,8 +137,6 @@ Run with:
 APP_ENV=production python app.py
 ```
 
----
-
 ## Development vs. Production Config
 
 | Setting        | Development              | Production                  |
@@ -168,9 +156,8 @@ if DEBUG:
     print("Running in development mode")
 ```
 
-**In production:** prefer injecting env vars directly via your platform (Railway, Heroku, Docker, Kubernetes) rather than shipping `.env` files.
-
----
+>[!TIP]
+>**In production:** prefer injecting env vars directly via your platform (Railway, Heroku, Docker, Kubernetes) rather than shipping `.env` files.
 
 ## Configuration Hierarchies
 
@@ -196,9 +183,8 @@ load_dotenv(".env", override=True)  # local overrides win
 PORT = int(os.getenv("PORT", 8080))  # fallback default in code
 ```
 
-This lets developers override specific values locally without touching shared config files.
-
----
+>[!NOTE]
+>This lets developers override specific values locally without touching shared config files.
 
 ## Configuration Validation
 
@@ -237,15 +223,18 @@ settings = Settings()  # Raises ValidationError if required fields are missing
 print(settings.database_url)
 ```
 
-Install: `pip install pydantic-settings`
+Install: 
 
-Pydantic validates types, applies defaults, and gives clear error messages — ideal for production apps.
+```python
+pip install pydantic-settings
+```
 
----
+>[!TIP]
+>Pydantic validates types, applies defaults, and gives clear error messages — ideal for production apps.
 
 ## Secrets Management
 
-For sensitive values (API keys, passwords, tokens), a `.env` file is fine locally — but not enough in production.
+For sensitive values (API keys, passwords, tokens), a `.env` file is fine locally, but not enough in production.
 
 **Production options:**
 

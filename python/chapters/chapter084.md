@@ -63,7 +63,35 @@ load_dotenv()   # loads .env into os.environ
 
 ## Environment Variables in Different OS
 
+| Task | Linux / macOS | Windows (cmd) | Windows (PS) |
+| :--- | :--- | :--- | :--- |
+| **Set (session)** | `export KEY=value` | `set KEY=value` | `$env:KEY="value"` |
+| **Read** | `echo $KEY` | `echo %KEY%`	| `$env:KEY` |
+| **Unset** | `unset KEY` | `set KEY=` | `Remove-Item Env:KEY` |
+| **List all** | `env` | `set` | `Get-ChildItem Env:` |
+
 ## Environment Variable Naming Conventions
+
+By convention, environment variable names comply with the following rules.
+
+1. The keys are written in UPPER_SNAKE_CASE:
+
+```ini
+DATABASE_URL=...
+AWS_ACCESS_KEY_ID=...
+MAX_RETRIES=3
+```
+
+2. Prefix by app or service to avoid collisions:
+
+```ini
+MYAPP_DEBUG=true
+MYAPP_PORT=8080
+```
+
+3. Avoid lowercase names: they're technically valid but not conventional and can be confused with shell variables.
+
+4. Never use spaces or hyphens in names.
 
 ## When to Use Environment Variables
 

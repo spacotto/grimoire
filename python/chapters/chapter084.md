@@ -95,6 +95,14 @@ MYAPP_PORT=8080
 
 ## When to Use Environment Variables
 
+| 👍 Use for | 👎 Avoid for |
+| :--- | :--- |
+| API keys, tokens, passwords | Complex structured config (use a config file) |
+| Database / service URLs	| Data that changes at runtime |
+| Runtime mode (`DEBUG`, `ENV`) | Large values (env vars have size limits) |
+| Port numbers, hostnames | Non-string types without conversion |
+| Cloud / CI/CD config | Secrets shared across many services (use a vault) |
+
 ## Security with Environment Variables
 
 ## Environment Variable Precedence

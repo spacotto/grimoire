@@ -105,4 +105,75 @@ MYAPP_PORT=8080
 
 ## Security with Environment Variables
 
+>[!WARNING]
+>Never commit secrets! Add `.env` to `.gitignore` immediately!
+
+1. Add the following items to the `.gitignore`:
+
+```ini
+.env
+.env.local
+*.env
+```
+
+2. Validate required secrets at startup (fail fast):
+
+```python
+import os, sys
+
+REQUIRED = ["DATABASE_URL", "SECRET_KEY", "API_KEY"]
+missing = [k for k in REQUIRED if not os.environ.get(k)]
+if missing:
+    sys.exit(f"Missing env vars: {', '.join(missing)}")
+```
+
+3. Don't log secrets, even partially:
+
+```python
+print(f"Loaded key: {os.environ['API_KEY']}")       # bad
+print("API key loaded.")                            # good
+```
+
+4. Type-cast and validate values:
+
+```python
+import os
+port = int(os.environ.get("PORT", "8080"))
+debug = os.environ.get("DEBUG", "false").lower() == "true"
+```
+
+>[!TIP]
+>For production secrets at scale, use a dedicated secrets manager (AWS Secrets Manager, HashiCorp Vault, GCP Secret Manager) rather than raw environment variables.
+
 ## Environment Variable Precedence
+
+When the same variable is defined in multiple places, a typical resolution order (highest → lowest priority):
+
+1. Process-level (set in Python at runtime):
+
+```python
+os.environ["PORT"] = "9000"
+```
+
+2. Shell export (before launching Python):
+
+```python
+export PORT=8080
+```
+
+3. `.env` file loaded via `python-dotenv`:
+
+```python
+PORT=7000
+```
+
+4. System-level / OS defaults
+
+5. `python-dotenv` won't overwrite existing variables by default. Pass `override=True` to force it:
+
+```python
+load_dotenv(override=True)   # .env wins over existing env
+```
+
+>[!TIP]
+>Rule of thumb: process-level > shell > `.env` file > OS defaults. Design your config loading with this order in mind.

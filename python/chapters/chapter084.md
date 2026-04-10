@@ -13,6 +13,26 @@ DATABASE_URL=postgres://localhost/mydb python app.py
 
 ## Reading Environment Variables (os.environ)
 
+Python exposes the current environment via `os.environ`, a dict-like object populated at startup.
+
+```python
+import os
+
+# Raises KeyError if not set
+db_url = os.environ["DATABASE_URL"]
+
+# Returns None (or a default) if not set — preferred
+db_url = os.environ.get("DATABASE_URL")
+db_url = os.environ.get("DATABASE_URL", "sqlite:///default.db")
+
+# Check if a variable exists
+if "API_KEY" in os.environ:
+    ...
+```
+
+>[!TIP]
+>Prefer `.get()` with a sensible default over direct access. It avoids crashes on missing variables in dev/test environments.
+
 ## Setting Environment Variables
 
 ## Environment Variables in Different OS

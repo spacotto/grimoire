@@ -1179,7 +1179,7 @@ PART XIV: FUNCTIONAL PROGRAMMING
 ================================================================================
 Functional programming treats computation as evaluating mathematical functions, emphasising immutability and avoiding side effects. This part teaches lambda expressions, higher-order functions (functions that take/return other functions), closures (functions that remember their environment), and decorators (functions that modify other functions). These powerful techniques lead to more concise, testable, and elegant code.
 
-Chapter 100: Introduction to Functional Programming
+[Chapter 100: Introduction to Functional Programming](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter100.md)
 --------------------------------------------------------------------------------
 1. What is Functional Programming?
 2. Functional vs. Imperative Programming
@@ -1191,7 +1191,7 @@ Chapter 100: Introduction to Functional Programming
 8. Benefits of Functional Programming
 9. When to Use Functional Programming
 
-Chapter 101: Lambda Expressions
+[Chapter 101: Lambda Expressions](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter101.md)
 --------------------------------------------------------------------------------
 1. What are Lambda Functions?
 2. Lambda Syntax
@@ -1202,7 +1202,7 @@ Chapter 101: Lambda Expressions
 7. Lambda with Built-in Functions
 8. Multi-line Lambdas (Avoiding)
 
-Chapter 102: Map, Filter, and Reduce
+[Chapter 102: Map, Filter, and Reduce](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter102.md)
 --------------------------------------------------------------------------------
 1. The `map()` Function
 2. Mapping Transformations
@@ -1214,7 +1214,7 @@ Chapter 102: Map, Filter, and Reduce
 8. List Comprehensions vs. map/filter
 9. Performance Considerations
 
-Chapter 103: First-Class Functions
+[Chapter 103: First-Class Functions](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter103.md)
 --------------------------------------------------------------------------------
 1. Functions as Objects
 2. Assigning Functions to Variables
@@ -1225,7 +1225,7 @@ Chapter 103: First-Class Functions
 7. `callable()` Function
 8. Function Identity
 
-Chapter 104: Higher-Order Functions
+[Chapter 104: Higher-Order Functions](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter104.md)
 --------------------------------------------------------------------------------
 1. What are Higher-Order Functions?
 2. Functions Taking Functions
@@ -1236,7 +1236,7 @@ Chapter 104: Higher-Order Functions
 7. `sorted()` with key Parameter
 8. Custom Higher-Order Functions
 
-Chapter 105: Closures
+[Chapter 105: Closures](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter105.md)
 --------------------------------------------------------------------------------
 1. What are Closures?
 2. Lexical Scoping
@@ -1248,7 +1248,7 @@ Chapter 105: Closures
 8. Closures vs. Classes
 9. When to Use Closures
 
-Chapter 106: The nonlocal Keyword
+[Chapter 106: The nonlocal Keyword](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter106.md)
 --------------------------------------------------------------------------------
 1. Understanding nonlocal
 2. Modifying Enclosing Scope
@@ -1258,7 +1258,7 @@ Chapter 106: The nonlocal Keyword
 6. Accumulator Patterns
 7. Best Practices with nonlocal
 
-Chapter 107: The functools Module
+[Chapter 107: The functools Module](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter107.md)
 --------------------------------------------------------------------------------
 1. Introduction to functools
 2. `functools.reduce`
@@ -1271,7 +1271,7 @@ Chapter 107: The functools Module
 9. `functools.total_ordering`
 10. `functools.cache` (Python 3..9+)
 
-Chapter 108: Decorators Fundamentals
+[Chapter 108: Decorators Fundamentals](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter108.md)
 --------------------------------------------------------------------------------
 1. What are Decorators?
 2. Decorator Syntax
@@ -1282,7 +1282,7 @@ Chapter 108: Decorators Fundamentals
 7. Decorator Execution Order
 8. Built-in Decorators
 
-Chapter 109: Creating Custom Decorators
+[Chapter 109: Creating Custom Decorators](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter109.md)
 --------------------------------------------------------------------------------
 1. Basic Decorator Pattern
 2. Wrapper Functions
@@ -1293,7 +1293,7 @@ Chapter 109: Creating Custom Decorators
 7. Parameterised Decorators
 8. Class-Based Decorators
 
-Chapter 110: Advanced Decorator Patterns
+[Chapter 110: Advanced Decorator Patterns](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter110.md)
 --------------------------------------------------------------------------------
 1. Chaining Decorators
 2. Decorator Order
@@ -1306,7 +1306,7 @@ Chapter 110: Advanced Decorator Patterns
 9. Caching Decorators
 10. Authentication Decorators
 
-Chapter 111: Method Decorators
+[Chapter 111: Method Decorators](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter111.md)
 --------------------------------------------------------------------------------
 1. @staticmethod
 2. @classmethod
@@ -1317,7 +1317,7 @@ Chapter 111: Method Decorators
 7. `self` and `cls` in Decorators
 8. Abstract Method Decorators
 
-Chapter 112: The `operator` Module
+[Chapter 112: The `operator` Module](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter112.md)
 --------------------------------------------------------------------------------
 1. Introduction to `operator`
 2. Arithmetic Operators
@@ -1328,7 +1328,7 @@ Chapter 112: The `operator` Module
 7. `operator.methodcaller`
 8. Using `operator` with `functools`
 
-Chapter 113: Functional Programming Best Practices
+[Chapter 113: Functional Programming Best Practices](https://github.com/spacotto/grimoire/blob/main/python/chapters/chapter113.md)
 --------------------------------------------------------------------------------
 1. Pure Function Design
 2. Avoiding Side Effects

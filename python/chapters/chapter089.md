@@ -207,4 +207,5 @@ Two lines. Pydantic handles:
 | Highly custom rules, legacy systems | Combine Pydantic + custom validators |
 | Performance-critical, no dependencies | Manual validation (rare) |
 
-> **Key takeaway:** Type hints describe intent. Pydantic enforces it. For any Python project that handles external data, Pydantic reduces bugs, removes boilerplate, and makes your data contracts explicit.
+>[!IMPORTANT]
+>Type hints describe intent. Pydantic enforces it. For any Python project that handles external data, Pydantic reduces bugs, removes boilerplate, and makes your data contracts explicit.

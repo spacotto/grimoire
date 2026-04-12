@@ -1,10 +1,10 @@
 # Introduction to Data Validation
 
-Data validation ensures that the data your program receives is correct, complete, and safe to use. Python's type hints help at development time, but they don't protect you at runtime — that's where **Pydantic** comes in. Pydantic is a Python library that validates data automatically using the type annotations you already write. This document covers why validation matters, what problems it solves, and how Pydantic compares to doing it by hand.
+Data validation ensures that the data your program receives is correct, complete, and safe to use. Python's type hints help at development time, but they don't protect you at runtime. That's where **Pydantic** comes in. Pydantic is a Python library that validates data automatically using the type annotations you already write. This document covers why validation matters, what problems it solves, and how Pydantic compares to doing it by hand.
 
 ## Why Data Validation Matters
 
-Programs receive data from many sources: HTTP requests, config files, databases, message queues, user input. You can never fully trust external data.
+Programs receive data from many sources: HTTP requests, config files, databases, message queues, and user input. You can never fully trust external data.
 
 Without validation, bad data causes:
 
@@ -55,7 +55,7 @@ Pydantic validates and coerces data on instantiation. If the data doesn't fit, i
 
 ## Data Integrity and Quality
 
-Validation isn't just about types — it's about **meaning**.
+Validation isn't just about types, it's about **meaning**.
 
 ```python
 from pydantic import BaseModel, field_validator

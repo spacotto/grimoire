@@ -1,10 +1,6 @@
-# Map, Filter, and Reduce in Python 3
-
-## Abstract
+# Map, Filter, and Reduce
 
 Python provides three built-in functional programming tools — `map()`, `filter()`, and `reduce()` — that let you process iterables in a clean, expressive way. Instead of writing explicit loops, these functions apply a transformation, a condition, or an accumulation over a sequence. This document covers each function individually, then shows how they combine, and compares them to list comprehensions for context.
-
----
 
 ## The `map()` Function
 
@@ -17,9 +13,7 @@ map(function, iterable)
 - `function` — a callable applied to each element
 - `iterable` — any iterable (list, tuple, generator…)
 
-The result is **not** a list. Wrap it in `list()` to materialize it.
-
----
+The result is **not** a list. Wrap it in `list()` to materialise it.
 
 ## Mapping Transformations
 
@@ -41,9 +35,8 @@ sums = list(map(lambda x, y: x + y, a, b))
 # → [11, 22, 33]
 ```
 
-> `map()` stops at the shortest iterable when given multiple iterables.
-
----
+>[!NOTE]
+>map()` stops at the shortest iterable when given multiple iterables.
 
 ## The `filter()` Function
 
@@ -57,8 +50,6 @@ filter(function, iterable)
 - If `function` is `None`, falsy elements are removed
 
 Like `map()`, it returns a lazy iterator.
-
----
 
 ## Filtering Data
 
@@ -83,8 +74,6 @@ active_users = list(filter(lambda u: u["active"], users))
 # → [{'name': 'Alice', ...}, {'name': 'Carol', ...}]
 ```
 
----
-
 ## The `reduce()` Function
 
 `reduce()` collapses an iterable into a **single value** by repeatedly applying a function to an accumulator and the next element.
@@ -94,8 +83,6 @@ active_users = list(filter(lambda u: u["active"], users))
 ```
 
 It is not a built-in — you must import it.
-
----
 
 ## `functools.reduce`
 
@@ -129,9 +116,8 @@ flat = reduce(lambda acc, x: acc + x, nested)
 # → [1, 2, 3, 4, 5, 6]
 ```
 
-> Always provide an `initializer` when the iterable might be empty, to avoid a `TypeError`.
-
----
+>[!IMPORTANT]
+>Always provide an `initializer` when the iterable might be empty, to avoid a `TypeError`.
 
 ## Combining `map`, `filter`, `reduce`
 
@@ -165,8 +151,6 @@ total = reduce(
 
 Reading inside-out: filter valid → extract amounts → sum them.
 
----
-
 ## List Comprehensions vs. `map`/`filter`
 
 For most everyday use, **list comprehensions** are preferred in Python because they are more readable.
@@ -192,8 +176,6 @@ result = [x ** 2 for x in numbers if x % 2 == 0]
 ```
 
 Use `map()`/`filter()` when passing named functions or when you need lazy evaluation (e.g., large datasets where you don't want to build the full list in memory).
-
----
 
 ## Performance Considerations
 

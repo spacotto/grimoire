@@ -89,7 +89,8 @@ pipeline = compose_many(str, add_one, square)
 pipeline(3)   # → "10"  (3² + 1 → "10")
 ```
 
-> **Note:** `compose(f, g)` applies `g` first, then `f` — right to left, like mathematical notation.
+>[!NOTE]
+> `compose(f, g)` applies `g` first, then `f` — right to left, like mathematical notation.
 
 ## Function Combinators
 

@@ -36,7 +36,7 @@ A **thread** is the smallest unit of execution within a process. All threads in 
 
 Compile with: `cc file.c -lpthread`
 
-### Creating Threads
+### `pthread_create`
 
 `pthread_create()` spawns a new thread that executes `start_routine(arg)`.
 
@@ -54,13 +54,26 @@ int pthread_create(pthread_t *thread, const pthread_attr_t *attr,
 
 Returns `0` on success, an error code otherwise. The new thread runs concurrently with the caller immediately after creation.
 
-### Joining Threads
+### `pthread_join`
 
 Blocks the calling thread until `thread` terminates.
 
 ```c
 int pthread_join(pthread_t thread, void **retval);
 ```
+
+| Parameter | Description | 
+| :--- | :--- |
+| `thread` | ID of the thread to wait for |
+| `retval` | If non-`NULL`, receives the value returned by `start_routine` |
+
+>[!WARNING]
+>A thread that is never joined is a **resource leak** (its stack and descriptor persist). Always join, or detach with `pthread_detach()`.
+
+| Function | Purpose |
+| :--- | :--- |
+| `pthread_exit()` | Terminates calling thread (passes return value to `pthread_join`) |
+| `pthread_self()` | Returns the calling thread's own ID |
 
 ### Mutex
 

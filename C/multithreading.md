@@ -231,17 +231,16 @@ int pthread_cond_broadcast(pthread_cond_t *cond);  // Wake ALL threads
 | `pthread_cond_signal` | One waiting thread (OS chooses which) | Only one thread can act on the condition |
 | `pthread_cond_broadcast` | All waiting threads | Multiple threads may need to re-evaluate the condition |
  
-`pthread_cond_broadcast` is safer when in doubt — woken threads re-check their `while` condition and go back to sleep if not applicable.
+>[!TIP]
+>`pthread_cond_broadcast` is safer when in doubt—woken threads re-check their `while` condition and go back to sleep if not applicable.
  
 ---
 
-`pthread_cond_destroy`
+`pthread_cond_destroy` frees resources associated with a condition variable. Only call when **no threads are waiting** on it. Required for dynamically initialised condition variables; no-op for statically initialised ones.
  
 ```c
 int pthread_cond_destroy(pthread_cond_t *cond);
 ```
- 
-Frees resources associated with a condition variable. Only call when **no threads are waiting** on it. Required for dynamically initialised condition variables; no-op for statically initialised ones.
  
 >[!IMPORTANT]
 >Always use a `while` loop (not `if`) to recheck the condition after waking—**spurious wakeups** can occur.

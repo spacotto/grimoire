@@ -188,8 +188,23 @@ int pthread_cond_init(pthread_cond_t *cond, const pthread_condattr_t *attr);
 
 ---
 
+`pthread_cond_wait` **atomically** releases `mutex` and blocks the thread until `cond` is signalled. When it returns, the mutex is re-acquired automatically.
+
+```c
+int pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex);
+```
+
+The atomicity is critical: it eliminates the window between checking the condition and sleeping where a signal could be missed.
+
 >[!IMPORTANT]
 >Always use a `while` loop (not `if`) to recheck the condition after waking—**spurious wakeups** can occur.
+
+```c
+while (!condition)
+    pthread_cond_wait(&cond, &mutex);
+```
+
+---
 
 ## Concurrency Issues
 
@@ -215,7 +230,7 @@ lock(mutex2);        lock(mutex1);  // DEADLOCK
 **Prevention rules:**
 - Always acquire locks in the **same order**
 - Use `pthread_mutex_trylock()` to avoid blocking indefinitely
-- Minimize the number of locks held simultaneously
+- Minimise the number of locks held simultaneously
 
 ### Starvation
 A thread is perpetually denied access to a resource because others keep taking priority.

@@ -194,7 +194,7 @@ int pthread_cond_init(pthread_cond_t *cond, const pthread_condattr_t *attr);
 int pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex);
 ```
 
-The atomicity is critical: it eliminates the window between checking the condition and sleeping where a signal could be missed.
+The atomicity is critical: it eliminates the window between checking the condition and sleeping, where a signal could be missed.
 
 >[!IMPORTANT]
 >Always use a `while` loop (not `if`) to recheck the condition after waking—**spurious wakeups** can occur.
@@ -205,6 +205,46 @@ while (!condition)
 ```
 
 ---
+
+`pthread_cond_timedwait` is the same as `pthread_cond_wait`, but **returns automatically after an absolute deadline** (`abstime`). Returns `ETIMEDOUT` if the timeout expires before a signal arrives. Useful to avoid waiting forever.
+
+```c
+struct timespec ts;
+clock_gettime(CLOCK_REALTIME, &ts);
+ts.tv_sec += 2;  // Wait at most 2 seconds
+
+int rc = pthread_cond_timedwait(&cond, &mutex, &ts);
+if (rc == ETIMEDOUT) { /* handle timeout */ }
+```
+
+---
+
+`pthread_cond_signal` vs `pthread_cond_broadcast`
+ 
+```c
+int pthread_cond_signal(pthread_cond_t *cond);     // Wake ONE thread
+int pthread_cond_broadcast(pthread_cond_t *cond);  // Wake ALL threads
+```
+ 
+| Function | Wakes | Use when |
+|---|---|---|
+| `pthread_cond_signal` | One waiting thread (OS chooses which) | Only one thread can act on the condition |
+| `pthread_cond_broadcast` | All waiting threads | Multiple threads may need to re-evaluate the condition |
+ 
+`pthread_cond_broadcast` is safer when in doubt — woken threads re-check their `while` condition and go back to sleep if not applicable.
+ 
+---
+
+`pthread_cond_destroy`
+ 
+```c
+int pthread_cond_destroy(pthread_cond_t *cond);
+```
+ 
+Frees resources associated with a condition variable. Only call when **no threads are waiting** on it. Required for dynamically initialised condition variables; no-op for statically initialised ones.
+ 
+>[!IMPORTANT]
+>Always use a `while` loop (not `if`) to recheck the condition after waking—**spurious wakeups** can occur.
 
 ## Concurrency Issues
 

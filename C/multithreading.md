@@ -256,6 +256,7 @@ counter++;
 
 // FIX: wrap in mutex lock/unlock
 ```
+---
 
 ### Deadlock
 Two threads each hold a lock; the other needs → both wait forever.
@@ -271,15 +272,21 @@ lock(mutex2);        lock(mutex1);  // DEADLOCK
 - Use `pthread_mutex_trylock()` to avoid blocking indefinitely
 - Minimise the number of locks held simultaneously
 
+---
+
 ### Starvation
 A thread is perpetually denied access to a resource because others keep taking priority.
 
 **Fix:** Use fair scheduling policies or bounded waiting mechanisms.
 
+---
+
 ### Priority Inversion
 A high-priority thread is blocked by a low-priority thread holding a needed lock.
 
 **Fix:** Use **priority inheritance** (OS-level) or redesign lock usage.
+
+---
 
 ### False Sharing
 Two threads modify **different variables** that share the same CPU cache line → performance hit from constant cache invalidation.
@@ -293,6 +300,8 @@ typedef struct {
     char padding[56];
 } padded_counter_t;
 ```
+
+---
 
 ## Quick Reference
 

@@ -36,7 +36,7 @@ A **thread** is the smallest unit of execution within a process. All threads in 
 
 Compile with: `cc file.c -lpthread`
 
-### `pthread_create`
+### Creating & Joining Threads
 
 `pthread_create()` spawns a new thread that executes `start_routine(arg)`.
 
@@ -54,9 +54,9 @@ int pthread_create(pthread_t *thread, const pthread_attr_t *attr,
 
 Returns `0` on success, an error code otherwise. The new thread runs concurrently with the caller immediately after creation.
 
-### `pthread_join`
+---
 
-Blocks the calling thread until `thread` terminates.
+`pthread_join()` Blocks the calling thread until `thread` terminates.
 
 ```c
 int pthread_join(pthread_t thread, void **retval);
@@ -75,10 +75,39 @@ int pthread_join(pthread_t thread, void **retval);
 | `pthread_exit()` | Terminates calling thread (passes return value to `pthread_join`) |
 | `pthread_self()` | Returns the calling thread's own ID |
 
-### Mutex
+### Mutex (Mutual Exclusion)
+
+Mutex functions **prevent two threads from accessing a critical section simultaneously**.
+
+```c
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+
+void *safe_increment(void *arg) {
+    pthread_mutex_lock(&lock);
+    // --- critical section ---
+    counter++;
+    // --- end critical section ---
+    pthread_mutex_unlock(&lock);
+    return NULL;
+}
+```
 
 >[!IMPORTANT]
 >Always unlock what you lock. A missing unlock causes a **deadlock**.
+
+---
+
+`pthread_mutex_init()` initialises a mutex dynamically. Use this when the mutex is heap-allocated or needs custom attributes (e.g. recursive locking). For static/global mutexes, prefer the macro `PTHREAD_MUTEX_INITIALIZER` instead.
+
+```c
+int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr);
+```
+
+| Function | Purpose |
+| :--- | :--- |
+| `mutex` | Pointer to the mutex to initialise |
+| `attr` | Mutex attributes; `NULL` = default (non-recursive, non-robust) |
+
 >[!IMPORTANT]
 >Always use a `while` loop (not `if`) to recheck the condition after waking—**spurious wakeups** can occur.
 

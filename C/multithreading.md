@@ -103,10 +103,90 @@ void *safe_increment(void *arg) {
 int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr);
 ```
 
-| Function | Purpose |
+| Parameter | Description |
 | :--- | :--- |
 | `mutex` | Pointer to the mutex to initialise |
 | `attr` | Mutex attributes; `NULL` = default (non-recursive, non-robust) |
+
+---
+
+`pthread_mutex_lock` acquires the mutex. If another thread already holds it, it blocks until it is released. Only one thread can hold a given mutex at a time—this is the core guarantee that protects the critical section.
+
+```c
+int pthread_mutex_lock(pthread_mutex_t *mutex);
+```
+
+>[!WARNING]
+>Calling `pthread_mutex_lock` on a mutex you already hold causes a deadlock (with a default non-recursive mutex).
+
+---
+
+`pthread_mutex_unlock` releases the mutex, allowing one waiting thread to acquire it. Must be called by the same thread that locked it. Always pair every lock with an unlock — even on error paths.
+
+```c
+int pthread_mutex_unlock(pthread_mutex_t *mutex);
+```
+
+---
+
+`pthread_mutex_destroy` frees resources associated with a mutex. Only call on an unlocked mutex with no threads waiting on it. Required for dynamically initialised mutexes to avoid resource leaks; no-op for statically initialised ones.
+
+```c
+int pthread_mutex_destroy(pthread_mutex_t *mutex);
+```
+
+### Semaphores
+
+A counter-based synchronisation tool. Useful for limiting concurrent access to a resource.
+
+```c
+#include <semaphore.h>
+
+sem_t sem;
+sem_init(&sem, 0, 1);  // Initial value = 1 (binary semaphore)
+
+sem_wait(&sem);   // Decrement (lock)
+// critical section
+sem_post(&sem);   // Increment (unlock)
+
+sem_destroy(&sem);
+```
+
+### Condition Variable
+
+Used to **block a thread until a specific condition becomes true**. Always used together with a mutex.
+
+```c
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t  cond = PTHREAD_COND_INITIALIZER;
+
+// Consumer thread — waits
+pthread_mutex_lock(&lock);
+while (!ready)
+    pthread_cond_wait(&cond, &lock);  // Releases lock while waiting
+pthread_mutex_unlock(&lock);
+
+// Producer thread — signals
+pthread_mutex_lock(&lock);
+ready = 1;
+pthread_cond_signal(&cond);           // Wake up one waiting thread
+pthread_mutex_unlock(&lock);
+```
+
+---
+
+`pthread_cond_init` initialises a condition variable dynamically. Use when heap-allocated or when custom attributes (e.g. clock type) are needed. For static/global variables, use `PTHREAD_COND_INITIALIZER` instead.
+
+```c
+int pthread_cond_init(pthread_cond_t *cond, const pthread_condattr_t *attr);
+```
+
+| Parameter | Description |
+| :--- | :--- |
+| `cond` | Pointer to the condition variable to initialise |
+| `attr` | Attributes; `NULL` = defaults |
+
+---
 
 >[!IMPORTANT]
 >Always use a `while` loop (not `if`) to recheck the condition after waking—**spurious wakeups** can occur.

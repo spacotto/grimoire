@@ -10,7 +10,7 @@
 | 1       | Sets text style to BOLD / High Intensity |
 | 38      | Specifies extended FOREGROUND color mode (48 is for Background) |
 | 5       | Selects 8-bit (256-color) lookup table mode (`38;5;<color_index>`) |
-| <code > | Color index (16 to 231 forms the 6x6x6 RGB color cube) |
+| `<code>` | Color index (16 to 231 forms the 6x6x6 RGB color cube) |
 | m       | SGR (Select Graphic Rendition) command terminator |
 
 ## Practical Example
